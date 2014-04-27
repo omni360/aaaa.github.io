@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<script type="text/javascript" src="dist/svg.js"></script>-->
+	<script type="text/javascript" src="./dist/svg.js"></script>
+	<script type="text/javascript" src="svgme.js"></script>
+	<title></title>
+</head>
+<body>
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+  <script type="text/javascript" xlink:href="dist/svg.min.js"></script>
+  <script type="text/javascript">
+    <![CDATA[
+      var draw = SVG('drawing')
+      draw.rect(100,100).animate().fill('#f03').move(100,100)
+    ]]>
+  </script>
+</svg>
+
+<script type="text/javascript">
+	var draw = SVG('drawing').size(300, 300)
+var rect = draw.defs().rect(100, 100).attr({ fill: '#f06' })
+
+</script>
+</body>
+</html>
+
+<!--
+<p><b>Note: </b>Internet Explorer and Safari do not support SVG filters yet!</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="f1" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+      <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+</svg>
+
+<script type="text/javascript" src="raphael.js"></script>
+<script type="text/javascript" src="svg.js"></script>
+-->

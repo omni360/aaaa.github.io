@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function update (){
+            var now = new Date();
+            var second = now.getSeconds();
+            var min = now.getMinutes();
+            var hour = (now.getHours() % 12) + min / 60;
+            var secondangle = second * 6; //6 degrees for every minute
+            var minangle = min * 6;        //6 degrees for every minute
+            var hourangle = hour * 30;    //30 degrees for every hour
+            
+            var rectc = document.getElementById("defss");
+
+            if(second%2==0){
+                //alert(clocks);
+                    rectc.setAttribute("fill","red");
+                }else{
+                    //alert(secondangle);
+                    rectc.setAttribute("fill","green");
+            }
+            setTimeout(update, 1000); //update time for every second		
+	}
+	</script>
+</head>
+<body onload="update()">
+
+<p><b>Note: </b>Internet Explorer and Safari do not support SVG filters yet!</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="filter" x="0" y="0">
+      <feGaussianBlur stdDeviation="30" />
+      <feOffset dx="0" dy="0" />
+    </filter>
+  </defs>
+  <rect x="10" y = "10"id="defss" width="90" height="90" fill="red" filter="url(#filter)" />
+  <rect  x="25" y="25" width="90" height="90" fill="yellow"  />
+</svg>
+
+</body>
+</html>
