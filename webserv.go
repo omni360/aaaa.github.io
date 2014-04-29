@@ -16,6 +16,6 @@ func main() {
 }
 */
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("/")))
+	http.Handle("/", http.FileServer(http.Dir("./")))
 	http.ListenAndServe("localhost:4000", nil)
 }
