@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)file:///C:/webglex/ex.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+</head><body>
+<script src="./sex_files/d3.v3.min.js"></script>
+<script>
+
+var width = 960,
+    height = 500,
+    padding = 1.5, // separation between same-color nodes
+    clusterPadding = 6, // separation between different-color nodes
+    maxRadius = 12;
+
+
+    var ads = new Array(
+       ["1","腾讯",5871852],
+       ["1","完美世界",2745448],
+       ["1","盛大",823077],
+       ["1","网易",1572747],
+       ["1","36氪",318],
+       ["2","红米手机",825683],
+       ["2","iphone5",532949],
+       ["2","小米手机3",534913],
+       ["2","三星",55500],
+       ["2","ios",5952],
+       ["2","android",5446],
+       ["2","4G",4071],
+       ["3","天天酷跑",836669],
+       ["3","微信",385527],
+       ["3","手机qq",175621],
+       ["3","快播",110708],
+       ["3","大众点评网",84262],
+       ["3","谷歌地图",36903],
+       ["3","美图秀秀",29835],
+       ["3","易信",16639],
+       ["3","高德地图",15775],
+       ["3","墨迹天气",10939],
+       ["3","美图秀秀",8269],
+       ["4","京东",374721],
+       ["4","支付宝",276447],
+       ["4","美团网",159875],
+       ["4","唯品会",149885],
+       ["4","余额宝",52943],
+       ["4","手机淘宝",19115],
+       ["4","微信支付",1535],
+       ["5","360浏览器",35739],
+       ["5","搜狗浏览器",22094],
+       ["5","opera浏览器",984],
+       ["6","刘强东",26584],
+       ["6","马云",13839],
+       ["6","马化腾",7027],
+       ["6","雷军",7027],
+       ["6","李彦宏",3587]
+      )
+var n = ads.length, // total number of nodes
+    m = 6; // number of distinct clusters
+
+var color = d3.scale.category10()
+    .domain(d3.range(m));
+
+// The largest node for each cluster.
+var clusters = new Array(m);
+
+var nodes = d3.range(n).map(function() {
+  var i = Math.floor(Math.random() * m),
+      r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
+      d = {cluster: i, radius: r};
+  if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
+  return d;
+});
+
+// Use the pack layout to initialize node positions.
+d3.layout.pack()
+    .sort(null)
+    .size([width, height])
+    .children(function(d) { return d.values; })
+    .value(function(d) { return d.radius * d.radius; })
+    .nodes({values: d3.nest()
+      .key(function(d) { return d.cluster; })
+      .entries(nodes)});
+
+var force = d3.layout.force()
+    .nodes(nodes)
+    .size([width, height])
+    .gravity(.02)
+    .charge(0)
+    .on("tick", tick)
+    .start();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var node = svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("circle")
+    .style("fill", function(d) { return color(d.cluster); })
+    .call(force.drag);
+
+node.transition()
+    .duration(750)
+    .delay(function(d, i) { return i * 5; })
+    .attrTween("r", function(d) {
+      var i = d3.interpolate(0, d.radius);
+      return function(t) { return d.radius = i(t); };
+    });
+
+function tick(e) {
+  node
+      .each(cluster(10 * e.alpha * e.alpha))
+      .each(collide(.5))
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+}
+
+// Move d to be adjacent to the cluster node.
+function cluster(alpha) {
+  return function(d) {
+    var cluster = clusters[d.cluster];
+    if (cluster === d) return;
+    var x = d.x - cluster.x,
+        y = d.y - cluster.y,
+        l = Math.sqrt(x * x + y * y),
+        r = d.radius + cluster.radius;
+    if (l != r) {
+      l = (l - r) / l * alpha;
+      d.x -= x *= l;
+      d.y -= y *= l;
+      cluster.x += x;
+      cluster.y += y;
+    }
+  };
+}
+
+// Resolves collisions between d and all other circles.
+function collide(alpha) {
+  var quadtree = d3.geom.quadtree(nodes);
+  return function(d) {
+    var r = d.radius + maxRadius + Math.max(padding, clusterPadding),
+        nx1 = d.x - r,
+        nx2 = d.x + r,
+        ny1 = d.y - r,
+        ny2 = d.y + r;
+    quadtree.visit(function(quad, x1, y1, x2, y2) {
+      if (quad.point && (quad.point !== d)) {
+        var x = d.x - quad.point.x,
+            y = d.y - quad.point.y,
+            l = Math.sqrt(x * x + y * y),
+            r = d.radius + quad.point.radius + (d.cluster === quad.point.cluster ? padding : clusterPadding);
+        if (l < r) {
+          l = (l - r) / l * alpha;
+          d.x -= x *= l;
+          d.y -= y *= l;
+          quad.point.x += x;
+          quad.point.y += y;
+        }
+      }
+      return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+    });
+  };
+}
+
+</script><svg width="960" height="500">
+  <g id="numbers"> 
+        	<circle cx="493.7337086103088" cy="256.48286289161837" r="4.87893893946606" style="fill: rgb(214, 39, 40);"></circle>
+            <text cx="493.7337086103088" cy="493.7337086103088">12</text>     
+        </g>
+
+<circle cx="484.2814504979746" cy="242.9583804326142" r="2.771026695718107" style="fill: rgb(31, 119, 180);"></circle>
+<circle cx="512.8981344472888" cy="285.63532785904215" r="4.87893893946606" style="fill: rgb(214, 39, 40);"></circle><circle cx="482.9307229290099" cy="259.5481701764098" r="1.940983792092137" style="fill: rgb(31, 119, 180);"></circle><circle cx="519.8508216314423" cy="237.98916708268678" r="5.520779871446482" style="fill: rgb(255, 127, 14);"></circle><circle cx="518.2473056595451" cy="291.2955604957682" r="1.15933872710823" style="fill: rgb(214, 39, 40);"></circle><circle cx="469.44851967974773" cy="233.8890196906834" r="4.384762568175236" style="fill: rgb(140, 86, 75);"></circle><circle cx="490.25692734410455" cy="261.5307543660279" r="1.1345940548130617" style="fill: rgb(31, 119, 180);"></circle><circle cx="526.979197290023" cy="283.2322414538021" r="7.912308336501201" style="fill: rgb(214, 39, 40);"></circle><circle cx="443.53745285777387" cy="233.1899540941007" r="6.699432924444484" style="fill: rgb(140, 86, 75);"></circle><circle cx="459.18537999297473" cy="234.5296766886246" r="4.406090238729412" style="fill: rgb(140, 86, 75);"></circle><circle cx="437.2935708300413" cy="262.4061146366201" r="5.983177567642299" style="fill: rgb(44, 160, 44);"></circle><circle cx="468.0563539319375" cy="268.0116766511438" r="9.011024307261144" style="fill: rgb(44, 160, 44);"></circle><circle cx="479.38965160712746" cy="223.8331935944836" r="8.265464388345922" style="fill: rgb(140, 86, 75);"></circle><circle cx="452.8154152538053" cy="254.0528641893748" r="10.139732759248371" style="fill: rgb(44, 160, 44);"></circle><circle cx="439.1618041212015" cy="296.3209350593908" r="7.426893287411501" style="fill: rgb(148, 103, 189);"></circle><circle cx="545.1733985084727" cy="291.75919459090176" r="10.67930001409361" style="fill: rgb(214, 39, 40);"></circle><circle cx="522.9330156695512" cy="227.1309344851927" r="4.267859211742628" style="fill: rgb(255, 127, 14);"></circle><circle cx="477.3704112630299" cy="317.63774072542776" r="11.419975601553254" style="fill: rgb(148, 103, 189);"></circle><circle cx="448.9916301426224" cy="275.1958683054665" r="9.861655594857789" style="fill: rgb(44, 160, 44);"></circle><circle cx="475.4186744715645" cy="287.8639300807678" r="6.172039614138097" style="fill: rgb(148, 103, 189);"></circle><circle cx="456.42826576271096" cy="213.3034994696897" r="15.497747880897006" style="fill: rgb(140, 86, 75);"></circle><circle cx="486.9613630209779" cy="260.7223896435993" r="0.7581121576838892" style="fill: rgb(31, 119, 180);"></circle><circle cx="524.263228173946" cy="306.1799805616264" r="13.223722090645836" style="fill: rgb(214, 39, 40);"></circle><circle cx="519.399486513136" cy="220.58185740537007" r="1.6739487114148357" style="fill: rgb(255, 127, 14);"></circle><circle cx="459.3505247049827" cy="300.7807029178582" r="11.753593037639005" style="fill: rgb(148, 103, 189);"></circle><circle cx="456.1791630576662" cy="319.85261565164143" r="6.080777007074069" style="fill: rgb(148, 103, 189);"></circle><circle cx="498.93994730950556" cy="297.60753431179955" r="12.013805827776139" style="fill: rgb(214, 39, 40);"></circle><circle cx="508.18190666619057" cy="246.6558788295035" r="7.51801671264065" style="fill: rgb(255, 127, 14);"></circle><circle cx="506.718523256205" cy="313.6314276983069" r="4.301756565269737" style="fill: rgb(214, 39, 40);"></circle><circle cx="470.96411197374033" cy="250.97383570174782" r="6.7735709425491315" style="fill: rgb(44, 160, 44);"></circle><circle cx="452.78329143235425" cy="231.40404437186095" r="1.2182564202720458" style="fill: rgb(140, 86, 75);"></circle><circle cx="482.7972046833139" cy="203.05309194032225" r="11.291852514215705" style="fill: rgb(140, 86, 75);"></circle><circle cx="505.3904005529577" cy="225.9142306439464" r="11.818206235971603" style="fill: rgb(255, 127, 14);"></circle><circle cx="463.01043689106683" cy="247.98061441011492" r="0.22584062482653305" style="fill: rgb(44, 160, 44);"></circle><circle cx="489.6609801843736" cy="252.89306868650715" r="6.024809247198975" style="fill: rgb(31, 119, 180);"></circle><circle cx="476.7942027810315" cy="299.6857476898997" r="4.2292373894941075" style="fill: rgb(148, 103, 189);"></circle><circle cx="512.985187474649" cy="326.63283315858604" r="8.631109552355824" style="fill: rgb(214, 39, 40);"></circle><circle cx="491.8823464279433" cy="242.23349784078385" r="3.3663638112607277" style="fill: rgb(31, 119, 180);"></circle></svg></body></html>
