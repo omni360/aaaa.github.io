@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>d3 library example for scatter chart</title>
+	<meta charset=utf-8>
+	<meta name=description content="this is an d3 library example template">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script src="./dist/js/d3/d3.js"></script>
+	<link rel="stylesheet" href="./dist/css/bootstrap.min.css"> 
+</head>
+<body>
+
+	<script type="text/javascript">
+		var w = 1200;
+		var h = 450;
+		var barPandding = 1;
+
+		var dataset=[ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+		var xScale = d3.scale.ordinal()
+			.domain(d3.range(dataset.length))
+			.rangeRoundBands([0,w],0.05);
+
+		var yScale = d3.scale.linear()
+			.domain([0,d3.max(dataset)])
+			.range([0,h*0.75]);
+
+		//创建svg
+		var svg = d3.select("body")
+					.append("svg")
+					.attr("width",w)
+					.attr("height",h);
+
+				//创建条形图	
+		var bar = svg.selectAll("rect")
+					.data(dataset)
+					.enter()
+					.append("rect")
+					.attr("x",function(d,i){
+						return xScale(i);
+						//return i * (w/dataset.length);	//条形宽20像素，外加1像素间距
+					})
+					.attr("y",function(d){
+						return h- yScale(d);
+					})
+					.attr("width",xScale.rangeBand())
+					//.attr("width",w/dataset.length - barPandding)
+					.attr("height",function(d){
+						return yScale(d);
+					})
+					.attr("fill",function(d){
+						return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+					})
+					.on("click", function() {
+							// 新数据集
+							var numValues = dataset.length;
+							dataset = [];	
+							for (var i = numValues - 1; i >= 0; i--) {
+								var newNumber = Math.floor(Math.random() * 21 + 5);
+								dataset.push(newNumber);
+							};
+							//yScale.domain([0,d3.max(dataset)]);
+							//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+							// 更新所有矩形
+							svg.selectAll("rect")
+									.data(dataset)
+									.transition()
+									.duration(5000)
+									.attr("y", function(d) {
+										return h- yScale(d);
+									})
+									.attr("height", function(d) {
+										return yScale(d);
+									})
+									.attr("fill",function(d){
+										return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+									});
+							svg.selectAll("circle")
+									.data(dataset)
+									.transition()
+									.duration(5000)		
+									.attr("cy",function(d){
+										return h- yScale(d) + 10;
+									});
+							svg.selectAll("text")
+									.data(dataset)
+									.transition()
+									.duration(5000)
+									.text(function(d){
+											return d;
+									})
+									.attr("y",function(d){
+										return h- yScale(d) + 14;
+									});
+
+					});
+				//创建标签圆	
+				svg.selectAll("circle")
+					.data(dataset)		
+					.enter()
+					.append("circle")
+					.attr("cx",function(d,i){
+						return xScale(i) + xScale.rangeBand() /2 ;
+						//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+					})
+					.attr("cy",function(d){
+						return h- yScale(d) + 10;
+					})
+					.attr("r",8)
+					.attr("fill","white");
+				//创建标签文本	
+				svg.selectAll("text")
+					.data(dataset)
+					.enter()
+					.append("text")
+					.text(function(d){
+						return d;
+					})
+					.attr("x",function(d,i){
+						return xScale(i) + xScale.rangeBand() /2;
+						//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+					})
+					.attr("y",function(d){
+						return h- yScale(d) + 14;
+					})
+					.attr("font-family","sans-serif")
+					.attr("font-size","11px")
+					.attr("fill","black")
+					.attr("text-anchor","middle");
+
+/*	d3.select("input").on("click", function() {
+		// 新数据集
+		dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+		// 更新所有矩形
+		svg.selectAll("rect")
+				.data(dataset)
+				.transition()
+				.duration(5000)
+				.attr("y", function(d) {
+					return h- yScale(d);
+				})
+				.attr("height", function(d) {
+					return yScale(d);
+				});
+		svg.selectAll("circle")
+				.data(dataset)
+				.transition()
+				.duration(5000)		
+				.attr("cy",function(d){
+					return h- yScale(d) + 10;
+				});
+		svg.selectAll("text")
+				.data(dataset)
+				.transition()
+				.duration(5000)
+				.text(function(d){
+						return d;
+				})
+				.attr("y",function(d){
+					return h- yScale(d) + 14;
+				});
+
+});
+*/
+	</script>
+	<!-- <input type="button" value="点击这里" /> -->
+</body>
+</html>
