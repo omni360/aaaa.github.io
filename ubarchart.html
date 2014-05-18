@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>d3 library example for scatter chart</title>
+	<meta charset=utf-8>
+	<meta name=description content="this is an d3 library example template">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script src="./dist/js/d3/d3.js"></script>
+	<link rel="stylesheet" href="./dist/css/bootstrap.min.css"> 
+	<style type="text/css">
+/* 	rect:hover{
+	fill:orange;
+	-moz-transition:all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;	
+	transition: all 0.3s;
+} */
+
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var w = this.window.innerWidth;
+		var h = this.window.innerHeight / 2;
+		var barPandding = 1;
+
+		var dataset=[
+						{key: 0, value:  5},
+						{key: 1, value:  10},
+						{key: 2, value:  13},
+						{key: 3, value:  19},
+						{key: 4, value:  21},
+						{key: 5, value:  25},
+						{key: 6, value:  22},
+						{key: 7, value:  18},
+						{key: 8, value:  15},
+						{key: 9, value:  13},
+						{key: 10, value:  11},
+						{key: 11, value:  12},
+						{key: 12, value:  15},
+						{key: 13, value:  20},
+						{key: 14, value:  18},
+						{key: 15, value:  17},
+						{key: 16, value:  16},
+						{key: 17, value:  18},
+						{key: 18, value:  23},
+						{key: 19, value:  25},
+						{key: 20, value:  13},
+						{key: 21, value:  19},
+						{key: 22, value:  21},
+						{key: 23, value:  25},
+						{key: 24, value:  22},
+						{key: 25, value:  18},
+						{key: 26, value:  15},
+						{key: 27, value:  13},
+						{key: 28, value:  11},
+						{key: 29, value:  12},
+						{key: 30, value:  15},
+						{key: 31, value:  20},
+						{key: 32, value:  18},
+						{key: 33, value:  17},
+						{key: 34, value:  16},
+						{key: 35, value:  18},
+						{key: 36, value:  13},
+						{key: 37, value:  19},
+						{key: 38, value:  21},
+						{key: 39, value:  25},
+						{key: 40, value:  22},
+						{key: 41, value:  18},
+						{key: 42, value:  15},
+						{key: 43, value:  13},
+						{key: 44, value:  11},
+						{key: 45, value:  12},
+						{key: 46, value:  15},
+						{key: 47, value:  20},
+						{key: 48, value:  18},
+						{key: 49, value:  17},
+						{key: 50, value:  16},
+						{key: 51, value:  18},
+						{key: 52, value:  13},
+						{key: 53, value:  19},
+						{key: 54, value:  21},
+						{key: 55, value:  25},
+						{key: 56, value:  22},
+						{key: 57, value:  18},
+						{key: 58, value:  15},
+						{key: 59, value:  13},
+						{key: 60, value:  11},
+						{key: 61, value:  12},
+						{key: 62, value:  15},
+						{key: 63, value:  20},
+						{key: 64, value:  18},
+						{key: 65, value:  17},
+						{key: 66, value:  16},
+						{key: 67, value:  18}
+					 ];
+
+		var key = function(d){
+			return d.key;
+		};
+
+		var xScale = d3.scale.ordinal()
+			.domain(d3.range(dataset.length))
+			.rangeRoundBands([0,w],0.05);
+
+		var yScale = d3.scale.linear()
+			.domain([0,d3.max(dataset,function(d){
+				return d.value;
+			})])
+			.range([0,h*0.75]);
+
+		//创建svg
+		var svg = d3.select("body")
+					.append("svg")
+					.attr("width",w)
+					.attr("height",h);
+
+				//创建条形图	
+		var bar = svg.selectAll("rect")
+					.data(dataset,key)
+					.enter()
+					.append("rect")
+					.attr("x",function(d,i){
+						return xScale(i);
+					})
+					.attr("y",function(d){
+						return h- yScale(d.value);
+					})
+					.attr("width",xScale.rangeBand())
+					.attr("height",function(d){
+						return yScale(d.value);
+					})
+					.attr("fill",function(d){
+						return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+					})
+					.on("mouseover",function(){
+						d3.select(this)
+							.attr("fill","orange");
+					})
+					.on("mouseout",function(d){
+						d3.select(this)
+							.transition()
+							.duration(500)
+							.attr("fill",function(d){
+								return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+							})
+					})
+					.on("click",function () {
+						// 新数据集
+						var numValues = dataset.length;
+						var minkey = dataset[0].key;	
+						var maxkey = dataset[dataset.length-1].key;	
+
+						dataset = [];
+
+						for (var i = minkey; i <= maxkey; i++) {
+							var newNumber = Math.floor(Math.random() * 21 + 5);
+							var k = i;
+							/*console.log(k)*/
+						var v ={key:k ,value:newNumber};
+							dataset.push(v);
+						};
+
+						//yScale.domain([0,d3.max(dataset)]);
+						//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+						// 更新所有矩形
+						svg.selectAll("rect")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)
+								.attr("y", function(d) {
+									return h- yScale(d.value);
+								})
+								.attr("height", function(d) {
+									return yScale(d.value);
+								})
+								.attr("fill",function(d){
+									return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+								});
+						svg.selectAll("circle")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)		
+								.attr("cy",function(d){
+									return h- yScale(d.value) + xScale.rangeBand()/2;
+								});
+						svg.selectAll("text")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)
+								.text(function(d){
+										return d.value;
+								})
+								.attr("y",function(d){
+									return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+								});
+					});
+				//创建标签圆	
+				svg.selectAll("circle")
+					.data(dataset,key)		
+					.enter()
+					.append("circle")
+					.attr("cx",function(d,i){
+						return xScale(i) + xScale.rangeBand() /2 ;
+					})
+					.attr("cy",function(d){
+						return h- yScale(d.value) + xScale.rangeBand()/2;//+ 10;
+					})
+					.attr("r",xScale.rangeBand()/2)
+					.attr("fill","white");
+				//创建标签文本	
+				svg.selectAll("text")
+					.data(dataset,key)
+					.enter()
+					.append("text")
+					.text(function(d){
+						return d.value;
+					})
+					.attr("x",function(d,i){
+						return xScale(i) + xScale.rangeBand() /2;
+					})
+					.attr("y",function(d){
+						return h- yScale(d.value) + 4 + xScale.rangeBand()/2 ;
+					})
+					.attr("font-family","sans-serif")
+					.attr("font-size","11px")
+					.attr("fill","black")
+					.attr("text-anchor","middle");
+
+		var br = d3.select("body")
+					.append("br");
+
+
+		var b = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","Add")
+					.style("margin-top", "30px")
+					.style("margin-left", "80px")
+					.on("click",function () {
+						var maxValue = 21;
+						var newNumber = Math.floor(Math.random() * maxValue + 5);
+						var k = dataset[dataset.length-1].key;
+						var v ={key:k +1,value:newNumber};
+						dataset.push(v);
+
+						xScale.domain(d3.range(dataset.length));
+						yScale.domain([0,d3.max(dataset,function(d){
+							return d.value;
+						})]);
+
+						var bars = svg.selectAll("rect")
+									.data(dataset,key);
+
+								bars.enter()
+									.append("rect")
+									.attr("x",w)
+									.attr("y",function(d){
+										return h- yScale(d.value);
+									})
+									.attr("width",xScale.rangeBand())
+									.attr("height",function(d){
+										return yScale(d.value);
+									})
+									.attr("fill",function(d){
+										return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+									})
+									.on("click",function () {
+										// 新数据集
+										var numValues = dataset.length;
+										var minkey = dataset[0].key;	
+										var maxkey = dataset[dataset.length-1].key;	
+
+										dataset = [];
+
+										for (var i = minkey; i <= maxkey; i++) {
+											var newNumber = Math.floor(Math.random() * 21 + 5);
+											var k = i;
+											/*console.log(k)*/
+										var v ={key:k ,value:newNumber};
+											dataset.push(v);
+										};
+
+										//yScale.domain([0,d3.max(dataset)]);
+										//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+										// 更新所有矩形
+										svg.selectAll("rect")
+												.data(dataset,key)
+												.transition()
+												.duration(5000)
+												.attr("y", function(d) {
+													return h- yScale(d.value);
+												})
+												.attr("height", function(d) {
+													return yScale(d.value);
+												})
+												.attr("fill",function(d){
+													return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+												});
+										svg.selectAll("circle")
+												.data(dataset,key)
+												.transition()
+												.duration(5000)		
+												.attr("cy",function(d){
+													return h- yScale(d.value) + xScale.rangeBand()/2;
+												});
+										svg.selectAll("text")
+												.data(dataset,key)
+												.transition()
+												.duration(5000)
+												.text(function(d){
+														return d.value;
+												})
+												.attr("y",function(d){
+													return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+												});
+									});
+
+								bars.transition()
+									.duration(500)
+									.attr("x",function(d,i){
+										return xScale(i);
+									})
+									.attr("y",function(d){
+										return h - yScale(d.value);
+									})
+									.attr("width",xScale.rangeBand())
+									.attr("height",function(d){
+										return yScale(d.value);
+									});
+
+						var c= svg.selectAll("circle")
+									.data(dataset,key );
+
+								c.enter()
+									.append("circle")
+									.attr("cx",function(d,i){
+										return w + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d.value)  + xScale.rangeBand()/2 ;
+									})
+									.attr("r",xScale.rangeBand()/2)
+									.attr("fill","white");
+
+								c.transition()
+									.duration(500)
+									.attr("cx",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d.value)  + xScale.rangeBand()/2;
+									});
+
+						var nc = svg.selectAll("text")			
+									.data(dataset,key);
+
+								nc.enter()
+									.append("text")
+									.text(function(d){
+										return d.value;
+									})
+									.attr("x",function(d,i){
+										return w + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+									})
+									.attr("font-family","sans-serif")
+									.attr("font-size","11px")
+									.attr("fill","black")
+									.attr("text-anchor","middle");
+
+								nc.transition()
+									.duration(500)
+									.attr("x",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+									});
+
+
+								svg.selectAll("text")		
+									.data(dataset,key)
+									.transition()
+									.duration(500)
+									.text(function(d){
+										return d.value;
+									})
+									.attr("x",function(d,i){
+										return xScale(i)+xScale.rangeBand() /2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+									});
+								svg.selectAll("circle")		
+									.data(dataset,key)
+									.transition()
+									.duration(500)
+									.text(function(d){
+										return d.value;
+									})
+									.attr("cx",function(d,i){
+										return xScale(i)+xScale.rangeBand() /2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d.value) + xScale.rangeBand()/2;
+									})
+									.attr("r",xScale.rangeBand()/2);
+					});
+
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","delete")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+						//从数据集中删除值
+						dataset.shift();
+
+						//更新比例尺区间
+						xScale.domain(d3.range(dataset.length));
+						yScale.domain([0,d3.max(dataset,function(d) {
+							return d.value;
+						})]);
+
+
+						//选择条形
+						var bars = svg.selectAll("rect")
+										.data(dataset,key);
+
+						//enter...
+						bars.enter()
+							.append("rect")
+							.attr("x",function(d,i){
+								return xScale(i);
+								//return i * (w/dataset.length);	//条形宽20像素，外加1像素间距
+							})
+							.attr("y",function(d){
+								return h- yScale(d.value);
+							})
+							.attr("width",xScale.rangeBand())
+							//.attr("width",w/dataset.length - barPandding)
+							.attr("height",function(d){
+								return yScale(d.value);
+							})
+							.attr("fill",function(d){
+								return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+							})
+							.on("click", function() {
+									// 新数据集
+									var numValues = dataset.length;
+									dataset = [];	
+									for (var i = numValues - 1; i >= 0; i--) {
+										var newNumber = Math.floor(Math.random() * 21 + 5);
+										var k = numValues;
+										var v ={key:k,value:newNumber};
+										dataset.push(v);
+									};
+									//yScale.domain([0,d3.max(dataset)]);
+									//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+									// 更新所有矩形
+									svg.selectAll("rect")
+											.data(dataset,key)
+											.transition()
+											.duration(5000)
+											.attr("y", function(d) {
+												return h- yScale(d.value);
+											})
+											.attr("height", function(d) {
+												return yScale(d.value);
+											})
+											.attr("fill",function(d){
+												return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+											});
+									svg.selectAll("circle")
+											.data(dataset,key)
+											.transition()
+											.duration(5000)		
+											.attr("cy",function(d){
+												return h- yScale(d.value) + xScale.rangeBand()/2;
+											});
+									svg.selectAll("text")
+											.data(dataset,key)
+											.transition()
+											.duration(5000)
+											.text(function(d){
+													return d.value;
+											})
+											.attr("y",function(d){
+												return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+											});
+
+							});
+						bars.transition()
+							.duration(500)
+							.attr("x",function(d,i){
+								return xScale(i);
+							})
+							.attr("y",function(d){
+								return h - yScale(d.value);
+							})
+							.attr("width",xScale.rangeBand())
+							.attr("height",function(d){
+								return yScale(d.value);
+							});
+
+						bars.exit()
+							.transition()
+							.duration(500)	
+							.attr("x",-xScale.rangeBand())
+							.remove();
+
+						var dc= svg.selectAll("circle")
+									.data(dataset,key);
+
+								dc.enter()
+									.append("circle")
+									.attr("cx",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d.value)  + xScale.rangeBand()/2 ;
+									})
+									.attr("r",xScale.rangeBand()/2)
+									.attr("fill","white");
+
+								dc.transition()
+									.duration(500)
+									.attr("cx",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d.value)  + xScale.rangeBand()/2;
+									});
+
+						dc.exit()
+							.transition()
+							.duration(500)
+							.attr("cx",-xScale.rangeBand()/2)
+							.remove();
+
+						var nc = svg.selectAll("text")			
+									.data(dataset,key);
+
+								nc.enter()
+									.append("text")
+									.text(function(d){
+										return d.value;
+									})
+									.attr("x",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+									})
+									.attr("font-family","sans-serif")
+									.attr("font-size","11px")
+									.attr("fill","black")
+									.attr("text-anchor","middle");
+
+								nc.transition()
+									.duration(500)
+									.attr("x",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+									});
+						nc.exit()
+							.transition()
+							.duration(500)
+							.attr("x",-xScale.rangeBand()/2)
+							.remove();
+
+						svg.selectAll("text")		
+							.data(dataset,key)
+							.transition()
+							.duration(500)
+							.text(function(d){
+								return d.value;
+							})
+							.attr("x",function(d,i){
+								return xScale(i)+xScale.rangeBand() /2;
+							})
+							.attr("y",function(d){
+								return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+							});
+						svg.selectAll("circle")		
+							.data(dataset,key)
+							.transition()
+							.duration(500)
+							.text(function(d){
+								return d.value;
+							})
+							.attr("cx",function(d,i){
+								return xScale(i)+xScale.rangeBand() /2;
+							})
+							.attr("cy",function(d){
+								return h- yScale(d.value) + xScale.rangeBand()/2;
+							})
+							.attr("r",xScale.rangeBand()/2);
+					});
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","update")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+						// 新数据集
+						var numValues = dataset.length;
+						var minkey = dataset[0].key;	
+						var maxkey = dataset[dataset.length-1].key;	
+
+						dataset = [];
+
+						for (var i = minkey; i <= maxkey; i++) {
+							var newNumber = Math.floor(Math.random() * 21 + 5);
+							var k = i;
+							/*console.log(k)*/
+						var v ={key:k ,value:newNumber};
+							dataset.push(v);
+						};
+
+						//yScale.domain([0,d3.max(dataset)]);
+						//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+						// 更新所有矩形
+						svg.selectAll("rect")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)
+								.attr("y", function(d) {
+									return h- yScale(d.value);
+								})
+								.attr("height", function(d) {
+									return yScale(d.value);
+								})
+								.attr("fill",function(d){
+									return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d.value*10)+")";
+								});
+						svg.selectAll("circle")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)		
+								.attr("cy",function(d){
+									return h- yScale(d.value) + xScale.rangeBand()/2;
+								});
+						svg.selectAll("text")
+								.data(dataset,key)
+								.transition()
+								.duration(5000)
+								.text(function(d){
+										return d.value;
+								})
+								.attr("y",function(d){
+									return h- yScale(d.value) + 4 + xScale.rangeBand()/2;
+								});
+					});
+		var sortOrder = true;
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","sort")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+
+							if(sortOrder){
+								ascendingBars();								
+								sortOrder = !sortOrder;
+							} else{
+								descendingBars();
+								sortOrder = !sortOrder;
+							}
+
+					});
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","ascending")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+							ascendingBars();
+					});
+		var ascendingBars = function(){
+			svg.selectAll("rect")
+				.sort(function(a,b){
+					return d3.ascending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("x",function(d,i) {
+					return xScale(i);
+				});
+			svg.selectAll("circle")
+				.sort(function(a,b){
+					return d3.ascending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("cx",function(d,i){
+					return xScale(i) + xScale.rangeBand() /2 ;
+					//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+				})
+			svg.selectAll("text")
+				.sort(function(a,b){
+					return d3.ascending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("x",function(d,i){
+					return xScale(i) + xScale.rangeBand() /2 ;
+					//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+				})
+		}
+			var d = d3.select("body")
+						.append("input")
+						.attr("type","button")
+						.attr("value","descending")
+						.style("margin-top", "30px")
+						.style("margin-left", "30px")
+						.on("click",function () {
+								descendingBars();
+						});
+		var descendingBars = function(){
+			svg.selectAll("rect")
+				.sort(function(a,b){
+					return d3.descending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("x",function(d,i) {
+					return xScale(i);
+				});
+			svg.selectAll("circle")
+				.sort(function(a,b){
+					return d3.descending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("cx",function(d,i){
+					return xScale(i) + xScale.rangeBand() /2 ;
+					//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+				})
+			svg.selectAll("text")
+				.sort(function(a,b){
+					return d3.descending(a.value,b.value);
+				})
+				.transition()
+				.delay(function(d,i){
+					return i*50;
+				})
+				.duration(1000)
+				.attr("x",function(d,i){
+					return xScale(i) + xScale.rangeBand() /2 ;
+					//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+				});
+		}
+
+	</script>
+
+</body>
+</html>
