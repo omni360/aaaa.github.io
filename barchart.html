@@ -11,17 +11,20 @@
 <body>
 
 	<script type="text/javascript">
-		var w = 1200;
-		var h = 450;
+		var w = this.window.innerWidth;
+		var h = this.window.innerHeight / 2;
 		var barPandding = 1;
 
-		var dataset=[ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+		var dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+
 		var xScale = d3.scale.ordinal()
 			.domain(d3.range(dataset.length))
 			.rangeRoundBands([0,w],0.05);
 
 		var yScale = d3.scale.linear()
-			.domain([0,d3.max(dataset)])
+			.domain([0,d3.max(dataset,function(d){
+				return d;
+			})])
 			.range([0,h*0.75]);
 
 		//创建svg
@@ -79,7 +82,7 @@
 									.transition()
 									.duration(5000)		
 									.attr("cy",function(d){
-										return h- yScale(d) + 10;
+										return h- yScale(d) + xScale.rangeBand()/2;
 									});
 							svg.selectAll("text")
 									.data(dataset)
@@ -89,7 +92,7 @@
 											return d;
 									})
 									.attr("y",function(d){
-										return h- yScale(d) + 14;
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
 									});
 
 					});
@@ -103,7 +106,7 @@
 						//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 					})
 					.attr("cy",function(d){
-						return h- yScale(d) + 10;
+						return h- yScale(d) + xScale.rangeBand()/2;//+ 10;
 					})
 					.attr("r",xScale.rangeBand()/2)
 					.attr("fill","white");
@@ -120,7 +123,7 @@
 						//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 					})
 					.attr("y",function(d){
-						return h- yScale(d) + 14;
+						return h- yScale(d) + 4 + xScale.rangeBand()/2 ;//+ 14;
 					})
 					.attr("font-family","sans-serif")
 					.attr("font-size","11px")
@@ -129,12 +132,14 @@
 
 		var br = d3.select("body")
 					.append("br");
-					
+
 
 		var b = d3.select("body")
 					.append("input")
 					.attr("type","button")
 					.attr("value","Add")
+					.style("margin-top", "30px")
+					.style("margin-left", "80px")
 					.on("click",function () {
 						var maxValue = 21;
 						var newNumber = Math.floor(Math.random() * maxValue + 5);
@@ -158,7 +163,50 @@
 									})
 									.attr("fill",function(d){
 										return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
-									});
+									})
+									.on("click", function() {
+										// 新数据集
+										var numValues = dataset.length;
+										dataset = [];	
+										for (var i = numValues - 1; i >= 0; i--) {
+											var newNumber = Math.floor(Math.random() * 21 + 5);
+											dataset.push(newNumber);
+										};
+										//yScale.domain([0,d3.max(dataset)]);
+										//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+										// 更新所有矩形
+										svg.selectAll("rect")
+												.data(dataset)
+												.transition()
+												.duration(5000)
+												.attr("y", function(d) {
+													return h- yScale(d);
+												})
+												.attr("height", function(d) {
+													return yScale(d);
+												})
+												.attr("fill",function(d){
+													return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+												});
+										svg.selectAll("circle")
+												.data(dataset)
+												.transition()
+												.duration(5000)		
+												.attr("cy",function(d){
+													return h- yScale(d) + xScale.rangeBand()/2;
+												});
+										svg.selectAll("text")
+												.data(dataset)
+												.transition()
+												.duration(5000)
+												.text(function(d){
+														return d;
+												})
+												.attr("y",function(d){
+													return h- yScale(d) + 4 + xScale.rangeBand()/2;
+												});
+
+								});
 
 								bars.transition()
 									.duration(500)
@@ -179,11 +227,11 @@
 								c.enter()
 									.append("circle")
 									.attr("cx",function(d,i){
-										return xScale(i) + xScale.rangeBand() /2 ;
+										return w + xScale.rangeBand() /2 ;
 										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 									})
 									.attr("cy",function(d){
-										return h- yScale(d) + 10;
+										return h- yScale(d)  + xScale.rangeBand()/2 ;
 									})
 									.attr("r",xScale.rangeBand()/2)
 									.attr("fill","white");
@@ -195,7 +243,7 @@
 										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 									})
 									.attr("cy",function(d){
-										return h- yScale(d) + 10;
+										return h- yScale(d)  + xScale.rangeBand()/2;
 									});
 
 						var nc = svg.selectAll("text")			
@@ -207,11 +255,11 @@
 										return d;
 									})
 									.attr("x",function(d,i){
-										return xScale(i) + xScale.rangeBand() /2;
+										return w + xScale.rangeBand() /2 ;
 										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 									})
 									.attr("y",function(d){
-										return h- yScale(d) + 14;
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
 									})
 									.attr("font-family","sans-serif")
 									.attr("font-size","11px")
@@ -225,7 +273,7 @@
 										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
 									})
 									.attr("y",function(d){
-										return h- yScale(d) + 14;
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
 									});
 
 
@@ -240,7 +288,7 @@
 										return xScale(i)+xScale.rangeBand() /2;
 									})
 									.attr("y",function(d){
-										return h- yScale(d)+14;
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
 									});
 								svg.selectAll("circle")		
 									.data(dataset)
@@ -253,11 +301,256 @@
 										return xScale(i)+xScale.rangeBand() /2;
 									})
 									.attr("cy",function(d){
-										return h- yScale(d)+10;
+										return h- yScale(d) + xScale.rangeBand()/2;
 									})
 									.attr("r",xScale.rangeBand()/2);
 					});
 
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","delete")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+						//从数据集中删除值
+						dataset.shift();
+
+						//更新比例尺区间
+						xScale.domain(d3.range(dataset.length));
+						yScale.domain([0,d3.max(dataset)]);
+
+						//选择条形
+						var bars = svg.selectAll("rect")
+										.data(dataset);
+
+						//enter...
+						bars.enter()
+							.append("rect")
+							.attr("x",function(d,i){
+								return xScale(i);
+								//return i * (w/dataset.length);	//条形宽20像素，外加1像素间距
+							})
+							.attr("y",function(d){
+								return h- yScale(d);
+							})
+							.attr("width",xScale.rangeBand())
+							//.attr("width",w/dataset.length - barPandding)
+							.attr("height",function(d){
+								return yScale(d);
+							})
+							.attr("fill",function(d){
+								return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+							})
+							.on("click", function() {
+									// 新数据集
+									var numValues = dataset.length;
+									dataset = [];	
+									for (var i = numValues - 1; i >= 0; i--) {
+										var newNumber = Math.floor(Math.random() * 21 + 5);
+										dataset.push(newNumber);
+									};
+									//yScale.domain([0,d3.max(dataset)]);
+									//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+									// 更新所有矩形
+									svg.selectAll("rect")
+											.data(dataset)
+											.transition()
+											.duration(5000)
+											.attr("y", function(d) {
+												return h- yScale(d);
+											})
+											.attr("height", function(d) {
+												return yScale(d);
+											})
+											.attr("fill",function(d){
+												return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+											});
+									svg.selectAll("circle")
+											.data(dataset)
+											.transition()
+											.duration(5000)		
+											.attr("cy",function(d){
+												return h- yScale(d) + xScale.rangeBand()/2;
+											});
+									svg.selectAll("text")
+											.data(dataset)
+											.transition()
+											.duration(5000)
+											.text(function(d){
+													return d;
+											})
+											.attr("y",function(d){
+												return h- yScale(d) + 4 + xScale.rangeBand()/2;
+											});
+
+							});
+						bars.transition()
+							.duration(500)
+							.attr("x",function(d,i){
+								return xScale(i);
+							})
+							.attr("y",function(d){
+								return h - yScale(d);
+							})
+							.attr("width",xScale.rangeBand())
+							.attr("height",function(d){
+								return yScale(d);
+							});
+
+						bars.exit()
+							.transition()
+							.duration(500)	
+							.attr("x",w)
+							.remove();
+
+						var c= svg.selectAll("circle")
+									.data(dataset);
+
+								c.enter()
+									.append("circle")
+									.attr("cx",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2 ;										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d)  + xScale.rangeBand()/2 ;
+									})
+									.attr("r",xScale.rangeBand()/2)
+									.attr("fill","white");
+
+								c.transition()
+									.duration(500)
+									.attr("cx",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("cy",function(d){
+										return h- yScale(d)  + xScale.rangeBand()/2;
+									});
+
+						c.exit()
+							.transition()
+							.duration(500)
+							.attr("cx",function(d,i){
+										return w + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+							.remove();
+
+						var nc = svg.selectAll("text")			
+									.data(dataset);
+
+								nc.enter()
+									.append("text")
+									.text(function(d){
+										return d;
+									})
+									.attr("x",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
+									})
+									.attr("font-family","sans-serif")
+									.attr("font-size","11px")
+									.attr("fill","black")
+									.attr("text-anchor","middle");
+
+								nc.transition()
+									.duration(500)
+									.attr("x",function(d,i){
+										return xScale(i) + xScale.rangeBand() /2;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+									.attr("y",function(d){
+										return h- yScale(d) + 4 + xScale.rangeBand()/2;
+									});
+						nc.exit()
+							.transition()
+							.duration(500)
+							.attr("x",function(d,i){
+										return w + xScale.rangeBand() /2 ;
+										//return i*(w/dataset.length) +(w/dataset.length -barPandding)/2;
+									})
+							.remove();
+
+						svg.selectAll("text")		
+							.data(dataset)
+							.transition()
+							.duration(500)
+							.text(function(d){
+								return d;
+							})
+							.attr("x",function(d,i){
+								return xScale(i)+xScale.rangeBand() /2;
+							})
+							.attr("y",function(d){
+								return h- yScale(d) + 4 + xScale.rangeBand()/2;
+							});
+						svg.selectAll("circle")		
+							.data(dataset)
+							.transition()
+							.duration(500)
+							.text(function(d){
+								return d;
+							})
+							.attr("cx",function(d,i){
+								return xScale(i)+xScale.rangeBand() /2;
+							})
+							.attr("cy",function(d){
+								return h- yScale(d) + xScale.rangeBand()/2;
+							})
+							.attr("r",xScale.rangeBand()/2);
+					});
+		var d = d3.select("body")
+					.append("input")
+					.attr("type","button")
+					.attr("value","update")
+					.style("margin-top", "30px")
+					.style("margin-left", "30px")
+					.on("click",function () {
+						// 新数据集
+						var numValues = dataset.length;
+						dataset = [];	
+						for (var i = numValues - 1; i >= 0; i--) {
+							var newNumber = Math.floor(Math.random() * 21 + 5);
+							dataset.push(newNumber);
+						};
+						//yScale.domain([0,d3.max(dataset)]);
+						//dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
+						// 更新所有矩形
+						svg.selectAll("rect")
+								.data(dataset)
+								.transition()
+								.duration(5000)
+								.attr("y", function(d) {
+									return h- yScale(d);
+								})
+								.attr("height", function(d) {
+									return yScale(d);
+								})
+								.attr("fill",function(d){
+									return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 255)+","+(d*10)+")";
+								});
+						svg.selectAll("circle")
+								.data(dataset)
+								.transition()
+								.duration(5000)		
+								.attr("cy",function(d){
+									return h- yScale(d) + xScale.rangeBand()/2;
+								});
+						svg.selectAll("text")
+								.data(dataset)
+								.transition()
+								.duration(5000)
+								.text(function(d){
+										return d;
+								})
+								.attr("y",function(d){
+									return h- yScale(d) + 4 + xScale.rangeBand()/2;
+								});
+					});
 /*	d3.select("input").on("click", function() {
 		// 新数据集
 		dataset=[ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25, 5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 16, 18, 23, 25, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18 ];
