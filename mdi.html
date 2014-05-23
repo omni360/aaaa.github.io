@@ -1,0 +1,190 @@
+<!--
+  作者  :念在三角湖畔
+    Blog：http://www.cnblogs.com/love17914
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOM操作-鼠标拖动</title>
+<style>
+  @-webkit-keyframes 'light'{
+    0%{
+      box-shadow:rgba(0,204,255,0.1) 0 0px 8px;
+    }
+    25%{
+      box-shadow:rgba(0,204,255,0.5) 0 0px 8px;
+    }
+    50%{
+      box-shadow:rgba(0,204,255,0.8) 0 0px 8px;
+    }
+    75%{
+      box-shadow:rgba(0,204,255,0.5) 0 0px 8px;
+    }
+    100%{
+      box-shadow:rgba(0,204,255,0.1) 0 0px 8px;
+    }
+  }
+  .temp{
+    position:absolute;
+    left:0;
+    top:0;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-box-shadow:#CCC 3px 3px 3px;
+    -moz-box-shadow:#CCC 3px 3px 3px;
+    box-shadow:#CCC 3px 3px 3px;
+    border:2px #09F solid;
+    height:60px;
+    line-height:100px;
+    width:150px;
+    text-align:center;
+    font-family:consolas;
+    color:#FFF;
+    background:-webkit-gradient(linear,0 0,0 100%,from(#09C),to(#099));
+    background:-moz-linear-gradient(top,#09C,#099 100%);
+    background:-o-linear-gradient(top,#09C,#099 100%);
+    cursor:move;
+    opacity:0.3;
+  }
+  #drag{
+    z-index:1000;
+  }
+  #dragDIV{
+    background:-webkit-gradient(linear,0 0,0 100%,from(#F30),to(#F63));
+    background:-moz-linear-gradient(top,#F30,#F63 100%);
+    background:-o-linear-gradient(top,#F30,#F63 100%);
+    left:500px;
+    top:300px;
+    z-index:2;
+    position:absolute;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-box-shadow:#CCC 3px 3px 3px;
+    -moz-box-shadow:#CCC 3px 3px 3px;
+    box-shadow:#CCC 3px 3px 3px;
+    border:2px #09F solid;
+    height:60px;
+    line-height:60px;
+    width:150px;
+    text-align:center;
+    font-family:consolas;
+    color:#FFF;
+    cursor:move;
+  }
+  #target{
+    width:152px;
+    height:400px;
+    position:absolute;
+    left:255px;;
+    top:150px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    font-family:consolas;
+    border:2px #09F dashed;
+    text-align:center;
+    line-height:400px;
+    z-index:0;
+  }
+</style>
+</head>
+
+<body onselectstart="return false;" onselect="document.selection.empty();">
+<div class="drag" id="dragDIV">Drag It!</div>
+<div id="target">Target Container</div>
+<script type="text/javascript">
+  var $ = function(id) {
+    return document.getElementById(id); 
+  }
+  function drag(id){
+    var elem = $(id);
+    var temp = null;
+    var isDrag = false;
+    var startX = 0;
+    var startY = 0;
+    var mX = 0;
+    var mY = 0;
+    document.onmousemove = function(event){//鼠标移动
+      this.innerHTML = 'Mouse Position('+event.pageX+','+event.pageY+')';
+      if(isDrag){//当前正在移动
+        if(temp == undefined){//temp临时拖动目标不存在
+          temp = document.createElement('div');
+          temp.id = 'drag';
+          temp.className = 'temp';
+          document.body.appendChild(temp);//将temp临时拖动目标添加到页面中
+        }
+        //改变位置
+        temp.style.left = (startX + event.pageX - mX) + 'px';
+        temp.style.top = (startY + event.pageY - mY) + 'px';
+        //检测是否在目标范围内
+        if(checkIntersect(temp,$('target'),20)){
+          //在范围内
+          $('target').style.border = '2px #F00 dashed';
+          $('target').style.webkitAnimationName = 'light';//闪烁动画
+          $('target').style.webkitAnimationDuration = '1s';
+          $('target').style.webkitAnimationDelay = '0.5s';
+          $('target').style.webkitAnimationIterationCount = '100';
+        }else{
+          //不在范围内
+          $('target').style.border = '2px #09F dashed';
+          $('target').style.webkitAnimationName = '';
+        }
+      }
+    };
+    elem.onmousedown = function(event){//鼠标按下
+      isDrag = true;
+      startX = parseInt(this.style.left||getCSSValue(this,'left'));
+      startY = parseInt(this.style.top||getCSSValue(this,'top'));
+      mX = event.pageX;
+      mY = event.pageY;
+    };
+    document.onmouseup = function(){//鼠标释放
+      isDrag = false;
+      if(checkIntersect(temp,$('target'),20)){
+        elem.style.left=$('target').offsetLeft+'px';
+        elem.style.top=$('target').offsetTop+'px';
+        
+      }else{
+        elem.style.left=temp.offsetLeft+'px';
+        elem.style.top=temp.offsetTop+'px';
+      }
+      document.body.removeChild(temp);//移出临时拖动目标
+      temp = null;
+      $('target').style.border = '2px #09F dashed';
+      $('target').style.webkitAnimationName = '';//取消闪烁
+    };
+    elem.onmouseout = function(){//鼠标移出
+      this.innerHTML = 'Drag It!';
+    };
+  }
+  function getCSSValue(obj,key){//获取元素CSS值
+    if(obj.currentStyle){//IE
+      return obj.currentStyle[key]; 
+    }else{//!IE
+      return document.defaultView.getComputedStyle(obj,null)[key];
+    }
+  }
+  
+  function checkIntersect(obj1,obj2,distance){//检测碰撞,distance为吸附的范围
+    var left1 = obj1.offsetLeft;
+    var top1 = obj1.offsetTop;
+    var left2 = obj2.offsetLeft;
+    var top2 = obj2.offsetTop;
+    var width1 = obj1.offsetWidth;
+    var height1 = obj1.offsetHeight;
+    var width2 = obj2.offsetWidth;
+    var height2 = obj2.offsetHeight;
+    return (
+      ((left1-left2>=0&&left1-left2<width2+distance)||
+      (left2-left1>=0&&left2-left1<width1+distance))&&
+      ((top1-top2>=0&&top1-top2<height2+distance)||
+      (top2-top1>=0&&top2-top1<height1+distance))
+    );
+  }
+  drag('dragDIV');
+</script>
+</body>
+</html>
