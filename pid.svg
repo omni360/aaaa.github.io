@@ -1,0 +1,3530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="auto" height="auto" viewBox="0 0 612 428.179" enable-background="new 0 0 612 428.179" xml:space="preserve">
+<g>
+	<rect x="8.863" y="1.52" fill="#FFFFFF" width="610.025" height="430.862"/>
+	
+		<rect x="8.863" y="1.52" fill="none" stroke="#000000" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="610.025" height="430.862"/>
+	
+		<rect x="16.693" y="5.723" fill="none" stroke="#000000" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="594.366" height="422.457"/>
+	<g id="LINE">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="75.969" y1="131.82" x2="106.02" y2="131.82"/>
+	</g>
+	<g id="INSERT">
+		<g id="POLYLINE">
+			<polygon fill="#0000FF" points="106.02,131.82 102.29,132.566 102.29,131.074 			"/>
+		</g>
+	</g>
+	<g id="ARC">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M126.33,116.03c-2.168-5.608-8.471-8.398-14.08-6.23c-2.862,1.106-5.124,3.368-6.23,6.23"/>
+	</g>
+	<g id="ARC_1_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M106.02,147.609c2.168,5.608,8.471,8.398,14.08,6.23c2.862-1.106,5.124-3.368,6.23-6.23"/>
+	</g>
+	<g id="LINE_1_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="126.33" y1="116.03" x2="126.33" y2="147.609"/>
+	</g>
+	<g id="LINE_2_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="106.02" y1="147.609" x2="106.02" y2="116.03"/>
+	</g>
+	<g id="MTEXT">
+		
+			<text transform="matrix(1 0 0 1 114.1162 127.6636)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">HP</text>
+		
+			<text transform="matrix(1 0 0 1 107.2771 131.2904)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SEPARATOR</text>
+	</g>
+	<g id="LWPOLYLINE">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			116.175,109.068 116.175,89.749 300.415,89.749 		"/>
+	</g>
+	<g id="LWPOLYLINE_1_">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			116.175,154.571 116.175,249.545 157.883,249.545 		"/>
+	</g>
+	<g id="LWPOLYLINE_2_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="161.509" y1="249.545" x2="193.062" y2="249.545"/>
+	</g>
+	<g id="LINE_3_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="116.175" y1="89.749" x2="232.232" y2="89.749"/>
+	</g>
+	<g id="LINE_4_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="232.232" y1="72.34" x2="232.232" y2="89.749"/>
+	</g>
+	<g id="INSERT_1_">
+		<g id="POLYLINE_1_">
+			<polygon fill="#0000FF" points="116.175,249.545 115.429,245.816 116.921,245.816 			"/>
+		</g>
+	</g>
+	<g id="ARC_2_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M309.12,76.824c0-2.404-1.949-4.352-4.352-4.352s-4.352,1.949-4.352,4.352"/>
+	</g>
+	<g id="HATCH">
+		<rect x="300.415" y="79.557" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="8.704" height="20.478"/>
+		
+			<path fill="none" stroke="#FF0000" stroke-width="0.001" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M300.415,81.877l2.321-2.321 M300.415,88.289l8.704-8.704 M300.415,94.7l8.704-8.704 M301.491,100.035l7.628-7.628
+			 M307.903,100.035l1.217-1.217"/>
+	</g>
+	<g id="LINE_5_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="309.12" y1="76.824" x2="309.12" y2="102.768"/>
+	</g>
+	<g id="LINE_6_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="102.699" x2="300.415" y2="76.799"/>
+	</g>
+	<g id="LWPOLYLINE_3_">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			304.767,72.472 304.767,60.735 478.853,60.735 		"/>
+	</g>
+	<g id="LWPOLYLINE_4_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="304.767" y1="107.12" x2="304.767" y2="126.017"/>
+	</g>
+	<g id="LINE_7_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="100.035" x2="309.12" y2="100.035"/>
+	</g>
+	<g id="INSERT_2_">
+		<g id="POLYLINE_2_">
+			<polygon fill="#0000FF" points="300.415,89.749 296.685,90.495 296.685,89.003 			"/>
+		</g>
+	</g>
+	<g id="INSERT_3_">
+		<g id="LWPOLYLINE_5_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				88.611,123.115 84.259,127.468 88.611,131.82 92.963,127.468 88.611,123.115 			"/>
+		</g>
+		<g id="ATTRIB">
+			
+				<text transform="matrix(1 0 0 1 88.2485 128.5556)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">1</text>
+		</g>
+	</g>
+	<g id="INSERT_4_">
+		<g id="LWPOLYLINE_6_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				217.725,81.045 213.372,85.397 217.725,89.749 222.077,85.397 217.725,81.045 			"/>
+		</g>
+		<g id="ATTRIB_1_">
+			
+				<text transform="matrix(1 0 0 1 216.9992 86.4849)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">3</text>
+		</g>
+	</g>
+	<g id="INSERT_5_">
+		<g id="LWPOLYLINE_7_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				111.823,162.285 107.47,166.637 111.823,170.989 116.175,166.637 111.823,162.285 			"/>
+		</g>
+		<g id="ATTRIB_2_">
+			
+				<text transform="matrix(1 0 0 1 110.7345 167.7248)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">11</text>
+		</g>
+	</g>
+	<g id="INSERT_6_">
+		<g id="LWPOLYLINE_8_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				300.415,110.784 296.063,115.136 300.415,119.489 304.767,115.136 300.415,110.784 			"/>
+		</g>
+		<g id="ATTRIB_3_">
+			
+				<text transform="matrix(1 0 0 1 299.6898 116.2245)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">6</text>
+		</g>
+	</g>
+	<g id="LWPOLYLINE_9_">
+		
+			<rect x="478.853" y="24.467" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="9.067,1.8134,1.8134,1.8134" width="36.268" height="166.832"/>
+	</g>
+	<g id="MTEXT_1_">
+		
+			<text transform="matrix(1 0 0 1 477.5576 42.6008)" fill="#00FFFF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">POWER PLANT</text>
+	</g>
+	<g id="INSERT_7_">
+		<g id="LWPOLYLINE_10_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				253.992,81.045 249.64,85.397 253.992,89.749 258.345,85.397 253.992,81.045 			"/>
+		</g>
+		<g id="ATTRIB_4_">
+			
+				<text transform="matrix(1 0 0 1 253.267 86.4849)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">4</text>
+		</g>
+	</g>
+	<g id="LINE_8_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="268.5" y1="97.003" x2="268.5" y2="89.749"/>
+	</g>
+	<g id="LINE_9_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="265.598" y1="97.003" x2="271.401" y2="97.003"/>
+	</g>
+	<g id="INSERT_8_">
+		<g id="LWPOLYLINE_11_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				268.5,99.904 264.147,104.256 268.5,108.608 272.852,104.256 268.5,99.904 			"/>
+		</g>
+		<g id="ATTRIB_5_">
+			
+				<text transform="matrix(1 0 0 1 267.7742 105.3442)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">5</text>
+		</g>
+	</g>
+	<g id="LINE_10_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="79.557" x2="309.12" y2="79.557"/>
+	</g>
+	<g id="ARC_3_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M300.415,102.768c0,2.404,1.949,4.352,4.352,4.352s4.352-1.949,4.352-4.352"/>
+	</g>
+	<g id="MTEXT_2_">
+		
+			<text transform="matrix(1 0 0 1 311.6064 78.1433)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">HP STEAM</text>
+		
+			<text transform="matrix(1 0 0 1 311.7101 81.7701)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SCRUBBER</text>
+	</g>
+	<g id="LINE_11_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="293.887" y1="126.017" x2="299.327" y2="126.017"/>
+	</g>
+	<g id="LINE_12_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="299.327" y1="126.017" x2="299.327" y2="129.644"/>
+	</g>
+	<g id="LINE_13_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="299.327" y1="129.644" x2="310.208" y2="129.644"/>
+	</g>
+	<g id="LINE_14_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="310.208" y1="129.644" x2="310.208" y2="126.017"/>
+	</g>
+	<g id="LINE_15_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="310.208" y1="126.017" x2="315.648" y2="126.017"/>
+	</g>
+	<g id="INSERT_9_">
+		<g id="LWPOLYLINE_12_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				328.704,52.03 324.352,56.383 328.704,60.735 333.056,56.383 328.704,52.03 			"/>
+		</g>
+		<g id="ATTRIB_6_">
+			
+				<text transform="matrix(1 0 0 1 327.9788 57.4707)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">7</text>
+		</g>
+	</g>
+	<g id="INSERT_10_">
+		<g id="LINE_16_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.797" y1="46.953" x2="362.794" y2="46.959"/>
+		</g>
+		<g id="LINE_17_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.797" y1="46.959" x2="362.794" y2="46.953"/>
+		</g>
+		<g id="LINE_18_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.794" y1="46.953" x2="362.797" y2="46.953"/>
+		</g>
+		<g id="LINE_19_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.794" y1="46.959" x2="362.797" y2="46.959"/>
+		</g>
+		<g id="ATTRIB_7_">
+			
+				<text transform="matrix(-1.469576e-016 0.8 -1 -1.836970e-016 362.7988 46.9544)" fill="#FFFF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="0.1">YY</text>
+		</g>
+		<g id="ATTRIB_8_">
+			
+				<text transform="matrix(-1.469576e-016 0.8 -1 -1.836970e-016 362.791 46.9508)" fill="#FFFF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="0.1">V-XXXX</text>
+		</g>
+	</g>
+	<g id="INSERT_11_">
+		<g id="LINE_20_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="364.247" y1="46.953" x2="361.345" y2="52.756"/>
+		</g>
+		<g id="LINE_21_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="364.247" y1="52.756" x2="361.345" y2="46.953"/>
+		</g>
+		<g id="LINE_22_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="361.345" y1="46.953" x2="364.247" y2="46.953"/>
+		</g>
+		<g id="LINE_23_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="361.345" y1="52.756" x2="364.247" y2="52.756"/>
+		</g>
+		<g id="ATTRIB_9_">
+		</g>
+		<g id="ATTRIB_10_">
+		</g>
+	</g>
+	<g id="INSERT_12_">
+		<g id="LINE_24_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="49.854" x2="359.894" y2="49.854"/>
+		</g>
+		<g id="ARC_4_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M359.894,48.404c-0.801,0-1.451,0.65-1.451,1.451c0,0.801,0.65,1.451,1.451,1.451"/>
+		</g>
+		<g id="LINE_25_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="359.894" y1="51.305" x2="359.894" y2="48.404"/>
+		</g>
+	</g>
+	<g id="INSERT_13_">
+		<g id="LINE_26_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.754" y1="46.953" x2="375.852" y2="52.756"/>
+		</g>
+		<g id="LINE_27_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.754" y1="52.756" x2="375.852" y2="46.953"/>
+		</g>
+		<g id="LINE_28_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="375.852" y1="46.953" x2="378.754" y2="46.953"/>
+		</g>
+		<g id="LINE_29_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="375.852" y1="52.756" x2="378.754" y2="52.756"/>
+		</g>
+		<g id="ATTRIB_11_">
+		</g>
+		<g id="ATTRIB_12_">
+		</g>
+	</g>
+	<g id="INSERT_14_">
+		<g id="LINE_30_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="49.854" x2="374.402" y2="49.854"/>
+		</g>
+		<g id="ARC_5_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M374.402,48.404c-0.801,0-1.451,0.65-1.451,1.451c0,0.801,0.65,1.451,1.451,1.451"/>
+		</g>
+		<g id="LINE_31_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="51.305" x2="374.402" y2="48.404"/>
+		</g>
+	</g>
+	<g id="LINE_32_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="52.756" x2="362.796" y2="57.108"/>
+	</g>
+	<g id="LINE_33_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="57.108" x2="377.303" y2="57.108"/>
+	</g>
+	<g id="LINE_34_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="52.756" x2="377.303" y2="60.735"/>
+	</g>
+	<g id="LINE_35_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="46.953" x2="362.796" y2="42.601"/>
+	</g>
+	<g id="LINE_36_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="42.601" x2="377.303" y2="42.601"/>
+	</g>
+	<g id="LINE_37_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="46.953" x2="377.303" y2="38.974"/>
+	</g>
+	<g id="INSERT_15_">
+		<g id="LINE_38_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.028" y1="28.819" x2="380.204" y2="28.819"/>
+		</g>
+		<g id="LINE_39_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.028" y1="34.622" x2="380.204" y2="34.622"/>
+		</g>
+		<g id="LINE_40_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="24.467" x2="374.402" y2="24.467"/>
+		</g>
+		<g id="LINE_41_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="38.974" x2="374.402" y2="38.974"/>
+		</g>
+		<g id="LINE_42_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="38.974" x2="374.402" y2="24.467"/>
+		</g>
+		<g id="LINE_43_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="34.622" x2="376.578" y2="34.622"/>
+		</g>
+		<g id="LINE_44_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="28.819" x2="376.578" y2="28.819"/>
+		</g>
+		<g id="LINE_45_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="24.467" x2="380.204" y2="38.974"/>
+		</g>
+	</g>
+	<g id="MTEXT_3_">
+		
+			<text transform="matrix(1 0 0 1 381.9924 24.663)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SILENCER</text>
+	</g>
+	<g id="LINE_46_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="428.078" y1="46.228" x2="428.078" y2="60.735"/>
+	</g>
+	<g id="LINE_47_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="435.332" y1="75.242" x2="435.332" y2="60.735"/>
+	</g>
+	<g id="LINE_48_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="428.078" y1="46.228" x2="478.853" y2="46.228"/>
+	</g>
+	<g id="LINE_49_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="435.332" y1="75.242" x2="478.853" y2="75.242"/>
+	</g>
+	<g id="INSERT_16_">
+		<g id="LWPOLYLINE_13_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				453.465,37.523 449.113,41.875 453.465,46.228 457.818,41.875 453.465,37.523 			"/>
+		</g>
+		<g id="ATTRIB_13_">
+			
+				<text transform="matrix(1 0 0 1 452.7401 42.9635)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">8</text>
+		</g>
+	</g>
+	<g id="INSERT_17_">
+		<g id="LWPOLYLINE_14_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				453.465,52.03 449.113,56.383 453.465,60.735 457.818,56.383 453.465,52.03 			"/>
+		</g>
+		<g id="ATTRIB_14_">
+			
+				<text transform="matrix(1 0 0 1 452.7401 57.4707)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">9</text>
+		</g>
+	</g>
+	<g id="INSERT_18_">
+		<g id="LWPOLYLINE_15_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				453.465,66.538 449.113,70.89 453.465,75.242 457.818,70.89 453.465,66.538 			"/>
+		</g>
+		<g id="ATTRIB_15_">
+			
+				<text transform="matrix(1 0 0 1 452.196 71.9778)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">10</text>
+		</g>
+	</g>
+	<g id="ARC_6_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M309.12,178.374c0-2.404-1.949-4.352-4.352-4.352s-4.352,1.949-4.352,4.352"/>
+	</g>
+	<g id="HATCH_1_">
+		<rect x="300.415" y="181.107" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="8.704" height="20.478"/>
+		
+			<path fill="none" stroke="#FF0000" stroke-width="0.001" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M300.415,183.427l2.321-2.321 M300.415,189.839l8.704-8.704 M300.415,196.25l8.704-8.704 M301.491,201.585l7.628-7.628
+			 M307.903,201.585l1.217-1.217"/>
+	</g>
+	<g id="LINE_50_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="309.12" y1="178.374" x2="309.12" y2="204.318"/>
+	</g>
+	<g id="LINE_51_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="204.249" x2="300.415" y2="178.349"/>
+	</g>
+	<g id="LWPOLYLINE_16_">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			304.767,174.022 304.767,155.031 478.853,155.031 		"/>
+	</g>
+	<g id="LWPOLYLINE_17_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="304.767" y1="208.67" x2="304.767" y2="238.447"/>
+	</g>
+	<g id="LINE_52_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="201.585" x2="309.12" y2="201.585"/>
+	</g>
+	<g id="INSERT_19_">
+		<g id="POLYLINE_3_">
+			<polygon fill="#0000FF" points="300.415,191.299 296.685,192.045 296.685,190.553 			"/>
+		</g>
+	</g>
+	<g id="INSERT_20_">
+		<g id="LWPOLYLINE_18_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				300.415,219.588 296.063,223.94 300.415,228.292 304.767,223.94 300.415,219.588 			"/>
+		</g>
+		<g id="ATTRIB_16_">
+			
+				<text transform="matrix(1 0 0 1 298.9645 225.028)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">16</text>
+		</g>
+	</g>
+	<g id="LINE_53_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="300.415" y1="181.107" x2="309.12" y2="181.107"/>
+	</g>
+	<g id="ARC_7_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M300.415,204.318c0,2.404,1.949,4.352,4.352,4.352s4.352-1.949,4.352-4.352"/>
+	</g>
+	<g id="MTEXT_4_">
+		
+			<text transform="matrix(1 0 0 1 311.6064 179.6932)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">HP STEAM</text>
+		
+			<text transform="matrix(1 0 0 1 311.7101 183.32)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SCRUBBER</text>
+	</g>
+	<g id="LINE_54_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="293.887" y1="238.447" x2="299.327" y2="238.447"/>
+	</g>
+	<g id="LINE_55_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="299.327" y1="238.447" x2="299.327" y2="242.074"/>
+	</g>
+	<g id="LINE_56_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="299.327" y1="242.074" x2="310.208" y2="242.074"/>
+	</g>
+	<g id="LINE_57_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="310.208" y1="242.074" x2="310.208" y2="238.447"/>
+	</g>
+	<g id="LINE_58_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="310.208" y1="238.447" x2="315.648" y2="238.447"/>
+	</g>
+	<g id="INSERT_21_">
+		<g id="LWPOLYLINE_19_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				328.704,146.327 324.352,150.679 328.704,155.031 333.056,150.679 328.704,146.327 			"/>
+		</g>
+		<g id="ATTRIB_17_">
+			
+				<text transform="matrix(1 0 0 1 327.2534 151.767)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">17</text>
+		</g>
+	</g>
+	<g id="INSERT_22_">
+		<g id="LINE_59_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.797" y1="141.249" x2="362.794" y2="141.255"/>
+		</g>
+		<g id="LINE_60_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.797" y1="141.255" x2="362.794" y2="141.249"/>
+		</g>
+		<g id="LINE_61_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.794" y1="141.249" x2="362.797" y2="141.249"/>
+		</g>
+		<g id="LINE_62_">
+			
+				<line fill="none" stroke="#00FFFF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.794" y1="141.255" x2="362.797" y2="141.255"/>
+		</g>
+		<g id="ATTRIB_18_">
+			
+				<text transform="matrix(-1.469576e-016 0.8 -1 -1.836970e-016 362.7988 141.2507)" fill="#FFFF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="0.1">YY</text>
+		</g>
+		<g id="ATTRIB_19_">
+			
+				<text transform="matrix(-1.469576e-016 0.8 -1 -1.836970e-016 362.791 141.2472)" fill="#FFFF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="0.1">V-XXXX</text>
+		</g>
+	</g>
+	<g id="INSERT_23_">
+		<g id="LINE_63_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="364.247" y1="141.249" x2="361.345" y2="147.052"/>
+		</g>
+		<g id="LINE_64_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="364.247" y1="147.052" x2="361.345" y2="141.249"/>
+		</g>
+		<g id="LINE_65_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="361.345" y1="141.249" x2="364.247" y2="141.249"/>
+		</g>
+		<g id="LINE_66_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="361.345" y1="147.052" x2="364.247" y2="147.052"/>
+		</g>
+		<g id="ATTRIB_20_">
+		</g>
+		<g id="ATTRIB_21_">
+		</g>
+	</g>
+	<g id="INSERT_24_">
+		<g id="LINE_67_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="144.151" x2="359.894" y2="144.151"/>
+		</g>
+		<g id="ARC_8_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M359.894,142.7c-0.801,0-1.451,0.65-1.451,1.451s0.65,1.451,1.451,1.451"/>
+		</g>
+		<g id="LINE_68_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="359.894" y1="145.601" x2="359.894" y2="142.7"/>
+		</g>
+	</g>
+	<g id="INSERT_25_">
+		<g id="LINE_69_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.754" y1="141.249" x2="375.852" y2="147.052"/>
+		</g>
+		<g id="LINE_70_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.754" y1="147.052" x2="375.852" y2="141.249"/>
+		</g>
+		<g id="LINE_71_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="375.852" y1="141.249" x2="378.754" y2="141.249"/>
+		</g>
+		<g id="LINE_72_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="375.852" y1="147.052" x2="378.754" y2="147.052"/>
+		</g>
+		<g id="ATTRIB_22_">
+		</g>
+		<g id="ATTRIB_23_">
+		</g>
+	</g>
+	<g id="INSERT_26_">
+		<g id="LINE_73_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="144.151" x2="374.402" y2="144.151"/>
+		</g>
+		<g id="ARC_9_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M374.402,142.7c-0.801,0-1.451,0.65-1.451,1.451s0.65,1.451,1.451,1.451"/>
+		</g>
+		<g id="LINE_74_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="145.601" x2="374.402" y2="142.7"/>
+		</g>
+	</g>
+	<g id="LINE_75_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="147.052" x2="362.796" y2="151.404"/>
+	</g>
+	<g id="LINE_76_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="151.404" x2="377.303" y2="151.404"/>
+	</g>
+	<g id="LINE_77_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="147.052" x2="377.303" y2="155.031"/>
+	</g>
+	<g id="LINE_78_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="141.249" x2="362.796" y2="136.897"/>
+	</g>
+	<g id="LINE_79_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="362.796" y1="136.897" x2="377.303" y2="136.897"/>
+	</g>
+	<g id="LINE_80_">
+		
+			<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="141.249" x2="377.303" y2="133.27"/>
+	</g>
+	<g id="INSERT_27_">
+		<g id="LINE_81_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.028" y1="123.115" x2="380.204" y2="123.115"/>
+		</g>
+		<g id="LINE_82_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="378.028" y1="128.918" x2="380.204" y2="128.918"/>
+		</g>
+		<g id="LINE_83_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="118.763" x2="374.402" y2="118.763"/>
+		</g>
+		<g id="LINE_84_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="133.27" x2="374.402" y2="133.27"/>
+		</g>
+		<g id="LINE_85_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="133.27" x2="374.402" y2="118.763"/>
+		</g>
+		<g id="LINE_86_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="128.918" x2="376.578" y2="128.918"/>
+		</g>
+		<g id="LINE_87_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="374.402" y1="123.115" x2="376.578" y2="123.115"/>
+		</g>
+		<g id="LINE_88_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="380.204" y1="118.763" x2="380.204" y2="133.27"/>
+		</g>
+	</g>
+	<g id="MTEXT_5_">
+		
+			<text transform="matrix(1 0 0 1 381.9924 118.9593)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SILENCER</text>
+	</g>
+	<g id="LINE_89_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="435.332" y1="169.538" x2="435.332" y2="155.031"/>
+	</g>
+	<g id="LINE_90_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="435.332" y1="169.538" x2="478.853" y2="169.538"/>
+	</g>
+	<g id="INSERT_28_">
+		<g id="LWPOLYLINE_20_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				453.465,146.327 449.113,150.679 453.465,155.031 457.818,150.679 453.465,146.327 			"/>
+		</g>
+		<g id="ATTRIB_24_">
+			
+				<text transform="matrix(1 0 0 1 452.0147 151.767)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">18</text>
+		</g>
+	</g>
+	<g id="INSERT_29_">
+		<g id="LWPOLYLINE_21_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				453.465,160.834 449.113,165.186 453.465,169.538 457.818,165.186 453.465,160.834 			"/>
+		</g>
+		<g id="ATTRIB_25_">
+			
+				<text transform="matrix(1 0 0 1 452.0147 166.2741)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">19</text>
+		</g>
+	</g>
+	<g id="LINE_91_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="116.175" y1="221.454" x2="149.541" y2="221.454"/>
+	</g>
+	<g id="INSERT_30_">
+		<g id="POLYLINE_4_">
+			<polygon fill="#0000FF" points="149.541,221.454 145.811,222.2 145.811,220.708 			"/>
+		</g>
+	</g>
+	<g id="ARC_10_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M169.851,205.664c-2.168-5.608-8.471-8.398-14.08-6.23c-2.862,1.106-5.124,3.368-6.23,6.23"/>
+	</g>
+	<g id="ARC_11_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M149.541,237.243c2.168,5.608,8.471,8.398,14.08,6.23c2.862-1.106,5.124-3.368,6.23-6.23"/>
+	</g>
+	<g id="LINE_92_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="169.851" y1="205.664" x2="169.851" y2="237.243"/>
+	</g>
+	<g id="LINE_93_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="149.541" y1="237.243" x2="149.541" y2="205.664"/>
+	</g>
+	<g id="MTEXT_6_">
+		
+			<text transform="matrix(1 0 0 1 157.8966 217.2978)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LP</text>
+		
+			<text transform="matrix(1 0 0 1 150.7985 220.9246)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SEPARATOR</text>
+	</g>
+	<g id="LWPOLYLINE_22_">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			159.696,198.702 159.696,191.299 300.415,191.299 		"/>
+	</g>
+	<g id="LWPOLYLINE_23_">
+		
+			<polyline fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			159.696,244.206 159.696,280.911 342.849,280.911 		"/>
+	</g>
+	<g id="LINE_94_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="159.696" y1="191.299" x2="188.71" y2="191.299"/>
+	</g>
+	<g id="LINE_95_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="232.232" y1="173.89" x2="232.232" y2="191.299"/>
+	</g>
+	<g id="INSERT_31_">
+		<g id="POLYLINE_5_">
+			<polygon fill="#0000FF" points="159.696,280.911 158.95,277.182 160.442,277.182 			"/>
+		</g>
+	</g>
+	<g id="INSERT_32_">
+		<g id="LWPOLYLINE_24_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				217.725,182.595 213.372,186.947 217.725,191.299 222.077,186.947 217.725,182.595 			"/>
+		</g>
+		<g id="ATTRIB_26_">
+			
+				<text transform="matrix(1 0 0 1 216.2739 188.0348)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">12</text>
+		</g>
+	</g>
+	<g id="INSERT_33_">
+		<g id="LWPOLYLINE_25_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				253.992,182.595 249.64,186.947 253.992,191.299 258.345,186.947 253.992,182.595 			"/>
+		</g>
+		<g id="ATTRIB_27_">
+			
+				<text transform="matrix(1 0 0 1 252.5417 188.0348)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">14</text>
+		</g>
+	</g>
+	<g id="LINE_96_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="268.5" y1="198.552" x2="268.5" y2="191.299"/>
+	</g>
+	<g id="LINE_97_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="265.598" y1="198.552" x2="271.401" y2="198.552"/>
+	</g>
+	<g id="INSERT_34_">
+		<g id="LWPOLYLINE_26_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				268.5,201.454 264.147,205.806 268.5,210.158 272.852,205.806 268.5,201.454 			"/>
+		</g>
+		<g id="ATTRIB_28_">
+			
+				<text transform="matrix(1 0 0 1 267.0488 206.8941)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">15</text>
+		</g>
+	</g>
+	<g id="INSERT_35_">
+		<g id="POLYLINE_6_">
+			<polygon fill="#0000FF" points="193.062,249.545 189.333,250.291 189.333,248.799 			"/>
+		</g>
+	</g>
+	<g id="ARC_12_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M213.372,233.756c-2.168-5.608-8.471-8.398-14.08-6.23c-2.862,1.106-5.124,3.368-6.23,6.23"/>
+	</g>
+	<g id="ARC_13_">
+		
+			<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M193.062,265.335c2.168,5.608,8.471,8.398,14.08,6.23c2.862-1.106,5.124-3.368,6.23-6.23"/>
+	</g>
+	<g id="LINE_98_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="213.372" y1="233.756" x2="213.372" y2="265.335"/>
+	</g>
+	<g id="LINE_99_">
+		
+			<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="193.062" y1="265.335" x2="193.062" y2="233.756"/>
+	</g>
+	<g id="MTEXT_7_">
+		
+			<text transform="matrix(1 0 0 1 201.418 245.3892)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LP</text>
+		
+			<text transform="matrix(1 0 0 1 194.3199 249.016)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">SEPARATOR</text>
+	</g>
+	<g id="LINE_100_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203.217" y1="226.794" x2="203.217" y2="191.299"/>
+	</g>
+	<g id="LINE_101_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203.217" y1="272.297" x2="203.217" y2="280.911"/>
+	</g>
+	<g id="INSERT_36_">
+		<g id="LINE_102_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="262.052" x2="355.905" y2="262.052"/>
+		</g>
+		<g id="CIRCLE">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M345.75,266.404c0-2.404,1.949-4.352,4.352-4.352s4.352,1.949,4.352,4.352c0,2.404-1.949,4.352-4.352,4.352
+				S345.75,268.808,345.75,266.404L345.75,266.404z"/>
+		</g>
+		<g id="LINE_103_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="266.404" x2="342.849" y2="266.404"/>
+		</g>
+		<g id="ATTRIB_29_">
+		</g>
+	</g>
+	<g id="INSERT_37_">
+		<g id="LINE_104_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="347.678" y1="270.019" x2="344.662" y2="273.658"/>
+		</g>
+		<g id="LINE_105_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="344.662" y1="273.658" x2="350.102" y2="273.658"/>
+		</g>
+		<g id="LINE_106_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="352.526" y1="270.019" x2="355.542" y2="273.658"/>
+		</g>
+		<g id="LINE_107_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.542" y1="273.658" x2="350.102" y2="273.658"/>
+		</g>
+	</g>
+	<g id="INSERT_38_">
+		<g id="POLYLINE_7_">
+			<polygon fill="#0000FF" points="357.356,262.052 353.626,262.798 353.626,261.306 			"/>
+		</g>
+	</g>
+	<g id="INSERT_39_">
+		<g id="POLYLINE_8_">
+			<polygon fill="#0000FF" points="344.662,266.404 340.932,267.15 340.932,265.658 			"/>
+		</g>
+	</g>
+	<g id="LINE_108_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.905" y1="262.052" x2="377.303" y2="262.052"/>
+	</g>
+	<g id="LINE_109_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="342.849" y1="266.404" x2="321.088" y2="266.404"/>
+	</g>
+	<g id="INSERT_40_">
+		<g id="LINE_110_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="247.545" x2="355.905" y2="247.545"/>
+		</g>
+		<g id="CIRCLE_1_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M345.75,251.897c0-2.404,1.949-4.352,4.352-4.352s4.352,1.949,4.352,4.352s-1.949,4.352-4.352,4.352
+				S345.75,254.301,345.75,251.897L345.75,251.897z"/>
+		</g>
+		<g id="LINE_111_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="251.897" x2="342.849" y2="251.897"/>
+		</g>
+		<g id="ATTRIB_30_">
+		</g>
+	</g>
+	<g id="INSERT_41_">
+		<g id="LINE_112_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="347.678" y1="255.512" x2="344.662" y2="259.151"/>
+		</g>
+		<g id="LINE_113_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="344.662" y1="259.151" x2="350.102" y2="259.151"/>
+		</g>
+		<g id="LINE_114_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="352.526" y1="255.512" x2="355.542" y2="259.151"/>
+		</g>
+		<g id="LINE_115_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.542" y1="259.151" x2="350.102" y2="259.151"/>
+		</g>
+	</g>
+	<g id="INSERT_42_">
+		<g id="POLYLINE_9_">
+			<polygon fill="#0000FF" points="357.356,247.545 353.626,248.291 353.626,246.799 			"/>
+		</g>
+	</g>
+	<g id="INSERT_43_">
+		<g id="POLYLINE_10_">
+			<polygon fill="#0000FF" points="344.662,251.897 340.932,252.643 340.932,251.151 			"/>
+		</g>
+	</g>
+	<g id="LINE_116_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.905" y1="247.545" x2="422.638" y2="247.545"/>
+	</g>
+	<g id="INSERT_44_">
+		<g id="LINE_117_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="276.559" x2="355.905" y2="276.559"/>
+		</g>
+		<g id="CIRCLE_2_">
+			
+				<path fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M345.75,280.911c0-2.404,1.949-4.352,4.352-4.352s4.352,1.949,4.352,4.352s-1.949,4.352-4.352,4.352
+				S345.75,283.315,345.75,280.911L345.75,280.911z"/>
+		</g>
+		<g id="LINE_118_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="350.102" y1="280.911" x2="342.849" y2="280.911"/>
+		</g>
+		<g id="ATTRIB_31_">
+		</g>
+	</g>
+	<g id="INSERT_45_">
+		<g id="LINE_119_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="347.678" y1="284.526" x2="344.662" y2="288.165"/>
+		</g>
+		<g id="LINE_120_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="344.662" y1="288.165" x2="350.102" y2="288.165"/>
+		</g>
+		<g id="LINE_121_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="352.526" y1="284.526" x2="355.542" y2="288.165"/>
+		</g>
+		<g id="LINE_122_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.542" y1="288.165" x2="350.102" y2="288.165"/>
+		</g>
+	</g>
+	<g id="INSERT_46_">
+		<g id="POLYLINE_11_">
+			<polygon fill="#0000FF" points="357.356,276.559 353.626,277.305 353.626,275.813 			"/>
+		</g>
+	</g>
+	<g id="INSERT_47_">
+		<g id="POLYLINE_12_">
+			<polygon fill="#0000FF" points="344.662,280.911 340.932,281.657 340.932,280.165 			"/>
+		</g>
+	</g>
+	<g id="LINE_123_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="355.905" y1="276.559" x2="377.303" y2="276.559"/>
+	</g>
+	<g id="LINE_124_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="342.849" y1="251.897" x2="321.088" y2="251.897"/>
+	</g>
+	<g id="LINE_125_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="321.088" y1="280.911" x2="321.088" y2="251.897"/>
+	</g>
+	<g id="LINE_126_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="377.303" y1="276.559" x2="377.303" y2="247.545"/>
+	</g>
+	<g id="INSERT_48_">
+		<g id="LWPOLYLINE_27_">
+			
+				<polyline fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				275.753,272.207 271.401,276.559 275.753,280.911 280.105,276.559 275.753,272.207 			"/>
+		</g>
+		<g id="ATTRIB_32_">
+			
+				<text transform="matrix(1 0 0 1 274.1211 277.6473)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">20</text>
+		</g>
+	</g>
+	<g id="LINE_127_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="422.638" y1="243.193" x2="451.652" y2="243.193"/>
+	</g>
+	<g id="LINE_128_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="451.652" y1="251.897" x2="422.638" y2="251.897"/>
+	</g>
+	<g id="LINE_129_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="422.638" y1="251.897" x2="422.638" y2="243.193"/>
+	</g>
+	<g id="LINE_130_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="457.455" y1="247.545" x2="451.652" y2="251.897"/>
+	</g>
+	<g id="LINE_131_">
+		
+			<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="451.652" y1="243.193" x2="457.455" y2="247.545"/>
+	</g>
+	<g id="MTEXT_8_">
+		
+			<text transform="matrix(1 0 0 1 430.8758 246.8197)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">TO BRINE </text>
+		
+			<text transform="matrix(1 0 0 1 427.1972 250.4465)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">RE-INJECTION</text>
+	</g>
+	<g id="TEXT">
+		
+			<text transform="matrix(1 0 0 1 129.9927 130.1876)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBA21</text>
+	</g>
+	<g id="LWPOLYLINE_28_">
+		
+			<rect x="129.231" y="127.286" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_1_">
+		
+			<text transform="matrix(1 0 0 1 129.9927 133.8144)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AT001</text>
+	</g>
+	<g id="LWPOLYLINE_29_">
+		
+			<rect x="129.231" y="130.913" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_2_">
+		
+			<text transform="matrix(1 0 0 1 173.5141 219.8219)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBA61</text>
+	</g>
+	<g id="LWPOLYLINE_30_">
+		
+			<rect x="172.752" y="216.92" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_3_">
+		
+			<text transform="matrix(1 0 0 1 173.5141 223.4486)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AT001</text>
+	</g>
+	<g id="LWPOLYLINE_31_">
+		
+			<rect x="172.752" y="220.547" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_4_">
+		
+			<text transform="matrix(1 0 0 1 217.0355 247.9133)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBA62</text>
+	</g>
+	<g id="LWPOLYLINE_32_">
+		
+			<rect x="216.274" y="245.012" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_5_">
+		
+			<text transform="matrix(1 0 0 1 217.0355 251.54)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AT001</text>
+	</g>
+	<g id="LWPOLYLINE_33_">
+		
+			<rect x="216.274" y="248.639" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_6_">
+		
+			<text transform="matrix(1 0 0 1 312.7826 189.714)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBA71</text>
+	</g>
+	<g id="LWPOLYLINE_34_">
+		
+			<rect x="312.021" y="186.813" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_7_">
+		
+			<text transform="matrix(1 0 0 1 312.7826 193.3407)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AT001</text>
+	</g>
+	<g id="LWPOLYLINE_35_">
+		
+			<rect x="312.021" y="190.439" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_8_">
+		
+			<text transform="matrix(1 0 0 1 312.7826 88.1641)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBA31</text>
+	</g>
+	<g id="LWPOLYLINE_36_">
+		
+			<rect x="312.021" y="85.263" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_9_">
+		
+			<text transform="matrix(1 0 0 1 312.7826 91.7908)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AT001</text>
+	</g>
+	<g id="LWPOLYLINE_37_">
+		
+			<rect x="312.021" y="88.889" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_10_">
+		
+			<text transform="matrix(1 0 0 1 383.8675 30.0885)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBU21</text>
+	</g>
+	<g id="LWPOLYLINE_38_">
+		
+			<rect x="383.106" y="27.187" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_11_">
+		
+			<text transform="matrix(1 0 0 1 383.8675 33.7152)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">BS001</text>
+	</g>
+	<g id="LWPOLYLINE_39_">
+		
+			<rect x="383.106" y="30.814" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_12_">
+		
+			<text transform="matrix(1 0 0 1 383.8675 124.3848)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LBU61</text>
+	</g>
+	<g id="LWPOLYLINE_40_">
+		
+			<rect x="383.106" y="121.483" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_13_">
+		
+			<text transform="matrix(1 0 0 1 383.8675 128.0116)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">BS001</text>
+	</g>
+	<g id="LWPOLYLINE_41_">
+		
+			<rect x="383.106" y="125.11" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_14_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 252.0785)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LAB81</text>
+	</g>
+	<g id="LWPOLYLINE_42_">
+		
+			<rect x="358.081" y="249.177" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_15_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 255.7053)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AP001</text>
+	</g>
+	<g id="LWPOLYLINE_43_">
+		
+			<rect x="358.081" y="252.804" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_16_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 266.5856)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LAB82</text>
+	</g>
+	<g id="LWPOLYLINE_44_">
+		
+			<rect x="358.081" y="263.684" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_17_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 270.2124)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AP001</text>
+	</g>
+	<g id="LWPOLYLINE_45_">
+		
+			<rect x="358.081" y="267.311" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_18_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 281.0928)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">LAB83</text>
+	</g>
+	<g id="LWPOLYLINE_46_">
+		
+			<rect x="358.081" y="278.191" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="TEXT_19_">
+		
+			<text transform="matrix(1 0 0 1 358.8427 284.7195)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">AP001</text>
+	</g>
+	<g id="LWPOLYLINE_47_">
+		
+			<rect x="358.081" y="281.818" fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10.88" height="3.627"/>
+	</g>
+	<g id="MTEXT_9_">
+		
+			<text transform="matrix(1 0 0 1 345.2837 238.4781)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">BRINE </text>
+		
+			<text transform="matrix(1 0 0 1 338.7037 242.1049)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">RE-INJECTION </text>
+		
+			<text transform="matrix(1 0 0 1 344.4547 245.7316)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="3.0735">PUMPS</text>
+	</g>
+	<g id="INSERT_49_">
+		<g id="LWPOLYLINE_48_">
+			
+				<polyline fill="none" stroke="#000000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				0.118,430.136 610.142,430.136 610.142,0 0.118,0 0.118,430.136 			"/>
+		</g>
+		<g id="TEXT_20_">
+			
+				<text transform="matrix(1.5 0 0 1 249.8443 16.3146)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Verify all dimensions prior to construction - Do not scale</text>
+		</g>
+		<g id="LWPOLYLINE_49_">
+			
+				<polygon fill="none" stroke="#000000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				511.175,276.844 598.604,276.844 598.604,20.736 31.347,20.736 31.347,419.083 511.175,419.083 			"/>
+		</g>
+		<g id="TEXT_21_">
+			
+				<text transform="matrix(1 0 0 1 573.3757 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Chk</text>
+		</g>
+		<g id="TEXT_22_">
+			
+				<text transform="matrix(1 0 0 1 565.9045 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">By</text>
+		</g>
+		<g id="TEXT_23_">
+			
+				<text transform="matrix(1 0 0 1 565.5808 370.1867)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Drawn</text>
+		</g>
+		<g id="TEXT_24_">
+			
+				<text transform="matrix(1 0 0 1 565.5808 375.0622)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">CAD Ref</text>
+		</g>
+		<g id="TEXT_25_">
+			
+				<text transform="matrix(1 0 0 1 589.9139 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Date</text>
+		</g>
+		<g id="TEXT_26_">
+			
+				<text transform="matrix(1 0 0 1 580.3392 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Appr.</text>
+		</g>
+		<g id="LINE_132_">
+			
+				<line fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="513.091" y1="364.786" x2="601.298" y2="364.786"/>
+		</g>
+		<g id="TEXT_27_">
+			
+				<text transform="matrix(1 0 0 1 522.0205 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Reason</text>
+		</g>
+		<g id="TEXT_28_">
+			
+				<text transform="matrix(1 0 0 1 513.1711 370.1867)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Scales</text>
+		</g>
+		<g id="TEXT_29_">
+			
+				<text transform="matrix(1 0 0 1 513.1711 375.0622)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Date</text>
+		</g>
+		<g id="TEXT_30_">
+			
+				<text transform="matrix(1 0 0 1 513.1711 363.6338)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Rev</text>
+		</g>
+		<g id="TEXT_31_">
+			
+				<text transform="matrix(1 0 0 1 580.6022 410.7896)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Revision</text>
+		</g>
+		<g id="TEXT_32_">
+			
+				<text transform="matrix(1 0 0 1 518.4457 410.7896)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Drawing</text>
+		</g>
+		<g id="LWPOLYLINE_50_">
+			
+				<polyline fill="none" stroke="#000000" stroke-width="1.4507" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				246.383,15.71 28.314,15.71 28.314,422.122 603.078,422.122 603.078,406.164 603.078,378.701 603.078,15.71 379.11,15.71 			"/>
+		</g>
+		<g id="LWPOLYLINE_51_">
+			
+				<polyline fill="none" stroke="#000000" stroke-width="1.4507" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				603.078,378.701 513.887,378.701 513.887,406.164 513.887,422.122 			"/>
+		</g>
+		<g id="LINE_133_">
+			
+				<line fill="none" stroke="#0000FF" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="603.078" y1="422.122" x2="603.078" y2="422.122"/>
+		</g>
+		<g id="LWPOLYLINE_52_">
+			
+				<line fill="none" stroke="#000000" stroke-width="1.4507" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="603.078" y1="406.164" x2="513.887" y2="406.164"/>
+		</g>
+		<g id="ATTRIB_33_">
+			
+				<text transform="matrix(0.8 0 0 1 518.3351 385.5864)" fill="#00FFFF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">CLIENT</text>
+		</g>
+		<g id="ATTRIB_34_">
+			
+				<text transform="matrix(0.8 0 0 1 518.3351 391.1716)" fill="#00FFFF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">POWER PLANT</text>
+		</g>
+		<g id="ATTRIB_35_">
+			
+				<text transform="matrix(0.8 0 0 1 518.3351 396.7569)" fill="#00FFFF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">PROCESS FLOW DIAGRAM</text>
+		</g>
+		<g id="ATTRIB_36_">
+		</g>
+		<g id="ATTRIB_37_">
+			<rect x="518.446" y="414.205" fill="#C0C0C0" width="32.986" height="5.527"/>
+			<rect x="551.432" y="414.205" fill="#C0C0C0" width="8.117" height="5.527"/>
+			<rect x="559.549" y="414.205" fill="#C0C0C0" width="15.889" height="5.527"/>
+			<rect x="575.438" y="414.205" fill="#C0C0C0" width="13.471" height="5.527"/>
+			
+				<text transform="matrix(1 0 0 1 518.4457 418.5225)" fill="#FF00FF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">Mechanical - Data Links</text>
+		</g>
+		<g id="ATTRIB_38_">
+			
+				<text transform="matrix(1 0 0 1 580.6022 418.5225)" fill="#FF00FF" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="7.1716">A</text>
+		</g>
+		<g id="ATTRIB_39_">
+			
+				<text transform="matrix(1 0 0 1 576.6079 370.1867)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">MSW</text>
+		</g>
+		<g id="ATTRIB_40_">
+			
+				<text transform="matrix(1 0 0 1 522.0494 370.1867)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">N.T.S.</text>
+		</g>
+		<g id="ATTRIB_41_">
+			<rect x="576.651" y="372.903" fill="#C0C0C0" width="16.493" height="2.763"/>
+			<rect x="593.144" y="372.903" fill="#C0C0C0" width="4.059" height="2.763"/>
+			<rect x="597.203" y="372.903" fill="#C0C0C0" width="7.944" height="2.763"/>
+			<rect x="605.147" y="372.903" fill="#C0C0C0" width="6.735" height="2.763"/>
+			
+				<text transform="matrix(1 0 0 1 576.6508 375.0622)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">Mechanical - Data Links</text>
+		</g>
+		<g id="ATTRIB_42_">
+			
+				<text transform="matrix(1 0 0 1 522.0066 375.0622)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">21AUG06</text>
+		</g>
+		<g id="ATTRIB_43_">
+			
+				<text transform="matrix(1 0 0 1 536.4252 375.0622)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">(NOT PLOTTED)</text>
+		</g>
+		<g id="ATTRIB_44_">
+			
+				<text transform="matrix(1 0 0 1 513.1711 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">A</text>
+		</g>
+		<g id="ATTRIB_45_">
+			
+				<text transform="matrix(1 0 0 1 522.0205 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">ISSUED FOR CLIENT REVIEW</text>
+		</g>
+		<g id="ATTRIB_46_">
+			
+				<text transform="matrix(1 0 0 1 565.5571 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">WKW</text>
+		</g>
+		<g id="ATTRIB_47_">
+			
+				<text transform="matrix(1 0 0 1 573.0283 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">HKM</text>
+		</g>
+		<g id="ATTRIB_48_">
+			
+				<text transform="matrix(1 0 0 1 579.9916 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">TDM</text>
+		</g>
+		<g id="ATTRIB_49_">
+			
+				<text transform="matrix(1 0 0 1 589.9139 360.007)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="2.5613">25AUG06</text>
+		</g>
+		<g id="ATTRIB_50_">
+		</g>
+		<g id="ATTRIB_51_">
+		</g>
+		<g id="ATTRIB_52_">
+		</g>
+		<g id="ATTRIB_53_">
+		</g>
+		<g id="ATTRIB_54_">
+		</g>
+		<g id="ATTRIB_55_">
+		</g>
+		<g id="ATTRIB_56_">
+		</g>
+		<g id="ATTRIB_57_">
+		</g>
+		<g id="ATTRIB_58_">
+		</g>
+		<g id="ATTRIB_59_">
+		</g>
+		<g id="ATTRIB_60_">
+		</g>
+		<g id="ATTRIB_61_">
+		</g>
+		<g id="ATTRIB_62_">
+		</g>
+		<g id="ATTRIB_63_">
+		</g>
+		<g id="ATTRIB_64_">
+		</g>
+		<g id="ATTRIB_65_">
+		</g>
+		<g id="ATTRIB_66_">
+		</g>
+		<g id="ATTRIB_67_">
+		</g>
+		<g id="ATTRIB_68_">
+		</g>
+		<g id="ATTRIB_69_">
+		</g>
+		<g id="ATTRIB_70_">
+		</g>
+		<g id="ATTRIB_71_">
+		</g>
+		<g id="ATTRIB_72_">
+		</g>
+		<g id="ATTRIB_73_">
+		</g>
+		<g id="ATTRIB_74_">
+		</g>
+		<g id="ATTRIB_75_">
+		</g>
+		<g id="ATTRIB_76_">
+		</g>
+		<g id="ATTRIB_77_">
+		</g>
+		<g id="ATTRIB_78_">
+		</g>
+		<g id="ATTRIB_79_">
+		</g>
+		<g id="ATTRIB_80_">
+		</g>
+		<g id="ATTRIB_81_">
+		</g>
+		<g id="ATTRIB_82_">
+		</g>
+		<g id="ATTRIB_83_">
+		</g>
+		<g id="ATTRIB_84_">
+		</g>
+		<g id="ATTRIB_85_">
+		</g>
+		<g id="ATTRIB_86_">
+		</g>
+		<g id="ATTRIB_87_">
+		</g>
+		<g id="ATTRIB_88_">
+		</g>
+		<g id="ATTRIB_89_">
+		</g>
+		<g id="ATTRIB_90_">
+		</g>
+		<g id="ATTRIB_91_">
+		</g>
+		<g id="ATTRIB_92_">
+		</g>
+		<g id="ATTRIB_93_">
+		</g>
+		<g id="ATTRIB_94_">
+		</g>
+		<g id="ATTRIB_95_">
+		</g>
+		<g id="ATTRIB_96_">
+		</g>
+		<g id="ATTRIB_97_">
+		</g>
+		<g id="ATTRIB_98_">
+		</g>
+		<g id="ATTRIB_99_">
+		</g>
+		<g id="ATTRIB_100_">
+		</g>
+		<g id="ATTRIB_101_">
+		</g>
+		<g id="ATTRIB_102_">
+		</g>
+		<g id="ATTRIB_103_">
+		</g>
+	</g>
+	<g id="INSERT_50_">
+		<g id="LWPOLYLINE_53_">
+			
+				<path fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M525.391,322.937h58.754c0.561,0,1.016-0.455,1.016-1.016v-11.606c0-0.561-0.455-1.015-1.016-1.015h-58.754
+				c-0.561,0-1.016,0.455-1.016,1.015v11.606C524.376,322.482,524.83,322.937,525.391,322.937z"/>
+		</g>
+		<g id="LWPOLYLINE_54_">
+			
+				<path fill="none" stroke="#FF0000" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M525.391,323.372h58.754c0.801,0,1.451-0.65,1.451-1.451v-11.606c0-0.801-0.65-1.451-1.451-1.451h-58.754
+				c-0.801,0-1.451,0.65-1.451,1.451v11.606C523.941,322.722,524.59,323.372,525.391,323.372z"/>
+		</g>
+		<g id="TEXT_33_">
+			
+				<text transform="matrix(1 0 0 1 535.1223 320.7576)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">CLIENT REVIEW</text>
+		</g>
+		<g id="TEXT_34_">
+			
+				<text transform="matrix(1 0 0 1 539.2672 314.9547)" fill="#FF0000" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="5.1226">ISSUED FOR</text>
+		</g>
+	</g>
+	<g id="ACAD_x5F_TABLE">
+		<g id="MTEXT_10_">
+			
+				<text transform="matrix(1 0 0 1 98.0745 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Stream No.</text>
+		</g>
+		<g id="MTEXT_11_">
+			
+				<text transform="matrix(1 0 0 1 146.5795 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1</text>
+		</g>
+		<g id="MTEXT_12_">
+			
+				<text transform="matrix(1 0 0 1 158.9382 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_13_">
+			
+				<text transform="matrix(1 0 0 1 162.5885 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2</text>
+		</g>
+		<g id="MTEXT_14_">
+			
+				<text transform="matrix(1 0 0 1 174.8712 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">3</text>
+		</g>
+		<g id="MTEXT_15_">
+			
+				<text transform="matrix(1 0 0 1 187.1539 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">4</text>
+		</g>
+		<g id="MTEXT_16_">
+			
+				<text transform="matrix(1 0 0 1 199.4366 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">5</text>
+		</g>
+		<g id="MTEXT_17_">
+			
+				<text transform="matrix(1 0 0 1 211.6813 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_18_">
+			
+				<text transform="matrix(1 0 0 1 215.2936 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">6</text>
+		</g>
+		<g id="MTEXT_19_">
+			
+				<text transform="matrix(1 0 0 1 227.5763 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_20_">
+			
+				<text transform="matrix(1 0 0 1 231.2266 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">7</text>
+		</g>
+		<g id="MTEXT_21_">
+			
+				<text transform="matrix(1 0 0 1 243.5093 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">8</text>
+		</g>
+		<g id="MTEXT_22_">
+			
+				<text transform="matrix(1 0 0 1 255.792 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">9</text>
+		</g>
+		<g id="MTEXT_23_">
+			
+				<text transform="matrix(1 0 0 1 267.9607 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">10</text>
+		</g>
+		<g id="MTEXT_24_">
+			
+				<text transform="matrix(1 0 0 1 280.2434 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11</text>
+		</g>
+		<g id="MTEXT_25_">
+			
+				<text transform="matrix(1 0 0 1 292.6021 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_26_">
+			
+				<text transform="matrix(1 0 0 1 296.2144 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_27_">
+			
+				<text transform="matrix(1 0 0 1 299.8266 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_28_">
+			
+				<text transform="matrix(1 0 0 1 304.3433 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_29_">
+			
+				<text transform="matrix(1 0 0 1 307.8796 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">12</text>
+		</g>
+		<g id="MTEXT_30_">
+			
+				<text transform="matrix(1 0 0 1 320.1623 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">13</text>
+		</g>
+		<g id="MTEXT_31_">
+			
+				<text transform="matrix(1 0 0 1 332.445 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">14</text>
+		</g>
+		<g id="MTEXT_32_">
+			
+				<text transform="matrix(1 0 0 1 344.7277 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">15</text>
+		</g>
+		<g id="MTEXT_33_">
+			
+				<text transform="matrix(1 0 0 1 357.0864 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_34_">
+			
+				<text transform="matrix(1 0 0 1 360.6227 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">16</text>
+		</g>
+		<g id="MTEXT_35_">
+			
+				<text transform="matrix(1 0 0 1 372.9814 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_36_">
+			
+				<text transform="matrix(1 0 0 1 376.5177 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">17</text>
+		</g>
+		<g id="MTEXT_37_">
+			
+				<text transform="matrix(1 0 0 1 388.8004 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">18</text>
+		</g>
+		<g id="MTEXT_38_">
+			
+				<text transform="matrix(1 0 0 1 401.0831 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">19</text>
+		</g>
+		<g id="MTEXT_39_">
+			
+				<text transform="matrix(1 0 0 1 413.4798 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20</text>
+		</g>
+		<g id="MTEXT_40_">
+			
+				<text transform="matrix(1 0 0 1 425.7625 308.9159)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">21</text>
+		</g>
+		<g id="MTEXT_41_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 98.9867 322.4285)" fill="#00FF00" font-family="'ArialMT'" font-size="1.1271">Description</text>
+		</g>
+		<g id="MTEXT_42_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 147.6055 328.1453)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Two Phase from Interface </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 149.1481 328.1834)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">to HP Separator</text>
+		</g>
+		<g id="MTEXT_43_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 159.8882 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Separator</text>
+		</g>
+		<g id="MTEXT_44_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 163.4625 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam to Scrubbing </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 165.0432 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Line</text>
+		</g>
+		<g id="MTEXT_45_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 175.7831 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam Scrubbing Spray </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 177.3258 328.1834)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Water Supply</text>
+		</g>
+		<g id="MTEXT_46_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 188.0659 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam Scrubbing Line</text>
+		</g>
+		<g id="MTEXT_47_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 200.3485 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam Condensate </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 201.8912 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Pots</text>
+		</g>
+		<g id="MTEXT_48_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 212.6313 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Inlet to Scrubber</text>
+		</g>
+		<g id="MTEXT_49_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 216.2435 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Scrubber Condensate</text>
+		</g>
+		<g id="MTEXT_50_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 228.5262 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Outlet from Scrubber</text>
+		</g>
+		<g id="MTEXT_51_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 232.1005 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam to Power Plant </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 233.6812 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Bifurcation</text>
+		</g>
+		<g id="MTEXT_52_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 244.4212 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Ejector Steam</text>
+		</g>
+		<g id="MTEXT_53_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 256.6659 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam to Turbine </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 258.2466 328.2215)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Strainer 1</text>
+		</g>
+		<g id="MTEXT_54_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 268.9486 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Steam to Turbine </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 270.5293 328.2215)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Strainer 2</text>
+		</g>
+		<g id="MTEXT_55_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 281.2693 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">HP Brine to LP Separator </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 282.812 328.2215)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Control Valve</text>
+		</g>
+		<g id="MTEXT_56_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 293.552 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Separator 1</text>
+		</g>
+		<g id="MTEXT_57_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 297.1643 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Separator 2</text>
+		</g>
+		<g id="MTEXT_58_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 300.7766 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam ex LP Separator </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 302.3192 328.3358)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1</text>
+		</g>
+		<g id="MTEXT_59_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 305.2933 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam ex Separator 2</text>
+		</g>
+		<g id="MTEXT_60_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 308.8676 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam to LP Scrubbing </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 310.4482 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Line</text>
+		</g>
+		<g id="MTEXT_61_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 321.1883 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam Scrubbing Spray </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 322.7309 328.1834)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Water Supply</text>
+		</g>
+		<g id="MTEXT_62_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 333.4709 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam Scrubbing Line</text>
+		</g>
+		<g id="MTEXT_63_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 345.7537 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam Condensate Pots</text>
+		</g>
+		<g id="MTEXT_64_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 358.0363 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Inlet to Demister</text>
+		</g>
+		<g id="MTEXT_65_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 361.6487 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Demister Condensate</text>
+		</g>
+		<g id="MTEXT_66_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 373.9313 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Outlet from Demister</text>
+		</g>
+		<g id="MTEXT_67_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 377.5056 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam to Power Plant </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 379.0863 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Bifurcation</text>
+		</g>
+		<g id="MTEXT_68_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 389.7883 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam to Turbine </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 391.369 328.2215)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Strainer 1</text>
+		</g>
+		<g id="MTEXT_69_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 402.071 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Steam to Turbine </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 403.6517 328.2215)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Strainer 2</text>
+		</g>
+		<g id="MTEXT_70_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 414.3917 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Brine to Reinjection </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 415.9344 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Pumps</text>
+		</g>
+		<g id="MTEXT_71_">
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 426.6364 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">LP Brine Reinjection </text>
+			
+				<text transform="matrix(6.123234e-017 -1 1 6.123234e-017 428.2171 328.2596)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Pumps Discharge</text>
+		</g>
+		<g id="MTEXT_72_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 331.9326)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Pipe True Length (m)</text>
+		</g>
+		<g id="MTEXT_73_">
+			
+				<text transform="matrix(1 0 0 1 150.5309 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">49.0</text>
+		</g>
+		<g id="MTEXT_74_">
+			
+				<text transform="matrix(1 0 0 1 159.3143 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_75_">
+			
+				<text transform="matrix(1 0 0 1 166.8059 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">7.0</text>
+		</g>
+		<g id="MTEXT_76_">
+			
+				<text transform="matrix(1 0 0 1 178.2716 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">150.0</text>
+		</g>
+		<g id="MTEXT_77_">
+			
+				<text transform="matrix(1 0 0 1 190.5543 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">160.0</text>
+		</g>
+		<g id="MTEXT_78_">
+			
+				<text transform="matrix(1 0 0 1 203.369 331.9326)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_79_">
+			
+				<text transform="matrix(1 0 0 1 219.264 331.9326)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_80_">
+			
+				<text transform="matrix(1 0 0 1 235.0639 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">90.0</text>
+		</g>
+		<g id="MTEXT_81_">
+			
+				<text transform="matrix(1 0 0 1 247.2896 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">10.0</text>
+		</g>
+		<g id="MTEXT_82_">
+			
+				<text transform="matrix(1 0 0 1 260.0093 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">4.0</text>
+		</g>
+		<g id="MTEXT_83_">
+			
+				<text transform="matrix(1 0 0 1 271.912 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">24.0</text>
+		</g>
+		<g id="MTEXT_84_">
+			
+				<text transform="matrix(1 0 0 1 284.1948 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">55.0</text>
+		</g>
+		<g id="MTEXT_85_">
+			
+				<text transform="matrix(1 0 0 1 292.9782 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_86_">
+			
+				<text transform="matrix(1 0 0 1 296.5905 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_87_">
+			
+				<text transform="matrix(1 0 0 1 311.774 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">12.0</text>
+		</g>
+		<g id="MTEXT_88_">
+			
+				<text transform="matrix(1 0 0 1 323.6767 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">150.0</text>
+		</g>
+		<g id="MTEXT_89_">
+			
+				<text transform="matrix(1 0 0 1 336.3964 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">93.0</text>
+		</g>
+		<g id="MTEXT_90_">
+			
+				<text transform="matrix(1 0 0 1 348.7741 331.9326)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_91_">
+			
+				<text transform="matrix(1 0 0 1 364.6691 331.9326)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_92_">
+			
+				<text transform="matrix(1 0 0 1 380.4691 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">76.0</text>
+		</g>
+		<g id="MTEXT_93_">
+			
+				<text transform="matrix(1 0 0 1 393.1317 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">4.0</text>
+		</g>
+		<g id="MTEXT_94_">
+			
+				<text transform="matrix(1 0 0 1 405.0345 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20.0</text>
+		</g>
+		<g id="MTEXT_95_">
+			
+				<text transform="matrix(1 0 0 1 417.3172 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">73.5</text>
+		</g>
+		<g id="MTEXT_96_">
+			
+				<text transform="matrix(1 0 0 1 429.8849 332.1986)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_97_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 336.0237)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Nominal Pipe Diameter (mm)</text>
+		</g>
+		<g id="MTEXT_98_">
+			
+				<text transform="matrix(1 0 0 1 149.7139 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1050.0</text>
+		</g>
+		<g id="MTEXT_99_">
+			
+				<text transform="matrix(1 0 0 1 159.3143 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_100_">
+			
+				<text transform="matrix(1 0 0 1 165.6089 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_101_">
+			
+				<text transform="matrix(1 0 0 1 178.7086 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">80.0</text>
+		</g>
+		<g id="MTEXT_102_">
+			
+				<text transform="matrix(1 0 0 1 190.1743 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_103_">
+			
+				<text transform="matrix(1 0 0 1 202.894 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">750.0</text>
+		</g>
+		<g id="MTEXT_104_">
+			
+				<text transform="matrix(1 0 0 1 218.732 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">100.0</text>
+		</g>
+		<g id="MTEXT_105_">
+			
+				<text transform="matrix(1 0 0 1 234.247 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_106_">
+			
+				<text transform="matrix(1 0 0 1 246.9667 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">250.0</text>
+		</g>
+		<g id="MTEXT_107_">
+			
+				<text transform="matrix(1 0 0 1 259.2494 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">750.0</text>
+		</g>
+		<g id="MTEXT_108_">
+			
+				<text transform="matrix(1 0 0 1 271.5321 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">750.0</text>
+		</g>
+		<g id="MTEXT_109_">
+			
+				<text transform="matrix(1 0 0 1 283.8148 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">750.0</text>
+		</g>
+		<g id="MTEXT_110_">
+			
+				<text transform="matrix(1 0 0 1 292.9782 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_111_">
+			
+				<text transform="matrix(1 0 0 1 296.5905 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_112_">
+			
+				<text transform="matrix(1 0 0 1 311.014 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_113_">
+			
+				<text transform="matrix(1 0 0 1 324.1137 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">80.0</text>
+		</g>
+		<g id="MTEXT_114_">
+			
+				<text transform="matrix(1 0 0 1 335.5794 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_115_">
+			
+				<text transform="matrix(1 0 0 1 348.2991 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">750.0</text>
+		</g>
+		<g id="MTEXT_116_">
+			
+				<text transform="matrix(1 0 0 1 364.1371 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">100.0</text>
+		</g>
+		<g id="MTEXT_117_">
+			
+				<text transform="matrix(1 0 0 1 379.6521 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1200.0</text>
+		</g>
+		<g id="MTEXT_118_">
+			
+				<text transform="matrix(1 0 0 1 392.3718 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">900.0</text>
+		</g>
+		<g id="MTEXT_119_">
+			
+				<text transform="matrix(1 0 0 1 404.6545 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">900.0</text>
+		</g>
+		<g id="MTEXT_120_">
+			
+				<text transform="matrix(1 0 0 1 416.9182 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">600.0</text>
+		</g>
+		<g id="MTEXT_121_">
+			
+				<text transform="matrix(1 0 0 1 429.2009 336.2896)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">600.0</text>
+		</g>
+		<g id="MTEXT_122_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 340.1147)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Flow (t/h)</text>
+		</g>
+		<g id="MTEXT_123_">
+			
+				<text transform="matrix(1 0 0 1 134.4108 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Steam</text>
+		</g>
+		<g id="MTEXT_124_">
+			
+				<text transform="matrix(1 0 0 1 150.1509 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">472.5</text>
+		</g>
+		<g id="MTEXT_125_">
+			
+				<text transform="matrix(1 0 0 1 166.0459 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">474.8</text>
+		</g>
+		<g id="MTEXT_126_">
+			
+				<text transform="matrix(1 0 0 1 179.5445 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_127_">
+			
+				<text transform="matrix(1 0 0 1 190.6113 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">472.8</text>
+		</g>
+		<g id="MTEXT_128_">
+			
+				<text transform="matrix(1 0 0 1 204.1099 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_129_">
+			
+				<text transform="matrix(1 0 0 1 220.0049 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_130_">
+			
+				<text transform="matrix(1 0 0 1 234.684 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">472.8</text>
+		</g>
+		<g id="MTEXT_131_">
+			
+				<text transform="matrix(1 0 0 1 247.3466 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">22.2</text>
+		</g>
+		<g id="MTEXT_132_">
+			
+				<text transform="matrix(1 0 0 1 259.2494 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">225.3</text>
+		</g>
+		<g id="MTEXT_133_">
+			
+				<text transform="matrix(1 0 0 1 271.5321 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">225.3</text>
+		</g>
+		<g id="MTEXT_134_">
+			
+				<text transform="matrix(1 0 0 1 285.0307 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_135_">
+			
+				<text transform="matrix(1 0 0 1 311.394 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">176.8</text>
+		</g>
+		<g id="MTEXT_136_">
+			
+				<text transform="matrix(1 0 0 1 324.9496 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_137_">
+			
+				<text transform="matrix(1 0 0 1 335.9594 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">176.3</text>
+		</g>
+		<g id="MTEXT_138_">
+			
+				<text transform="matrix(1 0 0 1 349.515 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_139_">
+			
+				<text transform="matrix(1 0 0 1 365.41 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_140_">
+			
+				<text transform="matrix(1 0 0 1 380.0321 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">176.3</text>
+		</g>
+		<g id="MTEXT_141_">
+			
+				<text transform="matrix(1 0 0 1 392.8658 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">88.1</text>
+		</g>
+		<g id="MTEXT_142_">
+			
+				<text transform="matrix(1 0 0 1 405.1484 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">88.1</text>
+		</g>
+		<g id="MTEXT_143_">
+			
+				<text transform="matrix(1 0 0 1 418.1531 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_144_">
+			
+				<text transform="matrix(1 0 0 1 430.4358 340.3806)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_145_">
+			
+				<text transform="matrix(1 0 0 1 134.3728 344.2057)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Liq. Water</text>
+		</g>
+		<g id="MTEXT_146_">
+			
+				<text transform="matrix(1 0 0 1 149.7139 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1387.7</text>
+		</g>
+		<g id="MTEXT_147_">
+			
+				<text transform="matrix(1 0 0 1 166.8059 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.7</text>
+		</g>
+		<g id="MTEXT_148_">
+			
+				<text transform="matrix(1 0 0 1 179.0886 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">9.7</text>
+		</g>
+		<g id="MTEXT_149_">
+			
+				<text transform="matrix(1 0 0 1 190.9153 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">12.4</text>
+		</g>
+		<g id="MTEXT_150_">
+			
+				<text transform="matrix(1 0 0 1 203.654 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">7.2</text>
+		</g>
+		<g id="MTEXT_151_">
+			
+				<text transform="matrix(1 0 0 1 219.549 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">5.2</text>
+		</g>
+		<g id="MTEXT_152_">
+			
+				<text transform="matrix(1 0 0 1 235.4439 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_153_">
+			
+				<text transform="matrix(1 0 0 1 247.7266 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_154_">
+			
+				<text transform="matrix(1 0 0 1 260.0093 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_155_">
+			
+				<text transform="matrix(1 0 0 1 272.292 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_156_">
+			
+				<text transform="matrix(1 0 0 1 283.3778 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1384.7</text>
+		</g>
+		<g id="MTEXT_157_">
+			
+				<text transform="matrix(1 0 0 1 312.211 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.5</text>
+		</g>
+		<g id="MTEXT_158_">
+			
+				<text transform="matrix(1 0 0 1 324.4937 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">3.5</text>
+		</g>
+		<g id="MTEXT_159_">
+			
+				<text transform="matrix(1 0 0 1 336.7764 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">4.6</text>
+		</g>
+		<g id="MTEXT_160_">
+			
+				<text transform="matrix(1 0 0 1 349.0781 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.9</text>
+		</g>
+		<g id="MTEXT_161_">
+			
+				<text transform="matrix(1 0 0 1 364.8971 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.7</text>
+		</g>
+		<g id="MTEXT_162_">
+			
+				<text transform="matrix(1 0 0 1 380.849 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_163_">
+			
+				<text transform="matrix(1 0 0 1 393.1317 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_164_">
+			
+				<text transform="matrix(1 0 0 1 405.4144 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_165_">
+			
+				<text transform="matrix(1 0 0 1 416.5002 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1207.3</text>
+		</g>
+		<g id="MTEXT_166_">
+			
+				<text transform="matrix(1 0 0 1 428.7829 344.4716)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1207.3</text>
+		</g>
+		<g id="MTEXT_167_">
+			
+				<text transform="matrix(1 0 0 1 134.3728 348.2967)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Impurities</text>
+		</g>
+		<g id="MTEXT_168_">
+			
+				<text transform="matrix(1 0 0 1 150.9109 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">3.8</text>
+		</g>
+		<g id="MTEXT_169_">
+			
+				<text transform="matrix(1 0 0 1 166.8059 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_170_">
+			
+				<text transform="matrix(1 0 0 1 179.5445 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_171_">
+			
+				<text transform="matrix(1 0 0 1 191.3713 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_172_">
+			
+				<text transform="matrix(1 0 0 1 203.654 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_173_">
+			
+				<text transform="matrix(1 0 0 1 219.549 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_174_">
+			
+				<text transform="matrix(1 0 0 1 235.4439 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_175_">
+			
+				<text transform="matrix(1 0 0 1 247.7266 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_176_">
+			
+				<text transform="matrix(1 0 0 1 260.0093 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_177_">
+			
+				<text transform="matrix(1 0 0 1 272.292 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_178_">
+			
+				<text transform="matrix(1 0 0 1 284.5747 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_179_">
+			
+				<text transform="matrix(1 0 0 1 312.211 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_180_">
+			
+				<text transform="matrix(1 0 0 1 324.4937 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_181_">
+			
+				<text transform="matrix(1 0 0 1 337.2323 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_182_">
+			
+				<text transform="matrix(1 0 0 1 349.0591 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_183_">
+			
+				<text transform="matrix(1 0 0 1 364.954 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_184_">
+			
+				<text transform="matrix(1 0 0 1 380.849 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_185_">
+			
+				<text transform="matrix(1 0 0 1 393.1317 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_186_">
+			
+				<text transform="matrix(1 0 0 1 405.4144 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_187_">
+			
+				<text transform="matrix(1 0 0 1 417.6971 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_188_">
+			
+				<text transform="matrix(1 0 0 1 429.9798 348.5627)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_189_">
+			
+				<text transform="matrix(1 0 0 1 134.3728 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">NCG</text>
+		</g>
+		<g id="MTEXT_190_">
+			
+				<text transform="matrix(1 0 0 1 150.5879 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.1</text>
+		</g>
+		<g id="MTEXT_191_">
+			
+				<text transform="matrix(1 0 0 1 166.4829 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.1</text>
+		</g>
+		<g id="MTEXT_192_">
+			
+				<text transform="matrix(1 0 0 1 179.5445 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_193_">
+			
+				<text transform="matrix(1 0 0 1 191.0483 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.1</text>
+		</g>
+		<g id="MTEXT_194_">
+			
+				<text transform="matrix(1 0 0 1 204.1099 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_195_">
+			
+				<text transform="matrix(1 0 0 1 220.0049 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_196_">
+			
+				<text transform="matrix(1 0 0 1 235.1209 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.1</text>
+		</g>
+		<g id="MTEXT_197_">
+			
+				<text transform="matrix(1 0 0 1 247.7266 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.5</text>
+		</g>
+		<g id="MTEXT_198_">
+			
+				<text transform="matrix(1 0 0 1 260.0093 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">5.3</text>
+		</g>
+		<g id="MTEXT_199_">
+			
+				<text transform="matrix(1 0 0 1 272.292 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">5.3</text>
+		</g>
+		<g id="MTEXT_200_">
+			
+				<text transform="matrix(1 0 0 1 285.0307 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_201_">
+			
+				<text transform="matrix(1 0 0 1 292.9782 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_202_">
+			
+				<text transform="matrix(1 0 0 1 296.5905 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_203_">
+			
+				<text transform="matrix(1 0 0 1 300.655 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_204_">
+			
+				<text transform="matrix(1 0 0 1 304.7195 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_205_">
+			
+				<text transform="matrix(1 0 0 1 312.6669 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_206_">
+			
+				<text transform="matrix(1 0 0 1 324.9496 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_207_">
+			
+				<text transform="matrix(1 0 0 1 337.2323 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_208_">
+			
+				<text transform="matrix(1 0 0 1 349.515 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_209_">
+			
+				<text transform="matrix(1 0 0 1 357.4625 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_210_">
+			
+				<text transform="matrix(1 0 0 1 365.41 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_211_">
+			
+				<text transform="matrix(1 0 0 1 373.3575 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_212_">
+			
+				<text transform="matrix(1 0 0 1 381.305 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_213_">
+			
+				<text transform="matrix(1 0 0 1 393.5877 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_214_">
+			
+				<text transform="matrix(1 0 0 1 405.8704 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_215_">
+			
+				<text transform="matrix(1 0 0 1 418.1531 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_216_">
+			
+				<text transform="matrix(1 0 0 1 430.4358 352.6537)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_217_">
+			
+				<text transform="matrix(1 0 0 1 134.4868 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Total</text>
+		</g>
+		<g id="MTEXT_218_">
+			
+				<text transform="matrix(1 0 0 1 149.7139 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1875.0</text>
+		</g>
+		<g id="MTEXT_219_">
+			
+				<text transform="matrix(1 0 0 1 166.0459 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">486.6</text>
+		</g>
+		<g id="MTEXT_220_">
+			
+				<text transform="matrix(1 0 0 1 179.0886 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">9.7</text>
+		</g>
+		<g id="MTEXT_221_">
+			
+				<text transform="matrix(1 0 0 1 190.6113 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">496.3</text>
+		</g>
+		<g id="MTEXT_222_">
+			
+				<text transform="matrix(1 0 0 1 203.654 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">7.2</text>
+		</g>
+		<g id="MTEXT_223_">
+			
+				<text transform="matrix(1 0 0 1 219.549 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">5.2</text>
+		</g>
+		<g id="MTEXT_224_">
+			
+				<text transform="matrix(1 0 0 1 234.703 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">483.9</text>
+		</g>
+		<g id="MTEXT_225_">
+			
+				<text transform="matrix(1 0 0 1 247.3466 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">22.7</text>
+		</g>
+		<g id="MTEXT_226_">
+			
+				<text transform="matrix(1 0 0 1 259.2494 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">230.6</text>
+		</g>
+		<g id="MTEXT_227_">
+			
+				<text transform="matrix(1 0 0 1 271.5321 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">230.6</text>
+		</g>
+		<g id="MTEXT_228_">
+			
+				<text transform="matrix(1 0 0 1 283.3778 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1384.7</text>
+		</g>
+		<g id="MTEXT_229_">
+			
+				<text transform="matrix(1 0 0 1 311.394 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">177.3</text>
+		</g>
+		<g id="MTEXT_230_">
+			
+				<text transform="matrix(1 0 0 1 324.4937 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">3.5</text>
+		</g>
+		<g id="MTEXT_231_">
+			
+				<text transform="matrix(1 0 0 1 335.9784 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">180.9</text>
+		</g>
+		<g id="MTEXT_232_">
+			
+				<text transform="matrix(1 0 0 1 349.0781 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.9</text>
+		</g>
+		<g id="MTEXT_233_">
+			
+				<text transform="matrix(1 0 0 1 364.8971 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.7</text>
+		</g>
+		<g id="MTEXT_234_">
+			
+				<text transform="matrix(1 0 0 1 380.0321 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">176.3</text>
+		</g>
+		<g id="MTEXT_235_">
+			
+				<text transform="matrix(1 0 0 1 392.8658 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">88.1</text>
+		</g>
+		<g id="MTEXT_236_">
+			
+				<text transform="matrix(1 0 0 1 405.1484 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">88.1</text>
+		</g>
+		<g id="MTEXT_237_">
+			
+				<text transform="matrix(1 0 0 1 416.5002 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1207.3</text>
+		</g>
+		<g id="MTEXT_238_">
+			
+				<text transform="matrix(1 0 0 1 428.7829 356.7447)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1207.3</text>
+		</g>
+		<g id="MTEXT_239_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 360.5697)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Upstream Pressure (bara)</text>
+		</g>
+		<g id="MTEXT_240_">
+			
+				<text transform="matrix(1 0 0 1 150.4739 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">12.0</text>
+		</g>
+		<g id="MTEXT_241_">
+			
+				<text transform="matrix(1 0 0 1 166.3689 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.6</text>
+		</g>
+		<g id="MTEXT_242_">
+			
+				<text transform="matrix(1 0 0 1 178.9936 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_243_">
+			
+				<text transform="matrix(1 0 0 1 190.9343 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.6</text>
+		</g>
+		<g id="MTEXT_244_">
+			
+				<text transform="matrix(1 0 0 1 203.369 360.5697)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_245_">
+			
+				<text transform="matrix(1 0 0 1 219.112 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.5</text>
+		</g>
+		<g id="MTEXT_246_">
+			
+				<text transform="matrix(1 0 0 1 234.9879 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.4</text>
+		</g>
+		<g id="MTEXT_247_">
+			
+				<text transform="matrix(1 0 0 1 247.2896 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_248_">
+			
+				<text transform="matrix(1 0 0 1 259.5724 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_249_">
+			
+				<text transform="matrix(1 0 0 1 271.855 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_250_">
+			
+				<text transform="matrix(1 0 0 1 284.1378 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.6</text>
+		</g>
+		<g id="MTEXT_251_">
+			
+				<text transform="matrix(1 0 0 1 312.325 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.1</text>
+		</g>
+		<g id="MTEXT_252_">
+			
+				<text transform="matrix(1 0 0 1 324.3987 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_253_">
+			
+				<text transform="matrix(1 0 0 1 336.7764 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.0</text>
+		</g>
+		<g id="MTEXT_254_">
+			
+				<text transform="matrix(1 0 0 1 348.7741 360.5697)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_255_">
+			
+				<text transform="matrix(1 0 0 1 364.954 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.0</text>
+		</g>
+		<g id="MTEXT_256_">
+			
+				<text transform="matrix(1 0 0 1 380.811 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.9</text>
+		</g>
+		<g id="MTEXT_257_">
+			
+				<text transform="matrix(1 0 0 1 393.0747 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.8</text>
+		</g>
+		<g id="MTEXT_258_">
+			
+				<text transform="matrix(1 0 0 1 405.3574 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.8</text>
+		</g>
+		<g id="MTEXT_259_">
+			
+				<text transform="matrix(1 0 0 1 417.8111 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.1</text>
+		</g>
+		<g id="MTEXT_260_">
+			
+				<text transform="matrix(1 0 0 1 429.8849 360.8357)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_261_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 364.6607)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Downstream Pressure (bara)</text>
+		</g>
+		<g id="MTEXT_262_">
+			
+				<text transform="matrix(1 0 0 1 150.4739 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.8</text>
+		</g>
+		<g id="MTEXT_263_">
+			
+				<text transform="matrix(1 0 0 1 166.3689 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.6</text>
+		</g>
+		<g id="MTEXT_264_">
+			
+				<text transform="matrix(1 0 0 1 178.9936 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_265_">
+			
+				<text transform="matrix(1 0 0 1 190.9343 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.6</text>
+		</g>
+		<g id="MTEXT_266_">
+			
+				<text transform="matrix(1 0 0 1 203.369 364.6607)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_267_">
+			
+				<text transform="matrix(1 0 0 1 219.093 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.4</text>
+		</g>
+		<g id="MTEXT_268_">
+			
+				<text transform="matrix(1 0 0 1 235.0069 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_269_">
+			
+				<text transform="matrix(1 0 0 1 247.2896 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_270_">
+			
+				<text transform="matrix(1 0 0 1 259.5724 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_271_">
+			
+				<text transform="matrix(1 0 0 1 271.855 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.3</text>
+		</g>
+		<g id="MTEXT_272_">
+			
+				<text transform="matrix(1 0 0 1 284.1378 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.7</text>
+		</g>
+		<g id="MTEXT_273_">
+			
+				<text transform="matrix(1 0 0 1 312.211 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.0</text>
+		</g>
+		<g id="MTEXT_274_">
+			
+				<text transform="matrix(1 0 0 1 324.3987 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_275_">
+			
+				<text transform="matrix(1 0 0 1 336.7764 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.0</text>
+		</g>
+		<g id="MTEXT_276_">
+			
+				<text transform="matrix(1 0 0 1 348.7741 364.6607)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_277_">
+			
+				<text transform="matrix(1 0 0 1 364.916 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.9</text>
+		</g>
+		<g id="MTEXT_278_">
+			
+				<text transform="matrix(1 0 0 1 380.792 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.8</text>
+		</g>
+		<g id="MTEXT_279_">
+			
+				<text transform="matrix(1 0 0 1 393.0747 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.8</text>
+		</g>
+		<g id="MTEXT_280_">
+			
+				<text transform="matrix(1 0 0 1 405.3574 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.8</text>
+		</g>
+		<g id="MTEXT_281_">
+			
+				<text transform="matrix(1 0 0 1 417.6971 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2.5</text>
+		</g>
+		<g id="MTEXT_282_">
+			
+				<text transform="matrix(1 0 0 1 429.5429 364.9267)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">11.0</text>
+		</g>
+		<g id="MTEXT_283_">
+			
+				<text transform="matrix(1 0 0 1 98.1505 368.7517)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Temperature (°C)</text>
+		</g>
+		<g id="MTEXT_284_">
+			
+				<text transform="matrix(1 0 0 1 150.0939 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">187.2</text>
+		</g>
+		<g id="MTEXT_285_">
+			
+				<text transform="matrix(1 0 0 1 166.1029 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">186.1</text>
+		</g>
+		<g id="MTEXT_286_">
+			
+				<text transform="matrix(1 0 0 1 178.7086 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">37.6</text>
+		</g>
+		<g id="MTEXT_287_">
+			
+				<text transform="matrix(1 0 0 1 190.5733 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">185.9</text>
+		</g>
+		<g id="MTEXT_288_">
+			
+				<text transform="matrix(1 0 0 1 202.856 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">185.9</text>
+		</g>
+		<g id="MTEXT_289_">
+			
+				<text transform="matrix(1 0 0 1 218.732 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">185.5</text>
+		</g>
+		<g id="MTEXT_290_">
+			
+				<text transform="matrix(1 0 0 1 234.627 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">185.0</text>
+		</g>
+		<g id="MTEXT_291_">
+			
+				<text transform="matrix(1 0 0 1 246.9097 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">184.8</text>
+		</g>
+		<g id="MTEXT_292_">
+			
+				<text transform="matrix(1 0 0 1 259.1924 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">184.8</text>
+		</g>
+		<g id="MTEXT_293_">
+			
+				<text transform="matrix(1 0 0 1 271.4751 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">184.8</text>
+		</g>
+		<g id="MTEXT_294_">
+			
+				<text transform="matrix(1 0 0 1 283.7578 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">186.5</text>
+		</g>
+		<g id="MTEXT_295_">
+			
+				<text transform="matrix(1 0 0 1 311.413 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">120.9</text>
+		</g>
+		<g id="MTEXT_296_">
+			
+				<text transform="matrix(1 0 0 1 324.1137 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">37.6</text>
+		</g>
+		<g id="MTEXT_297_">
+			
+				<text transform="matrix(1 0 0 1 335.9594 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">120.6</text>
+		</g>
+		<g id="MTEXT_298_">
+			
+				<text transform="matrix(1 0 0 1 348.2421 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">120.6</text>
+		</g>
+		<g id="MTEXT_299_">
+			
+				<text transform="matrix(1 0 0 1 364.1371 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">119.6</text>
+		</g>
+		<g id="MTEXT_300_">
+			
+				<text transform="matrix(1 0 0 1 380.0321 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">119.0</text>
+		</g>
+		<g id="MTEXT_301_">
+			
+				<text transform="matrix(1 0 0 1 392.3148 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">118.5</text>
+		</g>
+		<g id="MTEXT_302_">
+			
+				<text transform="matrix(1 0 0 1 404.5975 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">118.5</text>
+		</g>
+		<g id="MTEXT_303_">
+			
+				<text transform="matrix(1 0 0 1 416.8992 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">120.9</text>
+		</g>
+		<g id="MTEXT_304_">
+			
+				<text transform="matrix(1 0 0 1 429.1819 369.0177)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">120.9</text>
+		</g>
+		<g id="MTEXT_305_">
+			
+				<text transform="matrix(1 0 0 1 98.0745 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Superheat (ºC)</text>
+		</g>
+		<g id="MTEXT_306_">
+			
+				<text transform="matrix(1 0 0 1 150.6259 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_307_">
+			
+				<text transform="matrix(1 0 0 1 166.8059 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_308_">
+			
+				<text transform="matrix(1 0 0 1 178.8036 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_309_">
+			
+				<text transform="matrix(1 0 0 1 191.3713 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_310_">
+			
+				<text transform="matrix(1 0 0 1 203.369 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_311_">
+			
+				<text transform="matrix(1 0 0 1 219.549 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_312_">
+			
+				<text transform="matrix(1 0 0 1 228.0284 373.2685)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N</text>
+			
+				<text transform="matrix(1 0 0 1 227.6674 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">/A</text>
+		</g>
+		<g id="MTEXT_313_">
+			
+				<text transform="matrix(1 0 0 1 235.4439 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_314_">
+			
+				<text transform="matrix(1 0 0 1 247.7266 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_315_">
+			
+				<text transform="matrix(1 0 0 1 260.0093 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_316_">
+			
+				<text transform="matrix(1 0 0 1 272.292 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_317_">
+			
+				<text transform="matrix(1 0 0 1 284.5747 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_318_">
+			
+				<text transform="matrix(1 0 0 1 293.0542 373.2685)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N</text>
+			
+				<text transform="matrix(1 0 0 1 292.6932 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">/A</text>
+		</g>
+		<g id="MTEXT_319_">
+			
+				<text transform="matrix(1 0 0 1 312.211 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_320_">
+			
+				<text transform="matrix(1 0 0 1 324.4937 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_321_">
+			
+				<text transform="matrix(1 0 0 1 336.4914 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_322_">
+			
+				<text transform="matrix(1 0 0 1 349.0591 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_323_">
+			
+				<text transform="matrix(1 0 0 1 357.5385 373.2685)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N</text>
+			
+				<text transform="matrix(1 0 0 1 357.1776 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">/A</text>
+		</g>
+		<g id="MTEXT_324_">
+			
+				<text transform="matrix(1 0 0 1 364.954 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.0</text>
+		</g>
+		<g id="MTEXT_325_">
+			
+				<text transform="matrix(1 0 0 1 380.5641 374.9631)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_326_">
+			
+				<text transform="matrix(1 0 0 1 393.1317 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.6</text>
+		</g>
+		<g id="MTEXT_327_">
+			
+				<text transform="matrix(1 0 0 1 405.3574 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.2</text>
+		</g>
+		<g id="MTEXT_328_">
+			
+				<text transform="matrix(1 0 0 1 417.6211 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.4</text>
+		</g>
+		<g id="MTEXT_329_">
+			
+				<text transform="matrix(1 0 0 1 429.9038 375.2291)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.4</text>
+		</g>
+		<g id="MTEXT_330_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 379.0541)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Upstream Enthalpy (kJ/kg)</text>
+		</g>
+		<g id="MTEXT_331_">
+			
+				<text transform="matrix(1 0 0 1 149.7139 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1300.0</text>
+		</g>
+		<g id="MTEXT_332_">
+			
+				<text transform="matrix(1 0 0 1 165.6659 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.7</text>
+		</g>
+		<g id="MTEXT_333_">
+			
+				<text transform="matrix(1 0 0 1 178.2716 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">157.5</text>
+		</g>
+		<g id="MTEXT_334_">
+			
+				<text transform="matrix(1 0 0 1 190.2313 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2731.2</text>
+		</g>
+		<g id="MTEXT_335_">
+			
+				<text transform="matrix(1 0 0 1 202.894 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">789.5</text>
+		</g>
+		<g id="MTEXT_336_">
+			
+				<text transform="matrix(1 0 0 1 218.409 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2758.8</text>
+		</g>
+		<g id="MTEXT_337_">
+			
+				<text transform="matrix(1 0 0 1 234.304 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2780.3</text>
+		</g>
+		<g id="MTEXT_338_">
+			
+				<text transform="matrix(1 0 0 1 246.5867 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.8</text>
+		</g>
+		<g id="MTEXT_339_">
+			
+				<text transform="matrix(1 0 0 1 258.8694 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.8</text>
+		</g>
+		<g id="MTEXT_340_">
+			
+				<text transform="matrix(1 0 0 1 271.1521 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.8</text>
+		</g>
+		<g id="MTEXT_341_">
+			
+				<text transform="matrix(1 0 0 1 283.8148 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">791.8</text>
+		</g>
+		<g id="MTEXT_342_">
+			
+				<text transform="matrix(1 0 0 1 311.09 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2700.9</text>
+		</g>
+		<g id="MTEXT_343_">
+			
+				<text transform="matrix(1 0 0 1 323.6767 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">157.5</text>
+		</g>
+		<g id="MTEXT_344_">
+			
+				<text transform="matrix(1 0 0 1 335.7504 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2651.1</text>
+		</g>
+		<g id="MTEXT_345_">
+			
+				<text transform="matrix(1 0 0 1 348.2991 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">506.5</text>
+		</g>
+		<g id="MTEXT_346_">
+			
+				<text transform="matrix(1 0 0 1 363.8141 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2685.3</text>
+		</g>
+		<g id="MTEXT_347_">
+			
+				<text transform="matrix(1 0 0 1 379.7091 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2705.3</text>
+		</g>
+		<g id="MTEXT_348_">
+			
+				<text transform="matrix(1 0 0 1 391.9918 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2704.7</text>
+		</g>
+		<g id="MTEXT_349_">
+			
+				<text transform="matrix(1 0 0 1 404.2745 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2704.7</text>
+		</g>
+		<g id="MTEXT_350_">
+			
+				<text transform="matrix(1 0 0 1 416.9372 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">511.3</text>
+		</g>
+		<g id="MTEXT_351_">
+			
+				<text transform="matrix(1 0 0 1 429.2199 379.3201)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">511.3</text>
+		</g>
+		<g id="MTEXT_352_">
+			
+				<text transform="matrix(1 0 0 1 98.0365 385.2655)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Downstream Enthalpy (kJ/kg)</text>
+		</g>
+		<g id="MTEXT_353_">
+			
+				<text transform="matrix(1 0 0 1 149.7329 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1299.9</text>
+		</g>
+		<g id="MTEXT_354_">
+			
+				<text transform="matrix(1 0 0 1 165.6659 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.7</text>
+		</g>
+		<g id="MTEXT_355_">
+			
+				<text transform="matrix(1 0 0 1 178.2716 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">157.5</text>
+		</g>
+		<g id="MTEXT_356_">
+			
+				<text transform="matrix(1 0 0 1 190.2123 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2730.4</text>
+		</g>
+		<g id="MTEXT_357_">
+			
+				<text transform="matrix(1 0 0 1 203.369 385.2655)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_358_">
+			
+				<text transform="matrix(1 0 0 1 218.409 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2758.6</text>
+		</g>
+		<g id="MTEXT_359_">
+			
+				<text transform="matrix(1 0 0 1 228.0284 383.5708)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N</text>
+			
+				<text transform="matrix(1 0 0 1 227.6674 385.2655)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">/A</text>
+		</g>
+		<g id="MTEXT_360_">
+			
+				<text transform="matrix(1 0 0 1 234.304 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2780.3</text>
+		</g>
+		<g id="MTEXT_361_">
+			
+				<text transform="matrix(1 0 0 1 246.5867 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.8</text>
+		</g>
+		<g id="MTEXT_362_">
+			
+				<text transform="matrix(1 0 0 1 258.8504 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.4</text>
+		</g>
+		<g id="MTEXT_363_">
+			
+				<text transform="matrix(1 0 0 1 271.1521 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.8</text>
+		</g>
+		<g id="MTEXT_364_">
+			
+				<text transform="matrix(1 0 0 1 283.4348 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2779.6</text>
+		</g>
+		<g id="MTEXT_365_">
+			
+				<text transform="matrix(1 0 0 1 311.09 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2700.9</text>
+		</g>
+		<g id="MTEXT_366_">
+			
+				<text transform="matrix(1 0 0 1 323.3537 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2700.8</text>
+		</g>
+		<g id="MTEXT_367_">
+			
+				<text transform="matrix(1 0 0 1 335.9594 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">157.5</text>
+		</g>
+		<g id="MTEXT_368_">
+			
+				<text transform="matrix(1 0 0 1 347.9001 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2650.4</text>
+		</g>
+		<g id="MTEXT_369_">
+			
+				<text transform="matrix(1 0 0 1 363.8141 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2685.3</text>
+		</g>
+		<g id="MTEXT_370_">
+			
+				<text transform="matrix(1 0 0 1 380.5641 385.2655)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_371_">
+			
+				<text transform="matrix(1 0 0 1 391.9918 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2705.3</text>
+		</g>
+		<g id="MTEXT_372_">
+			
+				<text transform="matrix(1 0 0 1 404.2745 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2704.7</text>
+		</g>
+		<g id="MTEXT_373_">
+			
+				<text transform="matrix(1 0 0 1 416.5572 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2704.6</text>
+		</g>
+		<g id="MTEXT_374_">
+			
+				<text transform="matrix(1 0 0 1 428.8209 385.5315)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">2704.4</text>
+		</g>
+		<g id="MTEXT_375_">
+			
+				<text transform="matrix(1 0 0 1 98.1505 389.3565)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Average Steam Quality</text>
+		</g>
+		<g id="MTEXT_376_">
+			
+				<text transform="matrix(1 0 0 1 150.5309 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.25</text>
+		</g>
+		<g id="MTEXT_377_">
+			
+				<text transform="matrix(1 0 0 1 166.3689 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_378_">
+			
+				<text transform="matrix(1 0 0 1 178.7086 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_379_">
+			
+				<text transform="matrix(1 0 0 1 190.9913 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.97</text>
+		</g>
+		<g id="MTEXT_380_">
+			
+				<text transform="matrix(1 0 0 1 203.274 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_381_">
+			
+				<text transform="matrix(1 0 0 1 219.188 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.99</text>
+		</g>
+		<g id="MTEXT_382_">
+			
+				<text transform="matrix(1 0 0 1 235.0069 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_383_">
+			
+				<text transform="matrix(1 0 0 1 247.2896 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_384_">
+			
+				<text transform="matrix(1 0 0 1 259.5724 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_385_">
+			
+				<text transform="matrix(1 0 0 1 271.855 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_386_">
+			
+				<text transform="matrix(1 0 0 1 284.1948 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_387_">
+			
+				<text transform="matrix(1 0 0 1 311.774 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_388_">
+			
+				<text transform="matrix(1 0 0 1 324.1137 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_389_">
+			
+				<text transform="matrix(1 0 0 1 336.3964 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.97</text>
+		</g>
+		<g id="MTEXT_390_">
+			
+				<text transform="matrix(1 0 0 1 348.6791 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_391_">
+			
+				<text transform="matrix(1 0 0 1 364.5931 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.99</text>
+		</g>
+		<g id="MTEXT_392_">
+			
+				<text transform="matrix(1 0 0 1 380.412 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_393_">
+			
+				<text transform="matrix(1 0 0 1 392.6948 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_394_">
+			
+				<text transform="matrix(1 0 0 1 404.9774 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.00</text>
+		</g>
+		<g id="MTEXT_395_">
+			
+				<text transform="matrix(1 0 0 1 417.3172 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_396_">
+			
+				<text transform="matrix(1 0 0 1 429.5999 389.6225)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.00</text>
+		</g>
+		<g id="MTEXT_397_">
+			
+				<text transform="matrix(1 0 0 1 98.0745 393.4475)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Superficial Steam Velocity (m/s)</text>
+		</g>
+		<g id="MTEXT_398_">
+			
+				<text transform="matrix(1 0 0 1 150.5499 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">25.9</text>
+		</g>
+		<g id="MTEXT_399_">
+			
+				<text transform="matrix(1 0 0 1 159.3143 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_400_">
+			
+				<text transform="matrix(1 0 0 1 166.4259 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20.8</text>
+		</g>
+		<g id="MTEXT_401_">
+			
+				<text transform="matrix(1 0 0 1 179.5445 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_402_">
+			
+				<text transform="matrix(1 0 0 1 190.9913 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20.8</text>
+		</g>
+		<g id="MTEXT_403_">
+			
+				<text transform="matrix(1 0 0 1 203.369 393.4475)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_404_">
+			
+				<text transform="matrix(1 0 0 1 220.0049 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_405_">
+			
+				<text transform="matrix(1 0 0 1 235.0639 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">21.2</text>
+		</g>
+		<g id="MTEXT_406_">
+			
+				<text transform="matrix(1 0 0 1 247.3656 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">22.9</text>
+		</g>
+		<g id="MTEXT_407_">
+			
+				<text transform="matrix(1 0 0 1 259.6294 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">26.2</text>
+		</g>
+		<g id="MTEXT_408_">
+			
+				<text transform="matrix(1 0 0 1 271.912 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">26.2</text>
+		</g>
+		<g id="MTEXT_409_">
+			
+				<text transform="matrix(1 0 0 1 285.0307 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_410_">
+			
+				<text transform="matrix(1 0 0 1 292.9782 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_411_">
+			
+				<text transform="matrix(1 0 0 1 296.5905 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_412_">
+			
+				<text transform="matrix(1 0 0 1 311.831 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.7</text>
+		</g>
+		<g id="MTEXT_413_">
+			
+				<text transform="matrix(1 0 0 1 324.9496 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_414_">
+			
+				<text transform="matrix(1 0 0 1 336.4154 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.9</text>
+		</g>
+		<g id="MTEXT_415_">
+			
+				<text transform="matrix(1 0 0 1 348.7741 393.4475)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_416_">
+			
+				<text transform="matrix(1 0 0 1 365.41 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_417_">
+			
+				<text transform="matrix(1 0 0 1 380.4691 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">42.3</text>
+		</g>
+		<g id="MTEXT_418_">
+			
+				<text transform="matrix(1 0 0 1 392.7328 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.4</text>
+		</g>
+		<g id="MTEXT_419_">
+			
+				<text transform="matrix(1 0 0 1 405.0154 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.4</text>
+		</g>
+		<g id="MTEXT_420_">
+			
+				<text transform="matrix(1 0 0 1 418.1531 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_421_">
+			
+				<text transform="matrix(1 0 0 1 429.8849 393.7135)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="MTEXT_422_">
+			
+				<text transform="matrix(1 0 0 1 98.1505 397.5385)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">Average Fluid Velocity (m/s)</text>
+		</g>
+		<g id="MTEXT_423_">
+			
+				<text transform="matrix(1 0 0 1 150.5119 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">26.4</text>
+		</g>
+		<g id="MTEXT_424_">
+			
+				<text transform="matrix(1 0 0 1 159.3143 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_425_">
+			
+				<text transform="matrix(1 0 0 1 166.4259 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20.8</text>
+		</g>
+		<g id="MTEXT_426_">
+			
+				<text transform="matrix(1 0 0 1 179.1076 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.9</text>
+		</g>
+		<g id="MTEXT_427_">
+			
+				<text transform="matrix(1 0 0 1 190.9913 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">20.8</text>
+		</g>
+		<g id="MTEXT_428_">
+			
+				<text transform="matrix(1 0 0 1 203.369 397.5385)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_429_">
+			
+				<text transform="matrix(1 0 0 1 219.549 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.3</text>
+		</g>
+		<g id="MTEXT_430_">
+			
+				<text transform="matrix(1 0 0 1 235.0639 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">21.2</text>
+		</g>
+		<g id="MTEXT_431_">
+			
+				<text transform="matrix(1 0 0 1 247.3656 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">22.9</text>
+		</g>
+		<g id="MTEXT_432_">
+			
+				<text transform="matrix(1 0 0 1 259.6294 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">26.2</text>
+		</g>
+		<g id="MTEXT_433_">
+			
+				<text transform="matrix(1 0 0 1 271.912 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">26.2</text>
+		</g>
+		<g id="MTEXT_434_">
+			
+				<text transform="matrix(1 0 0 1 284.5177 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.0</text>
+		</g>
+		<g id="MTEXT_435_">
+			
+				<text transform="matrix(1 0 0 1 292.9782 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_436_">
+			
+				<text transform="matrix(1 0 0 1 296.5905 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_437_">
+			
+				<text transform="matrix(1 0 0 1 311.831 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.7</text>
+		</g>
+		<g id="MTEXT_438_">
+			
+				<text transform="matrix(1 0 0 1 324.4937 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">0.3</text>
+		</g>
+		<g id="MTEXT_439_">
+			
+				<text transform="matrix(1 0 0 1 336.4154 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.9</text>
+		</g>
+		<g id="MTEXT_440_">
+			
+				<text transform="matrix(1 0 0 1 348.7741 397.5385)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">N/A</text>
+		</g>
+		<g id="MTEXT_441_">
+			
+				<text transform="matrix(1 0 0 1 365.41 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">-</text>
+		</g>
+		<g id="MTEXT_442_">
+			
+				<text transform="matrix(1 0 0 1 380.4691 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">42.3</text>
+		</g>
+		<g id="MTEXT_443_">
+			
+				<text transform="matrix(1 0 0 1 392.7328 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.4</text>
+		</g>
+		<g id="MTEXT_444_">
+			
+				<text transform="matrix(1 0 0 1 405.0154 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">38.4</text>
+		</g>
+		<g id="MTEXT_445_">
+			
+				<text transform="matrix(1 0 0 1 417.6211 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">1.4</text>
+		</g>
+		<g id="MTEXT_446_">
+			
+				<text transform="matrix(1 0 0 1 429.8849 397.8045)" fill="#00FF00" font-family="'AdobeSongStd-Light-GBpc-EUC-H'" font-size="1.1271">TBA</text>
+		</g>
+		<g id="LINE_134_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="305.913" x2="437.071" y2="305.913"/>
+		</g>
+		<g id="LINE_135_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="310.004" x2="437.071" y2="310.004"/>
+		</g>
+		<g id="LINE_136_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="329.196" x2="437.071" y2="329.196"/>
+		</g>
+		<g id="LINE_137_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="333.287" x2="437.071" y2="333.287"/>
+		</g>
+		<g id="LINE_138_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="337.378" x2="437.071" y2="337.378"/>
+		</g>
+		<g id="LINE_139_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="341.469" x2="437.071" y2="341.469"/>
+		</g>
+		<g id="LINE_140_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="345.56" x2="437.071" y2="345.56"/>
+		</g>
+		<g id="LINE_141_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="349.651" x2="437.071" y2="349.651"/>
+		</g>
+		<g id="LINE_142_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="353.742" x2="437.071" y2="353.742"/>
+		</g>
+		<g id="LINE_143_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="357.833" x2="437.071" y2="357.833"/>
+		</g>
+		<g id="LINE_144_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="361.924" x2="437.071" y2="361.924"/>
+		</g>
+		<g id="LINE_145_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="366.015" x2="437.071" y2="366.015"/>
+		</g>
+		<g id="LINE_146_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="370.106" x2="437.071" y2="370.106"/>
+		</g>
+		<g id="LINE_147_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="376.317" x2="437.071" y2="376.317"/>
+		</g>
+		<g id="LINE_148_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="380.408" x2="437.071" y2="380.408"/>
+		</g>
+		<g id="LINE_149_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="386.62" x2="437.071" y2="386.62"/>
+		</g>
+		<g id="LINE_150_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="390.711" x2="437.071" y2="390.711"/>
+		</g>
+		<g id="LINE_151_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="394.802" x2="437.071" y2="394.802"/>
+		</g>
+		<g id="LINE_152_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="398.893" x2="437.071" y2="398.893"/>
+		</g>
+		<g id="LINE_153_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="97.1" y1="305.913" x2="97.1" y2="398.893"/>
+		</g>
+		<g id="LINE_154_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="133.437" y1="305.913" x2="133.437" y2="398.893"/>
+		</g>
+		<g id="LINE_155_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="145.719" y1="305.913" x2="145.719" y2="398.893"/>
+		</g>
+		<g id="LINE_156_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="158.002" y1="305.913" x2="158.002" y2="398.893"/>
+		</g>
+		<g id="LINE_157_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="161.614" y1="305.913" x2="161.614" y2="398.893"/>
+		</g>
+		<g id="LINE_158_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="173.897" y1="305.913" x2="173.897" y2="398.893"/>
+		</g>
+		<g id="LINE_159_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="186.18" y1="305.913" x2="186.18" y2="398.893"/>
+		</g>
+		<g id="LINE_160_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198.463" y1="305.913" x2="198.463" y2="398.893"/>
+		</g>
+		<g id="LINE_161_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="210.745" y1="305.913" x2="210.745" y2="398.893"/>
+		</g>
+		<g id="LINE_162_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="214.358" y1="305.913" x2="214.358" y2="398.893"/>
+		</g>
+		<g id="LINE_163_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="226.64" y1="305.913" x2="226.64" y2="398.893"/>
+		</g>
+		<g id="LINE_164_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="230.253" y1="305.913" x2="230.253" y2="398.893"/>
+		</g>
+		<g id="LINE_165_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="242.535" y1="305.913" x2="242.535" y2="398.893"/>
+		</g>
+		<g id="LINE_166_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="254.818" y1="305.913" x2="254.818" y2="398.893"/>
+		</g>
+		<g id="LINE_167_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="267.101" y1="305.913" x2="267.101" y2="398.893"/>
+		</g>
+		<g id="LINE_168_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="279.383" y1="305.913" x2="279.383" y2="398.893"/>
+		</g>
+		<g id="LINE_169_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="291.666" y1="305.913" x2="291.666" y2="398.893"/>
+		</g>
+		<g id="LINE_170_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="295.278" y1="305.913" x2="295.278" y2="398.893"/>
+		</g>
+		<g id="LINE_171_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="298.891" y1="305.913" x2="298.891" y2="398.893"/>
+		</g>
+		<g id="LINE_172_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="303.407" y1="305.913" x2="303.407" y2="398.893"/>
+		</g>
+		<g id="LINE_173_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="307.02" y1="305.913" x2="307.02" y2="398.893"/>
+		</g>
+		<g id="LINE_174_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="319.302" y1="305.913" x2="319.302" y2="398.893"/>
+		</g>
+		<g id="LINE_175_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="331.585" y1="305.913" x2="331.585" y2="398.893"/>
+		</g>
+		<g id="LINE_176_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="343.868" y1="305.913" x2="343.868" y2="398.893"/>
+		</g>
+		<g id="LINE_177_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="356.15" y1="305.913" x2="356.15" y2="398.893"/>
+		</g>
+		<g id="LINE_178_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="359.763" y1="305.913" x2="359.763" y2="398.893"/>
+		</g>
+		<g id="LINE_179_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="372.045" y1="305.913" x2="372.045" y2="398.893"/>
+		</g>
+		<g id="LINE_180_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="375.658" y1="305.913" x2="375.658" y2="398.893"/>
+		</g>
+		<g id="LINE_181_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="387.94" y1="305.913" x2="387.94" y2="398.893"/>
+		</g>
+		<g id="LINE_182_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="400.223" y1="305.913" x2="400.223" y2="398.893"/>
+		</g>
+		<g id="LINE_183_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="412.506" y1="305.913" x2="412.506" y2="398.893"/>
+		</g>
+		<g id="LINE_184_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="424.788" y1="305.913" x2="424.788" y2="398.893"/>
+		</g>
+		<g id="LINE_185_">
+			
+				<line fill="none" stroke="#00FF00" stroke-width="0.7087" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="437.071" y1="305.913" x2="437.071" y2="398.893"/>
+		</g>
+	</g>
+</g>
+</svg>
