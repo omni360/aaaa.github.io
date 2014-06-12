@@ -46,7 +46,7 @@
     scene.add(mesh);
   });
  
-  light = new THREE.DirectionalLight(0xffff00);
+  light = new THREE.DirectionalLight(0xffffff);
   light.shadowCameraTop = -1000;
   light.shadowCameraLeft = -1000;
   light.shadowCameraRight = 1000;
