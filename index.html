@@ -5,7 +5,10 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
-
+    <!-- Chang URLs to wherever Video.js files will be hosted -->
+    <link href="dist/vedio/video-js.css" rel="stylesheet" type="text/css">
+    <!-- video.js must be in the <head> for older IEs to work. -->
+    <script src="dist/vedio/video.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -71,6 +74,15 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="1024" height="680"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="dist/vedio/MY_VIDEO.webm" type='video/webm'>
+    <source src="dist/vedio/MY_VIDEO.mp4" type='video/mp4'>
+    <track kind="captions" src="dist/vedio/demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9
+  <track kind="subtitles" src="dist/vedio/demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
   <div class="viewport"></div>
   <script src="./dist/js/three.min.js"></script>
   <script src="./dist/js/OrbitControls.js"></script>
