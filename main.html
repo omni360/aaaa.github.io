@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <title>SVG clock</title>
+            <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
    <!-- <link rel="stylesheet" type="text/css" href="canvas.css" media="all" />-->
     <style type="text/css">
         #clock {    
@@ -93,6 +97,62 @@
         }
     </script>
 <body onload="updateTime()">
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Brand</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Link</a></li>
+      <li><a href="#">吊装动画</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="../../../Keypress.html">KeyPress</a></li>
+          <li><a href="../../../main.html">SVG clock</a></li>
+          <li><a href="../../../svgloader.html">web dwg viewr</a></li>
+          <li><a href="../../../ex.html">d3js-force bubble</a></li>
+          <li><a href="../../../exx.html">d3js-bubble chart</a></li>
+          <li><a href="../../../ubarchart.html">d3js-barcharts</a></li>
+          <li class="divider"></li>
+          <li><a href="../../../barchart.html">d3js-bar chart</a></li>
+          <li><a href="../../../scatterchart.html">d3js-scatter chart</a></li>
+          <li class="divider"></li>
+          <li><a href="../../../citygl.html">Webgl-city</a></li>
+          <li><a href="../../../webgl/water/index.html">Webgl-water</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
     <svg id="clock" viewBox="0 0 100 100" width="500" height="500">
         <defs>
             <!-- define an filter use to add shadow of some element -->
