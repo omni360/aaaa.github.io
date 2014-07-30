@@ -1,118 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form Input Type</title>
-	<style>
-	div{
-		width: 20px;
-		height: 20px;
-		float: left;
-		border: 1px red solid;
-		margin: 2px;
-	}
-	div:hover{
-		background-color:blue;
-	}
-	</style>
+	<title></title>
 </head>
 <body>
-<!-- 必要的form 标签 -->
-<form class="stylin_form1" action="process_form.php" method="post">
-<h3>A Stylin' Form</h3>
-<!-- 控件组，即各种控件的容器 -->
-<fieldset>
-<!-- 控件组的文字说明，或标题 -->
-<legend><span>Part 1 &#8226; Basic Controls</span></legend>
-<!-- 开始单行文本输入控件 -->
-<section>
-<p class="note">* indicates required field</p>
-<!-- for 属性把标注与控件关联起来，它的值必须与控件ID 值相同 -->
-<label for="user_name">User Name<span> *</span></label>
-<!-- text 属性让这个控件可以输入文本 -->
-<input type="text" id="user_name" name="user_name" />
-<p>Please select a user name</p>
-</section>
-<!-- 开始密码控件 -->
-<section>
-<label for="password">Password<span> *</span></label>
-<!-- 密码文本显示为掩码 -->
-<input type="password" id="password" name="password" maxlength="20" />
-<p>Password must be 8 or more characters</p>
-</section>
-<!-- 开始多行文本输入控件 -->
-<section>
-<label for="description">Description</label>
-<textarea id="description" name="description"
-placeholder="Enter the description here."></textarea>
-</section>
-<!-- 开始HTML5 日期控件 -->
-<section>
-<label for="description">Date</label>
-<input type="date" id="special_date" name="event_date" min="2012-09-05" />
-</section>
-</fieldset>
-<fieldset>
-<legend><span>Part 2 &#8226; Multiple-Choice Controls</span></legend>
-<!-- 开始复选框 -->
-<section>
-<h4>Select Any Number</h4>
-<section>
-<input type="checkbox" id="check1" name="checkset" value="1"
-tabindex="4" />
-<label for="check1">Choice 1</label>
-</section>
-<section>
-<input type="checkbox" checked="checked" id="check2" name=
-"checkset" value="2" />
-<label for="check2">Choice 2 is pre-checked</label>
-</section>
-<section>
-<input type="checkbox" id="check3" name="checkset" value="3" />
-<label for="check3">Choice 3&mdash;add as many as you need!
-</label>
-</section>
-<p>You must choose one or more</p>
-</section>
-<!-- 开始单选按钮 -->
-<section>
-<h4>Select Only One</h4>
-<section>
-<input checked="checked" id="radio1" name="radioset" type="radio"
-value="Choice_1" />
-<label for="radio1">Choice 1 is pre-selected and shows the text
-wraps nicely if it goes to multiple lines.</label>
-</section>
-<section>
-<input id="radio2" name="radioset" type="radio" value="Choice_2" />
-<label for="radio2">Choice 2</label>
-</section>
-<section>
-<input id="radio3" name="radioset" type="radio" value="Choice_3" />
-<label for="radio3">Choice 3</label>
-</section>
-</section>
-<!-- 开始选项列表（下拉列表） -->
-<section>
-<label for="select_choice">Select Your Choice</label>
-<select id="select_choice" name="select_choice">
-<option value="0">None</option>
-<option value="1">Choice 1</option>
-<option value="2">Choice 2</option>
-<option value="3">Choice 3</option>
-<option value="4">Choice 4</option>
-</select>
-</section>
-</fieldset>
-<!-- 开始提交按钮 -->
-<section>
-<input type="submit" value="Submit This Form" />
-</section>
-</form>
-<!--<script type="text/javascript">
-	for (var i = 1000 - 1; i >= 0; i--) {
-		document.body.appendChild(document.createElement('div'));
-	};
-</script>
--->
+<!--必要的form标签-->
+	<form class="stylin_form1" action="pull.php" method="post">
+		<h3>A Stylin' Form</h3>
+		<!--控件组，即各种空间的容器-->
+		<fieldset>
+			<!--控件组的文字说明或者标题-->
+			<legend>
+				<span>Part 1 &#8226; Basic Controls</span>
+			</legend>
+			<!--开始单行文本输入控件-->
+			<section>
+				<p class="note">* indicates required filed</p>
+				<!--for 属性把标注与控件关联起来，它的值必须与控件ID值相同-->
+				<lable for="user_name">User Name<span>*</span></lable>
+				<!--text属性让这个控件可以输入文本-->
+				<input type="text" id="user_name" name="user_name"/>
+				<p>Please select a user name</p>
+			</section>
+			<!--开始密码控件-->
+			<section>
+				<lable for="password">Password<span>*</span></lable>
+				<!--密码显示为掩码-->
+				<input type="password" id="password" name="password" maxlength="20"/>
+				<p>Password must be 8 or more characters</p>
+			</section>
+			<!--开始多行文本输入控件-->
+			<section>
+				<lable for="description">Description</lable>
+				<textarea id="Description" name="description" placeholder="Enter the description here."></textarea>
+			</section>
+			<!--开始HTML5日期控件-->
+			<section>
+				<lable for="description">Date</lable>
+				<input type="date" id="special_date" name="event_date" min="2012-1-3"/>
+			</section>
+			</fieldset>
+			<fieldset>
+				<legend><span>Part 2 &#8226; Multiple-Choice Controls</span></legend>
+				<!--开始复选框-->
+				<section>
+					<h4>Select Any Number</h4>
+					<section>
+						<input type="checkbox" id="check1" name="checkset" value="1" tabindex="4"/>
+						<lable for="check1">Choice 1</lable>
+					</section>
+					<section>
+						<input type="checkbox" id="check2" name="checkset" checked="checked" value="2"/>
+						<lable for="check2"> Choice 2 is pre-checked</lable>
+					</section>
+					<section>
+						<input type="checkbox" id="check3" name="checkset" value="1" />
+						<lable for="check3">Choice 3</lable>
+					</section>
+				</section>
+				<!--开始选项列表-->
+				<section>
+					<lable for="Select_choice">Select Your Choice</lable>
+					<select id="Select_choice" name="Select_choice">
+						<option value="0">None</option>
+						<opiton value="1">Choice 1</opiton>
+						<opiton value="2">Choice 2</opiton>
+						<opiton value="3">Choice 3</opiton>
+						<opiton value="4">Choice 4</opiton>
+					</select>
+				</section>
+			</fieldset>
+				<!--开始提交按钮-->
+				<section>
+					<input type="submit" value="Submit This Form"/>
+				</section>
+	</form>
 </body>
 </html>
