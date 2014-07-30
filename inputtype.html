@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Example for input type</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 </head>
 <body>
 <!--必要的form标签-->
@@ -17,26 +18,26 @@
 			<section>
 				<p class="note">* indicates required filed</p>
 				<!--for 属性把标注与控件关联起来，它的值必须与控件ID值相同-->
-				<lable for="user_name">User Name<span>*</span></lable>
+				<label for="user_name">User Name<span>*</span></label>
 				<!--text属性让这个控件可以输入文本-->
 				<input type="text" id="user_name" name="user_name"/>
 				<p>Please select a user name</p>
 			</section>
 			<!--开始密码控件-->
 			<section>
-				<lable for="password">Password<span>*</span></lable>
+				<label for="password">Password<span>*</span></label>
 				<!--密码显示为掩码-->
 				<input type="password" id="password" name="password" maxlength="20"/>
 				<p>Password must be 8 or more characters</p>
 			</section>
 			<!--开始多行文本输入控件-->
 			<section>
-				<lable for="description">Description</lable>
+				<label for="description">Description</label>
 				<textarea id="Description" name="description" placeholder="Enter the description here."></textarea>
 			</section>
 			<!--开始HTML5日期控件-->
 			<section>
-				<lable for="description">Date</lable>
+				<label for="description">Date</label>
 				<input type="date" id="special_date" name="event_date" min="2012-1-3"/>
 			</section>
 			</fieldset>
@@ -47,15 +48,15 @@
 					<h4>Select Any Number</h4>
 					<section>
 						<input type="checkbox" id="check1" name="checkset" value="1" tabindex="4"/>
-						<lable for="check1">Choice 1</lable>
+						<label for="check1">Choice 1</label>
 					</section>
 					<section>
 						<input type="checkbox" id="check2" name="checkset" checked="checked" value="2"/>
-						<lable for="check2"> Choice 2 is pre-checked</lable>
+						<label for="check2"> Choice 2 is pre-checked</label>
 					</section>
 					<section>
 						<input type="checkbox" id="check3" name="checkset" value="1" />
-						<lable for="check3">Choice 3</lable>
+						<label for="check3">Choice 3</label>
 					</section>
 					<p>You must choose one or more</p>
 				</section>
@@ -64,26 +65,26 @@
 					<h4>Select only one</h4>
 					<section>
 						<input checked="checked" id="radio1" name="radioset" type="radio" value="Choice_1"/>
-						<lable for="radio1">Choice 1 is pre-selected and shows the text wraps nicely if it goes to multiple lines.</lable>
+						<label for="radio1">Choice 1 is pre-selected and shows the text wraps nicely if it goes to multiple lines.</label>
 					</section>
 					<section> 
 						<input id="radio2" name="radioset" type="radio" value="choice_2" />
-						<lable for="radio2" >Choice 2</lable>
+						<label for="radio2" >Choice 2</label>
 					</section>
 					<section>
 						<input id="radio3" name="radioset" type="radio" value="choice_3" />
-						<lable for="radio3">Choice 3</lable>
+						<label for="radio3">Choice 3</label>
 					</section>
 				</section>
 				<!--开始选项列表-->
 				<section>
-					<lable for="Select_choice">Select Your Choice</lable>
-					<select id="Select_choice" name="Select_choice">
+					<label for="select_choice">Select Your Choice</label>
+					<select id="select_choice" name="select_choice">
 						<option value="0">None</option>
-						<opiton value="1">Choice 1</opiton>
-						<opiton value="2">Choice 2</opiton>
-						<opiton value="3">Choice 3</opiton>
-						<opiton value="4">Choice 4</opiton>
+						<option value="1">Choice 1</option>
+						<option value="2">Choice 2</option>
+						<option value="3">Choice 3</option>
+						<option value="4">Choice 4</option>
 					</select>
 				</section>
 			</fieldset>
