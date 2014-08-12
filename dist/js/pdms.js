@@ -21,7 +21,8 @@
   renderer.shadowMapAutoUpdate = true;
  
   camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);
-  camera.position.y = 1000;
+  camera.position.y = 50;
+  camera.position.x = 50;
  
   scene.add(camera);
  
