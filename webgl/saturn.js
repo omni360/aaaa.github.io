@@ -2,9 +2,88 @@
 * @Author: omni360
 * @Date:   2014-08-13 20:44:50
 * @Last Modified by:   omni360
-* @Last Modified time: 2014-08-13 21:08:58
+* @Last Modified time: 2014-08-15 10:54:25
 */
+Staturn = function(){
+	Sim.Object.call(this);
+}
+Saturn.prototype = new Sim.Object();
+Saturn.prototype.init = function(param){
+	param = param || {};
 
+	//create an orbit group to simulate the oribit - this is top-level Saturn
+	var planetOrbitGroup = THREE.Object3D();
+
+	//Tell the framework about out object
+	this.setObject3D (planetOrbitGroup);
+
+	//create a group to contain saturn and louds meshes
+	var planetGroup = new THREE.Object3D();
+	var distance = param.distance || 0;
+	var distsquared = distance * distance;
+	planetGroup.position.set(Math.sqrt(distsquared/2),0,-Math.sqrt(distsquared /2));
+	planetOrbitGroup.add(planetGroup);
+
+	this.planetGroup = planetGroup;
+	var size = param.size ||1;
+	this.planetGroup.scale.set(size,size,size);
+
+	this.planetGroup.rotation.x = Saturn.TILT;
+
+	this.createGlobe();
+	this.createRings();
+
+	this.animateOrbit = parm.animateOrbit;
+	this.period = param.period;
+	this.revolutionSpeed = param.revolutionSpeed ? param.revolutionSpeed : Saturn.REVOLUTION_Y;
+
+}
+Saturn.prototype.createRings = function(){
+	//create our saturn with nice texture
+	var ringsmap = "./images/SatRing.png";
+	var geometry = new Saturn.Rings(1.1,1.867,64);
+
+	var texture = THREE.ImageUtils.loadTexture(ringsmap);
+	var material = new THREE.MeshLambertMaterial( {map:texture,transprent:true,ambient:0xffffff} );
+	var ringsMesh = new THREE.Mesh(geometrey,material);
+	ringsMesh.doubleSide = true;
+	ringsMesh.rotation.x = Math.PI / 2;
+
+	//add it to our group
+	this.planetGroup.add(ringsMesh);
+
+	//save it away so we can rotate it 
+	this.ringsMesh = ringsMesh;
+}
+Saturn.prototype.update = function(){
+	//Simulate the orbit
+	if(this.animateOrbit)
+	{
+		this.object3D.rotation.y += this.revolutionSpeed / this.period;
+	}
+	sim.Object.prototype.update.call(this);
+}
+
+Saturn.TILT = -0.466;
+Saturn.REVOLUTION_Y = 0.003;
+
+
+Saturn.prototype.createGlobe = function(map){
+	//create our Saturn with nice texture
+	var saturnmap = "./images/saturn_bjoernjosson.jpg";
+	var geometry = new THREE.SphereGeometry( 1, 32, 32 );
+	var texture  = new THREE.ImageUtils.loadTexture(saturnmap);
+	var material = new THREE.MeshPhongMaterial( {map:texture} );
+	var globeMesh = new THREE.Mesh(geometry, material);
+
+	//add it to our group 
+	this.planetGroup.add(globeMesh);
+
+	//save it away so we can rotate it
+	this.globeMesh = globeMesh;
+
+
+}
 Saturn.Rings = function(innerRadius,outerRadius,nSegments){
 	THREE.Geometry.call(this);
 
