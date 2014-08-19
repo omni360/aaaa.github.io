@@ -2,9 +2,9 @@
 * @Author: omni360
 * @Date:   2014-08-13 20:44:50
 * @Last Modified by:   omni360
-* @Last Modified time: 2014-08-15 10:54:25
+* @Last Modified time: 2014-08-19 21:59:33
 */
-Staturn = function(){
+Saturn = function(){
 	Sim.Object.call(this);
 }
 Saturn.prototype = new Sim.Object();
@@ -118,21 +118,29 @@ Saturn.Rings = function(innerRadius,outerRadius,nSegments){
 		this.vertices.push(new THREE.Vertex(v3));
 		this.vertices.push(new THREE.Vertex(v4));
 	}
+	for ( i = 0; i < iVer ; i++ ) {
 
-	for(i =0;i<iVer;i++){
+	this.faces.push(new THREE.Face3( i * 4, i * 4 + 1, i * 4 + 2));
+	this.faces.push(new THREE.Face3( i * 4, i * 4 + 2, i * 4 + 3));
+	this.faceVertexUvs[ 0 ].push( [
+		       						new THREE.UV(0, 1),
+		       						new THREE.UV(1, 1),
+		       						new THREE.UV(1, 0) ] );
+	this.faceVertexUvs[ 0 ].push( [
+		       						new THREE.UV(0, 1),
+		       						new THREE.UV(1, 0),
+		       						new THREE.UV(0, 0) ] );
+	}	
+
+/*	for(i =0; i<iVer; i++){
 		this.faces.push(new THREE.Face3( i * 4, i * 4 + 1, i * 4 + 2 ));
 		this.faces.push(new THREE.Face3( i * 4, i * 4 + 2, i * 4 + 3 ));
-		this.faceVertexUvs[0].push{[
-			new THREE.UV(0,1),
-			new THREE.UV(1,1),
-			new THREE.UV(1,0)
-			]};
+		this.faceVertexUvs[0].push{[new THREE.UV(0,1),new THREE.UV(1,1),new THREE.UV(1,0)]};
 		this.faceVertexUvs[0].push{[
 			new THREE.UV(0,1),
 			new THREE.UV(1,0),
-			new THREE.UV(0,0)
-			]};
-	}
+			new THREE.UV(0,0)]};
+	}*/
 
 	this.computeCentroids();
 	this.computeFaceNormals();
