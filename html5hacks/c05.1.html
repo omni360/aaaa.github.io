@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	input{display: block;
+		border:1px solid #ccc;
+	}
+	:invalid{
+		border-color: #db729c;
+		-webkit-box-shadow:0 0 5px rgba(27,0,97,.5);
+	}
+	:required{
+		border-color:#1be032;
+		-webkit-box-shadow: 0 0 5px rgba(57,237,78,.5)
+	}
+	</style>
+</head>
+<body>
+	<form name="myform">
+		enter your name:<input type="text" placeholder="enter your name" oninput="updateMessage(this);" name="myname" required>	
+		enter your phone number:<input type="tel" name="myphone" pattern="\d\d\d-\d\d\d-\d\d\d\d" />
+		enter your email:<input type="email" name="myemail" />
+		<input type="submit" />
+	</form>
+	<script type="text/javascript">
+	document.myform.myname.setCustomValidity("to join our list.... please enter it here")
+	function updateMessage(input){
+		if(input.value=="") {
+			input.setCustomValidity('');
+		}
+	}
+	</script>
+
+</body>
+</html>
