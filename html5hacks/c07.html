@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom event</title>
+	<style type="text/css">
+	input[type=number]{border:2px solid green;}
+	input:invalid{border:2px solid red;}
+	</style>
+</head>
+<body>
+<form name="myform">
+	Pick a number, any number between 1 and 5:
+	<input type="number" name = "quantity" min = "1" max="5" />
+	<br/>
+	<input type="submit" name="mySubmit" />
+</form>
+<script type="text/javascript">
+	document.myform.quantity.addEventListener('input',function(e){
+		this.checkValidity()
+	},false);
+	document.myform.quantity.addEventListener('invalid',function(e){
+		alert('your number need to be between 1 an d 5, you chose ' + this.value +' ,' +e.target),false
+	})
+</script>
+
+</body>
+</html>
