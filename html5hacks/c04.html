@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>c04</title>
+	</head>
+	<body>
+		<form id="myForm"> add your telephone:<input type="tel" name="phone" required autofucs autocomplete = "on" /><br />
+		<input type="submit" form="myForm" />
+		</form>
+		<form action="demo_form.asp" autocomplete="on">
+			First Name:<input type="text" name ="fname" /> <br />
+			Last Name:<input type="text" name="lname" /> <br />
+			E-mail:<input type="email" name="email" /><br />
+			Favorite Animal:<input type="text" name="animal" list="animals" /><br />
+			<input placeholder="enter your 5 digit id number" type = "text" name="idNumber" pattern="[0-9]{5}" />
+			<datalist id="animals">
+				<option value="Dog">
+				<option value="Dolphin">
+				<option value="Duck">
+				<option value="Cat">
+				<option value="Bird">
+				<option value="mouse">
+			</datalist>
+			<input type="submit" />
+		</form>
+
+	</body>
+</html>
