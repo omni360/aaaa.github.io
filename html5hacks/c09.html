@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dataset dom</title>
+</head>
+<body>
+	<div class="container">
+		<h1>choose your weapon</h1>
+		<p>click on one of the selections below to find out more info about your character:</p>
+		<ul id="mylist">
+			<li data-description="Most powerful goblin in entie kingdom">Ludo</li>	
+			<li data-description="ruler over all goblins big and small">Jareth the Goblin King</li>	
+			<li data-description="only person who can put a stop to the goblinking">Sarah</li>	
+			<li data-description="unsung hero of the goblin kingdom">Hoggle</li>	
+		</ul>
+		<p id="displayTarg" class="well"></p>
+	</div>
+	<script type="text/javascript">
+	var mainElement = document.getElementById('mylist');
+	var descriptionTarget= document.getElementById('displayTarg');
+	mainElement.addEventListener('click',function(e){
+		var description = e.target.getAttribute('data-description');
+		//这里也可以使用dataset.description(),但是以上语句向后兼容
+		//。
+		descriptionTarget.innerHTML=description;
+	})
+	</script>
+
+</body>
+</html>
