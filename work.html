@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/superfish.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>  
@@ -20,7 +20,7 @@
     <script type="text/javascript" src="js/touchTouch.jquery.js"></script> 
     
 	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
-	<script>		
+<!-- <!-- 	<script>		
 		 jQuery(window).load(function() {	
 		 $x = $(window).width();		
 	if($x > 1024)
@@ -30,7 +30,7 @@
 		 jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
   		  }); 
 					
-	</script>
+	</script> --> -->
 
 	<!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
@@ -46,6 +46,7 @@
   <![endif]-->
 	
     <!--Google analytics code-->	  
+		<!--  
 	  <script type="text/javascript">
            var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-29231762-1']);
@@ -58,6 +59,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
       </script>
+      -->
 	</head>
 
 	<body>
@@ -103,23 +105,32 @@
          </article>
         <div class="clear"></div>
          <ul class="portfolio clearfix">           
-           <li class="box"><a href="img/slide-2.jpg" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li> 
-           <li class="box"><a href="img/slide-2.jpg" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li> 
-           <li class="box"><a href="img/slide-3.jpg" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li> 
-           <li class="box"><a href="img/slide-4.jpg" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li> 
-           <li class="box"><a href="img/slide-1.jpg" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li> 
-           <li class="box"><a href="img/slide-2.jpg" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li> 
-           <li class="box"><a href="img/slide-3.jpg" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li> 
-           <li class="box"><a href="img/slide-4.jpg" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>
-           <div class="clear"></div>
-           <li class="box"><a href="img/work/9.jpg" class="magnifier" ><img alt="" src="img/work/9.jpg"></a></li> 
-           <li class="box"><a href="img/work/10.jpg" class="magnifier" ><img alt="" src="img/work/10.jpg"></a></li> 
-           <li class="box"><a href="img/work/11.jpg" class="magnifier" ><img alt="" src="img/work/11.jpg"></a></li> 
-           <li class="box"><a href="img/work/12.jpg" class="magnifier" ><img alt="" src="img/work/12.jpg"></a></li> 
-           <li class="box"><a href="img/work/13.jpg" class="magnifier" ><img alt="" src="img/work/13.jpg"></a></li> 
-           <li class="box"><a href="img/work/14.jpg" class="magnifier" ><img alt="" src="img/work/14.jpg"></a></li> 
-           <li class="box"><a href="img/work/15.jpg" class="magnifier" ><img alt="" src="img/work/15.jpg"></a></li> 
-           <li class="box"><a href="img/work/16.jpg" class="magnifier" ><img alt="" src="img/work/16.jpg"></a></li>                  
+           <li class="box"><a href="demo/examples/webgl_animation_cloth.html" class="magnifier" ><img alt="" src="img/work/1.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_cars.html" class="magnifier" ><img alt="" src="img/work/2.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_envmaps.html" class="magnifier" ><img alt="" src="img/work/3.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_lightmap.html" class="magnifier" ><img alt="" src="img/work/4.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/css3d_periodictable.html" class="magnifier" ><img alt="" src="img/work/5.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_shaders_tonemapping.html" class="magnifier" ><img alt="" src="img/work/6.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_morphtargets_human.html" class="magnifier" ><img alt="" src="img/work/7.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_loader_collada_kinematics.html" class="magnifier" ><img alt="" src="img/work/8.jpg"></a></li>
+          <div class="clear"></div>
+           <li class="box"><a href="demo/examples/webgl_loader_collada_keyframe.html" class="magnifier" ><img alt="" src="img/work/9.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_lights_hemisphere.html" class="magnifier" ><img alt="" src="img/work/10.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_geometry_large_mesh.html" class="magnifier" ><img alt="" src="img/work/11.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_effects_parallaxbarrier.html" class="magnifier" ><img alt="" src="img/work/12.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_decals.html" class="magnifier" ><img alt="" src="img/work/13.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_animation_skinning_blending.html" class="magnifier" ><img alt="" src="img/work/14.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_loader_pdb.html" class="magnifier" ><img alt="" src="img/work/15.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/raytracing_sandbox.html" class="magnifier" ><img alt="" src="img/work/16.jpg"></a></li>                  
+          <div class="clear"></div>
+           <li class="box"><a href="demo/examples/webgl_morphtargets_md2.html" class="magnifier" ><img alt="" src="img/work/9.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_multiple_canvases_circle.html" class="magnifier" ><img alt="" src="img/work/10.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_geometry_colors_lookuptable.html" class="magnifier" ><img alt="" src="img/work/11.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_marchingcubes.html" class="magnifier" ><img alt="" src="img/work/12.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_blending_custom.html" class="magnifier" ><img alt="" src="img/work/13.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_bumpmap_skin.html" class="magnifier" ><img alt="" src="img/work/14.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_cubemap_dynamic.html" class="magnifier" ><img alt="" src="img/work/15.jpg"></a></li> 
+           <li class="box"><a href="demo/examples/canvas_camera_orthographic2.html" class="magnifier" ><img alt="" src="img/work/16.jpg"></a></li>                  
             </ul> 
       </div>
         </div>
