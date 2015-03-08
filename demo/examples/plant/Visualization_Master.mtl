@@ -1,0 +1,610 @@
+newmtl Pipe_supports_Ref_PS-083-000_BSI700-P1083-01-PipeSupport.dgn_PS-083-000_plant_example_2844_vis
+    Ns 2.000000
+    Kd 0.592157 0.741176 0.647059
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/galvanized03.jpg
+
+newmtl Luxmark_Hammer_lens_Ref_Public_Work_Features_BSi700-V0203-PublicWorkfeatures.dgn_Public_Work_Features_plant_example_39d_vis
+    Ns 12.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.546700
+
+newmtl Luxmark_Hammer_Ref_Public_Work_Features_BSi700-V0203-PublicWorkfeatures.dgn_Public_Work_Features_plant_example_39e_vis
+    Ns 20.000000
+    Kd 0.478431 0.305882 0.227451
+    Ks 0.478431 0.305882 0.227451
+     d 0.000000
+
+newmtl Equipement_Ref_Plot_Plan_BSI700-V0202-PlotPlan.dgn_Plot_Plan-RGB(0,255,0)__vis
+    Ns 0.000000
+    Kd 0.000000 1.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl GeneralAnnotations_Ref_Plot_Plan_BSI700-V0202-PlotPlan.dgn_Plot_Plan-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl area_under_tanks_Ref_Site_Profile_BSI700-V0201-Site.dgn_Site_Profile_plant_example_441_vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/grass11.jpg
+
+newmtl Ballast_Ref_Site_Profile_BSI700-V0201-Site.dgn_Site_Profile_plant_example_456_vis
+    Ns 20.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/gravel01.jpg
+
+newmtl grass_areas_Ref_Site_Profile_BSI700-V0201-Site.dgn_Site_Profile_plant_example_442_vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/Grass11.jpg
+
+newmtl storage_tank_ladders_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c77_vis
+    Ns 1.000000
+    Kd 0.576471 0.619608 0.556863
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl storage_tank_railing_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c78_vis
+    Ns 1.000000
+    Kd 0.827451 0.890196 0.800000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl platform_frame_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c6e_vis
+    Ns 2.000000
+    Kd 0.631373 0.309804 0.196078
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1865_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1878_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_18a6_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_3d8_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl grating_Ref_Bulk_Storage_Tank_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_45bd_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl storage_tank_ladders_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c77_vis
+    Ns 1.000000
+    Kd 0.576471 0.619608 0.556863
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl storage_tank_railing_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c78_vis
+    Ns 1.000000
+    Kd 0.827451 0.890196 0.800000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl platform_frame_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1c6e_vis
+    Ns 2.000000
+    Kd 0.631373 0.309804 0.196078
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1865_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_1878_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_18a6_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl storage_tanks_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_3d8_1c79_vis
+    Ns 5.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl grating_Ref_Bulk_Storage_Tank-2_BSI700-D1101-BulkTank.dgn_Bulk_Storage_Tank_plant_example_45bd_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl concrete_dirty_Ref_Rail_Car_Containment__BSI700-C0301-RRCarContainment.dgn_Rail_Car_Containment_Complication_plant_example_1ba6_vis
+    Ns 2.000000
+    Kd 0.890196 0.929412 0.874510
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/concrete08.jpg
+
+newmtl concrete_dirty_Ref__BSI700-C0301-RRCarContainment.dgn_RC_Containment_1_plant_example_1ba6_vis
+    Ns 2.000000
+    Kd 0.890196 0.929412 0.874510
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/concrete08.jpg
+
+newmtl concrete_dirty_Ref_Ref_BSI700-C0301-RRCarContainment.dgn_RC_Containment_2_plant_example_1ba6_vis
+    Ns 2.000000
+    Kd 0.890196 0.929412 0.874510
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/concrete08.jpg
+
+newmtl concrete_dirty_Ref_Ref-1_BSI700-C0301-RRCarContainment.dgn_RC_Containment_3_plant_example_1ba6_vis
+    Ns 2.000000
+    Kd 0.890196 0.929412 0.874510
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/concrete08.jpg
+
+newmtl concrete_dirty_Ref_Ref-2_BSI700-C0301-RRCarContainment.dgn_RC_Containment_4_plant_example_1ba6_vis
+    Ns 2.000000
+    Kd 0.890196 0.929412 0.874510
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/concrete08.jpg
+
+newmtl Rails_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track-RGB(150,92,0)__vis
+    Ns 0.000000
+    Kd 0.588235 0.360784 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl railing_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18998_vis
+    Ns 7.000000
+    Kd 0.682353 0.811765 0.819608
+    Ks 0.682353 0.811765 0.819608
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl gray_dirty_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18565_vis
+    Ns 1.000000
+    Kd 0.650980 0.650980 0.650980
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd bumps/dirtmap007.jpg
+
+newmtl grille_covers_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18da4_vis
+    Ns 2.000000
+    Kd 0.458824 0.458824 0.458824
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd bumps/rusty yellow.jpg
+
+newmtl dirty_red_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18564_vis
+    Ns 2.000000
+    Kd 0.701961 0.141176 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/rusty metal01.jpg
+
+newmtl tanker_wheels_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18da0_vis
+    Ns 15.000000
+    Kd 0.509804 0.376471 0.305882
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Train_Engine_Compartment_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track-RGB(0,0,210)__vis
+    Ns 0.000000
+    Kd 0.000000 0.000000 0.823529
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Train_Engine_Compartment_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track-RGB(30,30,30)__vis
+    Ns 0.000000
+    Kd 0.117647 0.117647 0.117647
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl RR_Ties_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18999_vis
+    Ns 1.000000
+    Kd 0.309804 0.298039 0.278431
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/Oldwood01.jpg
+
+newmtl tank_bottom_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_1899a_vis
+    Ns 5.000000
+    Kd 0.431373 0.580392 0.800000
+    Ks 0.431373 0.580392 0.800000
+     d 0.000000
+    map_Kd patterns/bikelane dirty.jpg
+
+newmtl tank_top_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_1899b_vis
+    Ns 1.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd bumps/dirtmap007.jpg
+
+newmtl tanker_frame_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18d9d_vis
+    Ns 1.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd bumps/dirtmap010.jpg
+
+newmtl tanker_TEXT_1_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18d9e_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd data/text2.tif
+
+newmtl tanker_TEXT_2_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18d9f_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd data/text1.tif
+
+newmtl track_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18da1_vis
+    Ns 2.000000
+    Kd 0.588235 0.392157 0.301961
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl trucks_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18da2_vis
+    Ns 7.000000
+    Kd 0.580392 0.411765 0.282353
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl engine_windows_Ref_RR_Track_BSI700-R0100-RRTrack.dgn_RR_Track_Train_18dbf_vis
+    Ns 40.000000
+    Kd 0.000000 0.000000 0.000000
+    Ks 0.592157 0.631373 0.600000
+     d 0.620000
+    map_Kd bumps/dirtmap014.jpg
+
+newmtl platform_frame_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,240,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.941176 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,0,255)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_railing_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(255,0,0)_plant_example_365f_vis
+    Ns 29.000000
+    Kd 1.000000 0.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,255,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 1.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl grating_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3824_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl grating_edges_Ref_Unloading_Platform-1_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3825_vis
+    Ns 26.000000
+    Kd 0.800000 0.847059 0.929412
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,240,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.941176 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,0,255)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_railing_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(255,0,0)_plant_example_365f_vis
+    Ns 29.000000
+    Kd 1.000000 0.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,255,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 1.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl grating_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3824_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl grating_edges_Ref_Unloading_Platform-2_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3825_vis
+    Ns 26.000000
+    Kd 0.800000 0.847059 0.929412
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,240,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.941176 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,0,255)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_railing_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(255,0,0)_plant_example_365f_vis
+    Ns 29.000000
+    Kd 1.000000 0.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,255,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 1.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl grating_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3824_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl grating_edges_Ref_Unloading_Platform-3_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3825_vis
+    Ns 26.000000
+    Kd 0.800000 0.847059 0.929412
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,240,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.941176 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,0,255)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 0.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_railing_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(255,0,0)_plant_example_365f_vis
+    Ns 29.000000
+    Kd 1.000000 0.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl platform_frame_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform-RGB(0,255,0)_plant_example_365e_vis
+    Ns 64.000000
+    Kd 0.000000 1.000000 0.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl grating_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3824_vis
+    Ns 26.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd objects/GRATING01.tif
+
+newmtl grating_edges_Ref_Unloading_Platform-4_BSI700-S0501-UnloadingPlatform.dgn_Unloading_Platform_plant_example_3825_vis
+    Ns 26.000000
+    Kd 0.800000 0.847059 0.929412
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Pipe_Y_Ref_Above_Ground_Piping_BSI700-P1001-Piping.dgn_Above_Ground_Piping_plant_example_6e52_vis
+    Ns 5.000000
+    Kd 1.000000 0.968627 0.411765
+    Ks 1.000000 0.968627 0.411765
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl Pipe_B_Ref_Above_Ground_Piping_BSI700-P1001-Piping.dgn_Above_Ground_Piping_plant_example_6e4e_vis
+    Ns 3.000000
+    Kd 0.419608 0.576471 1.000000
+    Ks 0.419608 0.576471 1.000000
+     d 0.000000
+    map_Kd bumps/rusty metal03.jpg
+
+newmtl Pipe_G_Ref_Above_Ground_Piping_BSI700-P1001-Piping.dgn_Above_Ground_Piping_plant_example_6e4f_vis
+    Ns 6.000000
+    Kd 0.450980 0.858824 0.396078
+    Ks 0.450980 0.858824 0.396078
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl Pipe_M_Ref_Above_Ground_Piping_BSI700-P1001-Piping.dgn_Above_Ground_Piping_plant_example_6e50_vis
+    Ns 2.000000
+    Kd 1.000000 0.239216 0.415686
+    Ks 1.000000 0.239216 0.415686
+     d 0.000000
+    map_Kd patterns/lxogradient.jpg
+
+newmtl Pump_house_trim_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_940_vis
+    Ns 2.000000
+    Kd 0.521569 0.686275 0.800000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Pump_house_glass_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_93d_vis
+    Ns 90.000000
+    Kd 0.000000 0.000000 0.000000
+    Ks 0.850980 0.850980 0.850980
+     d 0.860000
+
+newmtl Pump_house_side_door_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_93f_vis
+    Ns 5.000000
+    Kd 0.521569 0.686275 0.800000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/roll up door.jpg
+
+newmtl Pump_house_walls_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_941_vis
+    Ns 2.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/BLOCK03.jpg
+
+newmtl Pump_house_roof_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_93e_vis
+    Ns 1.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+    map_Kd patterns/gravel03.jpg
+
+newmtl Pump_house_door_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_93c_vis
+    Ns 2.000000
+    Kd 0.521569 0.686275 0.800000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Luxmark_Hammer_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_cb0_vis
+    Ns 20.000000
+    Kd 0.478431 0.305882 0.227451
+    Ks 0.478431 0.305882 0.227451
+     d 0.000000
+
+newmtl Luxmark_Hammer_lens_Ref_Pump_House_Storage_BSI700-A0101-PumpHouse.dgn_Pump_House_Complication_plant_example_caf_vis
+    Ns 12.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.546700
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank-2_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank-2_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank-3_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank-3_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank-4_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank-4_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank-5_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank-5_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl storage_tanks_Ref_Horizontal_Storage_Tank-6_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank_plant_example_720_vis
+    Ns 25.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000
+
+newmtl Default_Ref_Horizontal_Storage_Tank-6_BSI700-D1102-HorizontalTank.dgn_Horizontal_Storage_Tank-RGB(255,255,255)__vis
+    Ns 0.000000
+    Kd 1.000000 1.000000 1.000000
+    Ks 1.000000 1.000000 1.000000
+     d 0.000000

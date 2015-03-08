@@ -1,0 +1,5 @@
+﻿This directory contains temporary files for the MicroStation product installed at the following location:
+
+        C:\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation
+
+It should be harmless to remove this directory provided the above product is not currently running.

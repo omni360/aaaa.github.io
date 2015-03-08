@@ -1,0 +1,643 @@
+MS_PL--1
+
+material area under tanks
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern grass11.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 51.200000 29.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units feet
+end
+
+material Ballast
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern gravel01.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 3.000000 3.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units feet
+end
+
+material concrete
+ color 0.890196 0.929412 0.874510
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.0300
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4312
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ bump_map concrete05.jpg
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 5.120000 3.840000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units feet
+  pattern_mapping planar
+end
+
+material grass areas
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.0000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3861
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern Grass11.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 51.200000 29.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units feet
+end
+
+material grating
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.6200
+ specular 0.2600
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern GRATING01.tif
+  bgtrans on
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 5.000000 5.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+ bump_map GRATING01.tif
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  map_link pattern
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+end
+
+material grating edges
+ color 0.800000 0.847059 0.929412
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2600
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Luxmark Hammer
+ color 0.478431 0.305882 0.227451
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.0000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Luxmark Hammer lens
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 1.0000
+ diffuse 0.3333
+ specular 0.1200
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.6008
+ transmit 0.5467
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows off
+ radiosity on
+end
+
+material Pipe B
+ color 0.419608 0.576471 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pipe G
+ color 0.450980 0.858824 0.396078
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pipe M
+ color 1.000000 0.239216 0.415686
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pipe supports
+ color 0.592157 0.741176 0.647059
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pipe Y
+ color 1.000000 0.968627 0.411765
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material platform frame
+ color 0.850980 0.984314 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.0000
+ diffuse 0.6200
+ specular 0.2900
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 3.0388
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material platform railing
+ color 0.741176 0.854902 0.870588
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.0000
+ diffuse 0.5000
+ specular 0.2900
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 3.0388
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pump house door
+ color 0.521569 0.686275 0.800000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pump house glass
+ color 0.000000 0.000000 0.000000
+ specular_color 0.850980 0.850980 0.850980
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.0000
+ specular 0.2600
+ reflect 0.7308
+ actual_reflect 0.190000
+ highlight custom
+ finish 10.6341
+ transmit 0.8600
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pump house roof
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern gravel01.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 3.000000 3.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units feet
+end
+
+material Pump house side door
+ color 0.521569 0.686275 0.800000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ bump_map VERT01.JPG
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size on
+  pattern_scalemode relative
+end
+
+material Pump house trim
+ color 0.521569 0.686275 0.800000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material Pump house walls
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.1200
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.6008
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+ pattern BLOCK03.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 64.000000 32.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units inches
+ bump_map BlockCmuBump.jpg
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+  pattern_units inches
+end
+
+material sky cylinder
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 10.0000
+ diffuse 0.0000
+ specular 0.0000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3861
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows off
+ radiosity on
+ pattern skycyl12.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material storage tank ladders
+ color 0.576471 0.619608 0.556863
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.0000
+ diffuse 0.5000
+ specular 0.2600
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material storage tank railing
+ color 0.827451 0.890196 0.800000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2600
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material storage tanks
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular on
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.2000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.8067
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end

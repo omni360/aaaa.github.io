@@ -1,0 +1,1267 @@
+MS_PL--1
+
+material bnsf back
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bnsfback.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf forward intake
+ color 0.156863 0.349020 0.145098
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.5060
+ diffuse 0.3160
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bnsfts.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 19.762500 1.673600
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode master
+end
+
+material bnsf front
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bsnffrnt.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf green
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.5190
+ diffuse 0.5000
+ specular 0.2530
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bnsfgrn.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf left front
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sflf.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf left side
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sfleft.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf orange
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bsnforng.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf right front
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sfrt.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf right side
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sfright.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf top front
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.1520
+ diffuse 0.6000
+ specular 0.6010
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3990
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sftopf1.tif
+  bgtrans off
+  pattern_weight 0.8400
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map uptopf1.tif
+  bump_map_scale 1.0130
+  bump_map_invert on
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bnsf top rear
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7910
+ diffuse 0.6000
+ specular 0.2910
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4940
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bnrear.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map toprearb.tif
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bsnf orange
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.7780
+ diffuse 0.6000
+ specular 0.3860
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.3860
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern bsnforng.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material bsnf yellow
+ color 1.000000 0.945098 0.690196
+ specular_color 0.984314 1.000000 0.788235
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.5950
+ diffuse 0.9050
+ specular 0.1460
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.2030
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material chromium
+ color 0.450980 0.450980 0.450980
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.3200
+ specular 0.6200
+ reflect 1.0000
+ actual_reflect 0.620000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material dark grey
+ color 0.450980 0.450980 0.450980
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material front windows bnsf
+ color 0.450980 0.450980 0.450980
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.1520
+ specular 0.4000
+ reflect 0.1460
+ actual_reflect 0.058400
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material fuel tank
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.4100
+ specular 0.4700
+ reflect 0.2544
+ actual_reflect 0.119567
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material fuel tank bnsf
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6080
+ diffuse 0.6000
+ specular 0.1200
+ reflect 0.2030
+ actual_reflect 0.024360
+ highlight plastic
+ finish 0.2220
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern sf_fuel.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material handrail
+ color 0.800000 0.800000 0.800000
+ specular_color 0.909804 0.956863 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.4370
+ specular 0.5630
+ reflect 0.2850
+ actual_reflect 0.160455
+ highlight custom
+ finish 0.9490
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material light lens
+ color 0.894118 0.921569 0.588235
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 6.0000
+ diffuse 0.4700
+ specular 0.1800
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.3800
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material nose center
+ color 0.980392 0.866667 0.360784
+ specular_color 1.000000 1.000000 0.901961
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern upnose.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip on
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material nose left
+ color 0.980392 0.866667 0.360784
+ specular_color 1.000000 1.000000 0.901961
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern upfl.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material nose right
+ color 0.980392 0.866667 0.360784
+ specular_color 1.000000 1.000000 0.901961
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern upfr.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material numbers
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern 9711.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material numbers2
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern 1000.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material rear left
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern up2l nologo.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 180.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material rear right
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern up2r nologo.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material red color
+ color 0.831373 0.058824 0.109804
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material springs
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.4200
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern vert01.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 75.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 3.000000 2.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material starting point
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material train grey
+ color 0.768627 0.768627 0.768627
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material train yellow
+ color 0.980392 0.866667 0.360784
+ specular_color 1.000000 1.000000 0.901961
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material truck1
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.5000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern truck1.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material truck2
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.5000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern truck2.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material up front left
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern up1l.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 180.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material up front right
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern up1r.tif
+  bgtrans on
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 180.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material up top front
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.1520
+ diffuse 0.7100
+ specular 0.6010
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4006
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern uptopf1.tif
+  bgtrans off
+  pattern_weight 0.8400
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map uptopf1.tif
+  bump_map_scale 1.0130
+  bump_map_invert on
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material up top rear
+ color 0.611765 0.611765 0.611765
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.5820
+ diffuse 0.7100
+ specular 0.1080
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4006
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern toprearb.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map toprearb.tif
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material upsf1 top left side
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern upsf1.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map upsf1.tif
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material upsf2 top right side
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.7100
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern upsf2.tif
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map upsf2.tif
+  bump_map_scale 1.0000
+  bump_map_invert off
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material vent
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9000
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern vent01.jpg
+  bgtrans off
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+ bump_map vent01.jpg
+  bump_map_scale 2.5320
+  bump_map_invert on
+  map_state on
+  pattern_angle 0.0000
+  pattern_offset 0.000000 0.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material wheels
+ color 0.588235 0.403922 0.313725
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.4000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material window glass
+ color 0.450980 0.450980 0.450980
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 1.0000
+ diffuse 0.0440
+ specular 0.8290
+ reflect 0.5130
+ actual_reflect 0.425277
+ highlight plastic
+ finish 0.9370
+ transmit 0.1460
+ refract 1.0000
+ translucency 0.0440
+ thickness 0.0000
+ shadows on
+ radiosity off
+end

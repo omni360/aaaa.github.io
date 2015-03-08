@@ -1,0 +1,1 @@
+The signs in this file are courtesy of http://www.street-signs-usa.com they are 32bit RGB Alpha format and are intended to be used with background transparency enabled.

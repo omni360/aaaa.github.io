@@ -1,0 +1,2 @@
+#--- This file created for use by the COMPRESS DESIGN INCLUDEREFS command --- 
+compress design

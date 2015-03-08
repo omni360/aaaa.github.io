@@ -1,0 +1,57 @@
+cvs #-------------------------------------------------------------------------------
+# This is a MicroStation V8 Sheet Size Definition file.
+#
+# Lines that begin with # are for descriptive comments.
+#
+# $Copyright: (c) 2008 Bentley Systems, Incorporated. All rights reserved. $
+#-------------------------------------------------------------------------------
+# The active sheetsizes.def file is used to drive the Sheet Size (printable area) the 
+# in Models dialog box.  The Name column is the name that is displayed in the dialog
+# box. The Units column is the units that are used to describe the printable area.
+# The names of the units should be the same as the ones used in the Units.def file
+# but do not have to match the units that are in the targeted Model. True Scale will
+# be applied. The Height and Width columns describe the corresponding dimensions of
+# the printable area. Each column must be separated by a semicolon ";".
+#
+# The location of the sheetsizes.def file can be set with the configuration variable
+# MS_CUSTOMSHEETSIZEDEF. The default location of this file is in Workspace\system\data\.
+#
+#The Roll paper sizes can be used with any roll paper device. The height and width will 
+#emulate the size of the paper after it is cut.
+#
+#The Cut Sheet sizes can be use be used with most sheet paper printers such that the margin is less
+#than the maximum printable area that the printing device can produce.
+#
+#Negative values can be used for any of the margins to move the margins outside of the displayed paper.
+#
+#   Name              		 Units           Height          Width    TopMargin   LeftMargin  BottomMargin    RightMargin
+#Roll paper sizes.
+ANSI A ;                          Inch;          8.5;            11;      0.00;       0.00;       0.00;           0.00;
+ANSI B ;                          Inch;          11;             17;      0.00;       0.00;       0.00;           0.00;
+ANSI C ;                          inch;          17;             22;      0.00;       0.00;       0.00;           0.00;
+ANSI D ;                          inch;          22;             34;      0.00;       0.00;       0.00;           0.00;
+ANSI E ;                          inch;          34;             44;      0.00;       0.00;       0.00;           0.00;
+
+# Architectural Sizes
+#Arch A ;                        Inches;           9;             12;      0.00;       0.00;       0.00;           0.00;
+#Arch B ;                        Inches;          12;             18;      0.00;       0.00;       0.00;           0.00;
+#Arch C ;                        Inches;          18;             24;      0.00;       0.00;       0.00;           0.00;
+#Arch D ;                        inches;          24;             36;      0.00;       0.00;       0.00;           0.00;
+#Arch E ;                        inches;          36;             48;      0.00;       0.00;       0.00;           0.00;
+#Arch E1 ;                       inches;          30;             42;      0.00;       0.00;       0.00;           0.00;
+
+#ISO A0 ;	            millimeter;	        841;           1189;      0.00;       0.00;       0.00;           0.00;
+#ISO A1 ;	            millimeter;	        594;	        841;      0.00;       0.00;       0.00;           0.00;
+#ISO A2 ;	            millimeter;	        420;	        594;      0.00;       0.00;       0.00;           0.00;
+#ISO A3 ;	            millimeter;	        297;	        420;      0.00;       0.00;       0.00;           0.00;
+#ISO A4 ;	            millimeter;	        210;            297;      0.00;       0.00;       0.00;           0.00;
+
+
+#Cut Sheet sizes.
+ANSI A (Cut Sheet);            inches;         8.00;          10.50;      0.25;       0.25;       0.25;           0.25;
+ANSI B (Cut Sheet);            inches;        10.50;          16.50;      0.25;       0.25;       0.25;           0.25;
+#ANSI C (Cut Sheet);            inches;        16.50;          21.50;      0.25;       0.25;       0.25;           0.25;
+#ANSI D (Cut Sheet);            inches;        21.50;          33.50;      0.25;       0.25;       0.25;           0.25;
+#ANSI E (Cut Sheet);            inches;        33.50;          43.50;      0.25;       0.25;       0.25;           0.25;
+
+  

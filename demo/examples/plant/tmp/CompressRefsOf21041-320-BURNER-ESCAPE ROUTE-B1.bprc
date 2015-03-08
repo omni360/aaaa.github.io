@@ -1,0 +1,7 @@
+[SETTINGS=bpOptions]
+   logFile=c:\Temp\Bentley\MicroStation\8.11\o_Dof88niaENmS1PChQ4Mg\CompressRefsOf21041-320-BURNER-ESCAPE ROUTE-B1.log
+   cmdFileName=c:\Temp\Bentley\MicroStation\8.11\o_Dof88niaENmS1PChQ4Mg\compress.txt
+   clearLog=1
+   initialModel=-35
+[SOURCE=C:\Users\chunlei.hou\Desktop\21041-320-BURNER-ESCAPE ROUTE-B1.dgn]
+[MODEL=:Default:]

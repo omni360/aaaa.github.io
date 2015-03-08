@@ -1,0 +1,231 @@
+MS_PL--1
+
+material railing
+ color 0.831373 0.992157 1.000000
+ specular_color 0.890196 0.996078 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.4630
+ specular 0.3680
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight custom
+ finish 0.5581
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material RR Ties
+ color 0.200000 0.109804 0.015686
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.5000
+ specular 0.1200
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.5184
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material tank bottom
+ color 0.360784 0.372549 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material tank top
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.8740
+ specular 0.1370
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4006
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material tanker frame
+ color 0.360784 0.372549 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.6000
+ specular 0.4000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.9009
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material tanker TEXT 1
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 1.0000
+ specular 1.0000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern text2.tif
+  bgtrans on
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle -90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material tanker TEXT 2
+ color 1.000000 1.000000 1.000000
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 1.0000
+ specular 1.0000
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 1.0062
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+ pattern text1.tif
+  bgtrans on
+  pattern_weight 1.0000
+  map_state on
+  pattern_angle -90.0000
+  pattern_offset 0.000000 0.000000
+  pattern_scale 1.000000 1.000000
+  pattern_flip off
+  pattern_lock_size off
+  pattern_scalemode relative
+end
+
+material tanker wheels
+ color 0.890196 0.890196 0.890196
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.4110
+ specular 0.5370
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 2.8229
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end
+
+material track
+ color 0.760784 0.725490 0.639216
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.4100
+ specular 0.2900
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 4.7282
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity on
+end
+
+material trucks
+ color 0.890196 0.890196 0.890196
+ specular_color 1.000000 1.000000 1.000000
+ lock_efficiency off
+ lock_specular_and_reflect off
+ lock_finish_to_specular off
+ ambient 0.6000
+ diffuse 0.5160
+ specular 0.4530
+ reflect 0.0000
+ actual_reflect 0.000000
+ highlight plastic
+ finish 0.4997
+ transmit 0.0000
+ refract 1.0000
+ translucency 0.0000
+ thickness 0.0000
+ shadows on
+ radiosity off
+end

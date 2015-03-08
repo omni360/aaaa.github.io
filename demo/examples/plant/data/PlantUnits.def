@@ -1,0 +1,125 @@
+#-------------------------------------------------------------------------------
+# This is a MicroStation V8 Unit Definition file.
+#
+# Lines that begin with # are for descriptive comments.
+#
+# $Copyright: (c) 2008 Bentley Systems, Incorporated. All rights reserved. $
+#-------------------------------------------------------------------------------
+#
+# The active unit definition file is specified by the configuration variable
+# MS_CUSTOMUNITDEF.  By default that variable refers to:
+#   \Bentley\WorkSpace\System\data\units.def
+#
+# MicroStation uses its active units definition file in two instances:
+#
+#   1) Only the units defined in the units.def file are typically accessible in 
+#      the MicroStation user interface.  To include all the known units in the 
+#      user interface, define the configuration variable MS_UNITS_SHOWALL.  
+#
+#   2) The units.def file is consulted when converting data from file formats 
+#      with incomplete unit information.  For example, V7 dgn files provide only 
+#      a two character unit label.  This two character label is compared to the 
+#      labels supplied in the units.def file to determine the correct mathematical 
+#      definition.
+#
+# NOTE: In both of the above cases, when a unit from the unit definition file
+#       conflicts with one of the standard units, the unit from the definition
+#       file will be used.
+#
+# NOTE: Both standard and custom units are accessible via the "SET UNITS" keyin.
+#
+# The format of this file consists of one unit definition per line, where the
+# format of each line is:  
+#
+# Label,Label,...,Label; Name(singular); Name(plural); Numerator; Denominator; Base; System
+#
+# Label:
+# Used to specify the default label for coordinate readout and dimensioning.  A list of 
+# labels can be provided but only the first is used by V8.  The other labels are used 
+# when loading a V7 format file, in which case the label for the V7 file's master unit 
+# will be matched against all the labels that are provided.
+#
+# Name(singular) and Name(plural):
+# Used for display of the unit in dialog boxes.
+#
+# Numerator and Denominator:
+# Together these are used to define the size of the unit being described.  The ratio of
+# numerator divided by denominator represents the number X of the new unit that make
+# up a single Meter.  For example: 100.0 / 1.0 = 100.0 centimeters = 1 meter.  To ensure
+# the greatest possible accuracy, it is highly recommended that both numerator and
+# denominator be specified as whole integer values.
+#
+# Base:
+# Only units of the same base can be compared.  All linear distance units should use a
+# base of Meter.  For nonlinear units such as degrees latitude or longitude specify
+# base Unitless.
+#
+#   Valid values for Base are:
+#   0 Unitless
+#   1 Meter
+#
+# System:
+# Used to catagorize units for display in some dialogs.
+#
+#   Valid values for System are:
+#   0 Undefined
+#   1 English
+#   2 Metric
+#
+#-------------------------------------------------------------------------------
+#
+# MicroStation Standard Unit Examples
+#
+#Label,Label,...; Name(singular); Name(plural);              Numerator;           Denominator; Base; System
+
+#  SI (metric) units
+#
+#fm;              Femtometer;     Femtometers;      1000000000000000.0;                   1.0;    1;      2
+#pm;              Picometer;      Picometers;          1000000000000.0;                   1.0;    1;      2
+#nm;              Nanometer;      Nanometers;             1000000000.0;                   1.0;    1;      2
+    um;           Micrometer;     Micrometers;               1000000.0;                   1.0;    1;      2
+    mm;           Millimeter;     Millimeters;                  1000.0;                   1.0;    1;      2
+    cm;           Centimeter;     Centimeters;                   100.0;                   1.0;    1;      2
+#dm;              Decimeter;      Decimeters;                     10.0;                   1.0;    1;      2
+    m;            Meter;          Meters;                          1.0;                   1.0;    1;      2
+#dam;             Dekameter;      Dekameters;                      1.0;                  10.0;    1;      2
+#hm;              Hectometer;     Hectometers;                     1.0;                 100.0;    1;      2
+    km;           Kilometer;      Kilometers;                      1.0;                1000.0;    1;      2
+#Mm;              Megameter;      Megameters;                      1.0;             1000000.0;    1;      2
+#Gm;              Gigameter;      Gigameters;                      1.0;          1000000000.0;    1;      2
+#Tm;              Terameter;      Terameters;                      1.0;       1000000000000.0;    1;      2
+#Pm;              Petameter;      Petameters;                      1.0;    1000000000000000.0;    1;      2
+#
+#
+#  English units (based on International Foot)
+#
+    ui;           MicroInch;      MicroInches;           10000000000.0;                 254.0;    1;      1
+    mil;          Mil;            Mils;                     10000000.0;                 254.0;    1;      1
+#pt;              Point;          Points;                     720000.0;                 254.0;    1;      1
+#pica;            Pica;           Picas;                       60000.0;                 254.0;    1;      1
+    in,";         Inch;           Inches;                      10000.0;                 254.0;    1;      1
+    ft,';         Foot;           Feet;                        10000.0;                3048.0;    1;      1
+    
+
+    yd;           Yard;           Yards;                       10000.0;                9144.0;    1;      1
+    mi;           Mile;           Miles;                       10000.0;            16093440.0;    1;      1
+#
+#
+#  English units (based on U.S. Survey Foot)
+#
+#sf,ft,';         Survey Foot;    Survey Feet;                 39370.0;               12000.0;    1;      1
+#fat;             Fathom;         Fathoms;                     39370.0;               72000.0;    1;      1
+#rd;              Rod;            Rods;                        39370.0;              198000.0;    1;      1
+#ch;              Chain;          Chains;                      39370.0;              792000.0;    1;      1
+#fur;             Furlong;        Furlongs;                    39370.0;             7920000.0;    1;      1
+#sm,mi;           Survey Mile;    Survey Miles;                39370.0;            63360000.0;    1;      1
+#
+#
+#  No System
+#
+#A;               Angstrom;       Angstroms;             10000000000.0;                   1.0;    1;      2
+#nm;              Nautical Mile;  Nautical Miles;                  1.0;                1852.0;    1;      0
+#au;              Astromomical Unit;  Astromomical Units;          1.0;        149597900000.0;    1;      0
+#ly;              Light Year;     Light Years;                     1.0;    9460730000000000.0;    1;      0
+#pc;              Parsec;         Parsecs;                         1.0;   30856780000000000.0;    1;      0
+
