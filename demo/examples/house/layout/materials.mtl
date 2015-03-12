@@ -1,0 +1,1101 @@
+# 
+# ?? Sweet Home 3D ?? - ??? ?? 10 15:33:45 CST 2014
+# http://www.sweethome3d.com/
+# 
+
+newmtl ground_1
+illum 1
+Ka 0.65882355 0.65882355 0.65882355
+Kd 0.65882355 0.65882355 0.65882355
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+
+newmtl wall_1_2
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_1_2.png
+
+newmtl wall_1_5
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_1_5.png
+
+newmtl wall_2_11
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_2_11.png
+
+newmtl wall_3_17
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_3_17.png
+
+newmtl wall_4_23
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_4_23.png
+
+newmtl wall_5_29
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_wall_5_29.png
+
+newmtl bottom
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl top
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl left
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl right
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl back
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl front
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_bottom.png
+
+newmtl white
+illum 2
+Ka 0.4 0.4 0.4
+Kd 1.0 1.0 1.0
+Ks 0.3 0.3 0.3
+Ns 60.0
+
+newmtl flltgrey
+illum 1
+Ka 0.5224 0.5224 0.5224
+Kd 0.8245 0.8245 0.8245
+Ks 0.0 0.0 0.0
+Ns 1.0
+d 0.5
+
+newmtl lighttan
+illum 2
+Ka 0.098 0.0536 0.022
+Kd 0.702 0.421 0.2206
+Ks 0.8286 0.8057 0.5851
+Ns 128.0
+
+newmtl ltgrey
+illum 2
+Ka 0.5 0.5 0.5
+Kd 0.3837 0.3837 0.3837
+Ks 0.5 0.5 0.5
+Ns 65.89
+
+newmtl Sofa1_Tri_1
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 8.0
+map_Kd materials_Sofa1_Tri_1.png
+
+newmtl Sand
+illum 1
+Ka 0.0 0.0 0.0
+Kd 0.8344 0.79274 0.6856
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl woodfeet
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_woodfeet.png
+
+newmtl circulargreen
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_circulargreen.png
+
+newmtl lighttan2
+illum 2
+Ka 0.098 0.0492 0.0144
+Kd 0.3143 0.187 0.0962
+Ks 0.8286 0.8057 0.5851
+Ns 128.0
+
+newmtl 247
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.0 0.0 0.0
+Ns 96.07843
+Ni 1.0
+
+newmtl 248
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+map_Kd materials_248.png
+
+newmtl Wood
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.411852 0.259648 0.0
+Ks 0.106296 0.071262 0.012204
+Ns 96.07843
+Ni 1.0
+
+newmtl flblack
+illum 1
+Ka 0.0 0.0 0.0
+Kd 0.0041 0.0041 0.0041
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl gold
+illum 2
+Ka 0.7224 0.1416 0.0
+Kd 1.0 0.4898 0.0
+Ks 0.7184 0.3695 0.3695
+Ns 123.26
+
+newmtl bone2
+illum 1
+Ka 0.6408 0.5388 0.3348
+Kd 0.9837 0.862 0.6504
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl flbrown
+illum 1
+Ka 0.0571 0.0066 0.0011
+Kd 0.1102 0.012 0.0013
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl brownskn
+illum 2
+Ka 0.0122 0.0041 0.0
+Kd 0.0204 0.0082 0.0
+Ks 0.0735 0.0508 0.0321
+Ns 20.16
+
+newmtl Object01_269
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 1.0
+Ni 1.0
+map_Kd materials_Object01_269.png
+
+newmtl Object014948_270
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 50.0
+Ni 1.0
+map_Kd materials_Object014948_270.png
+
+newmtl Object016123_271
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 1.0
+Ni 1.0
+map_Kd materials_Object016123_271.png
+
+newmtl Door_GlassPanels_1
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 8.0
+map_Kd materials_Door_GlassPanels_1.png
+
+newmtl Door_GlassPanels_4
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.624 0.607529 0.378768
+Ks 0.5 0.5 0.5
+Ns 8.0
+
+newmtl Door_GlassPanels_5
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.75752 0.75752 0.75752
+Ks 0.5 0.5 0.5
+Ns 8.0
+
+newmtl Door_GlassPanels_6
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 8.0
+d 0.19834
+
+newmtl Door_GlassPanels_14
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 8.0
+map_Kd materials_Door_GlassPanels_14.png
+
+newmtl yellowbrt
+illum 2
+Ka 0.4 0.4 0.4
+Kd 1.0 0.7837 0.0
+Ks 0.3 0.3 0.3
+Ns 60.0
+
+newmtl mirror
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.7 0.7 0.7
+Ks 1.9 1.9 1.9
+Ns 128.0
+Ni 1.0
+sharpness 80.0
+
+newmtl chrome
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.170686 0.170686 0.170686
+Ks 1.472026 1.472026 1.472026
+Ns 128.0
+Ni 1.0
+
+newmtl metal_wheel
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 1.472026 1.472026 1.472026
+Ns 128.0
+Ni 1.0
+
+newmtl 10
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 50.980392
+Ni 1.0
+map_Kd materials_10.png
+
+newmtl metal_handle
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 1.472026 1.472026 1.472026
+Ns 128.0
+Ni 1.0
+
+newmtl 28
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+
+newmtl marble
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+
+newmtl white_ceramic
+illum 2
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 1.036058 1.036058 1.036058
+Ns 128.0
+Ni 1.0
+
+newmtl white_wood
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+
+newmtl fayence
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.95 0.95 0.95
+Ks 0.5 0.5 0.5
+Ns 50.0
+Ni 1.0
+
+newmtl chrome_2_407
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.7 0.7 0.7
+Ks 0.9 0.9 0.9
+Ns 120.0
+Ni 1.0
+
+newmtl cover
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.95 0.95 0.95
+Ks 0.1 0.1 0.1
+Ns 10.0
+Ni 1.0
+
+newmtl metal
+illum 2
+Ka 0.9764706 0.99215686 1.0
+Kd 0.9764706 0.99215686 1.0
+Ks 1.0 1.0 1.0
+Ns 128.0
+
+newmtl toalla_blanca
+illum 1
+Ka 0.9764706 0.99215686 1.0
+Kd 0.9764706 0.99215686 1.0
+Ks 0.0078125 0.0078125 0.0078125
+Ns 1.0
+
+newmtl White_ceramic
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 1.350186 1.350186 1.350186
+Ns 128.0
+Ni 1.021455
+
+newmtl White_plastic
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+
+newmtl paper
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.324099 0.324099 0.324099
+Ns 64.70588
+Ni 1.0
+
+newmtl Cardboard
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.463034 0.344105 0.205354
+Ks 0.324099 0.324099 0.324099
+Ns 64.70588
+Ni 1.0
+
+newmtl bordeaux
+illum 1
+Ka 0.0 0.0 0.0
+Kd 0.55 0.132 0.2574
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl sh3dMag
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_sh3dMag.png
+
+newmtl Blanc
+illum 1
+Ka 1.0 1.0 1.0
+Kd 0.86 0.86 0.86
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl flwhite
+illum 2
+Ka 0.6449 0.6116 0.5447
+Kd 0.9837 0.9309 0.8392
+Ks 0.8082 0.729 0.5708
+Ns 128.0
+
+newmtl 1
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.544 0.52 0.448
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 2
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.648 0.576 0.464
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 3
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.464 0.472 0.52
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 4
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.608 0.576 0.496
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 5
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.328 0.336 0.368
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 6
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.504 0.416 0.32
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl 7
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.72 0.688 0.648
+Ks 0.2 0.2 0.2
+Ns 17.647058
+Ni 1.0
+
+newmtl Spike_trunk_2_Cylinder_8
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 1.960784
+Ni 1.0
+map_Kd materials_Spike_trunk_2_Cylinder_8.png
+
+newmtl 9
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 1.960784
+Ni 1.0
+map_Kd materials_Spike_trunk_2_Cylinder_8.png
+
+newmtl 10_10_438
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 1.0
+Ni 1.0
+map_Kd materials_10_10_438.png
+
+newmtl 11
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 17.647058
+Ni 1.0
+map_Kd materials_11.png
+
+newmtl 12
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 17.647058
+Ni 1.0
+map_Kd materials_11.png
+
+newmtl Material
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+
+newmtl Aluminum
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.56 0.56 0.56
+Ks 0.705217 0.705217 0.705217
+Ns 105.882355
+Ni 1.0
+
+newmtl Wood_Cherry
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.645113 0.2 0.0
+Ks 0.258993 0.258993 0.258993
+Ns 23.529411
+Ni 1.0
+
+newmtl Line15_1
+illum 2
+Ka 0.251 0.251 0.251
+Kd 0.251 0.251 0.251
+Ks 0.0 0.0 0.0
+Ns 10.0
+Ni 1.5
+
+newmtl Box11_3
+illum 2
+Ka 0.7569 0.7569 0.7569
+Kd 0.7569 0.7569 0.7569
+Ks 0.603 0.603 0.603
+Ns 20.0
+Ni 1.5
+
+newmtl Line0911_5
+illum 2
+Ka 0.3882 0.0 0.0
+Kd 0.7294 0.0 0.0
+Ks 0.783 0.783 0.783
+Ns 25.0
+Ni 1.5
+
+newmtl ChamferBox01_6
+illum 2
+Ka 0.451 0.451 0.451
+Kd 0.451 0.451 0.451
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl Box13_8
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl Box12_10
+illum 2
+Ka 0.588 0.588 0.588
+Kd 0.588 0.588 0.588
+Ks 0.639 0.639 0.639
+Ns 10.0
+Ni 1.5
+d 0.19999999
+
+newmtl ChamferCyl04_14
+illum 2
+Ka 0.8471 0.4 0.0
+Kd 0.8471 0.4 0.0
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl Rectangle02_16
+illum 2
+Ka 0.8431 0.8431 0.8431
+Kd 0.8431 0.8431 0.8431
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl Line22_20
+illum 2
+Ka 0.9333 0.9333 0.9333
+Kd 0.9333 0.9333 0.9333
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl Rectangle07_55
+illum 2
+Ka 0.3098 0.3098 0.3098
+Kd 0.3098 0.3098 0.3098
+Ks 0.35 0.35 0.35
+Ns 32.0
+
+newmtl 514
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.505658 0.461262 0.074389
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl 515
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.512 0.0037 0.20665
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl 516
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.125126 0.512 0.20665
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl Material_517
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.512 0.512 0.512
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl 518
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.258312 0.212992 0.512
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl 522
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.359787 0.359787 0.397841
+Ks 0.125 0.125 0.125
+Ns 90.196075
+Ni 1.0
+
+newmtl offwhite
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.88 0.87208 0.8008
+Ks 0.1 0.1 0.1
+Ns 50.0
+
+newmtl metal_PolyMesh_6_528
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.3933 0.3933 0.3933
+Ks 0.75 0.75 0.75
+Ns 103.0
+
+newmtl Default_Texture
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl flltgrey_pied_533
+illum 1
+Ka 0.5224 0.5224 0.5224
+Kd 0.8245 0.8245 0.8245
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl glasstransparent
+illum 4
+Ka 0.2163 0.2163 0.2163
+Kd 0.4694 0.4694 0.4694
+Ks 0.6082 0.6082 0.6082
+Ns 128.0
+sharpness 60.0
+d 0.25
+
+newmtl redbrick
+illum 1
+Ka 0.1102 0.0067 0.0067
+Kd 0.3306 0.0398 0.0081
+Ks 0.0 0.0 0.0
+Ns 1.0
+
+newmtl grey
+illum 2
+Ka 0.5 0.5 0.5
+Kd 0.1837 0.1837 0.1837
+Ks 0.5 0.5 0.5
+Ns 65.89
+
+newmtl Box10_1
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.432 0.432 0.432
+Ns 33.0
+Ni 1.5
+map_Kd materials_Box10_1.png
+
+newmtl wenge
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_wenge.png
+
+newmtl Gris
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.7566 0.7566 0.7566
+Ks 0.09 0.09 0.09
+Ns 81.0
+
+newmtl tissu
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_tissu.png
+
+newmtl blondhair
+illum 2
+Ka 0.4449 0.2632 0.0509
+Kd 0.5714 0.3283 0.0443
+Ks 0.7755 0.4602 0.0918
+Ns 4.65
+
+newmtl Chair_wood
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.659822 0.441785
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+
+newmtl Leather
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.536 0.272 0.144
+Ks 0.258993 0.258993 0.258993
+Ns 47.058823
+Ni 0.0
+
+newmtl 619
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.23686 0.23686 0.23686
+Ns 1.0
+Ni 1.0
+map_Kd materials_619.png
+
+newmtl bed_Plane_620
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.266098 0.266098 0.266098
+Ns 37.2549
+Ni 1.0
+map_Kd materials_bed_Plane_620.png
+
+newmtl metalic_suau
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.473274 0.473274 0.473274
+Ks 0.965606 0.965606 0.965606
+Ns 37.2549
+Ni 1.0
+
+newmtl 622
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.205634 0.205634 0.205634
+Ns 80.39216
+Ni 1.0
+map_Kd materials_622.png
+
+newmtl Black_paint
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.0
+Ks 0.881118 0.881118 0.881118
+Ns 128.0
+Ni 1.0
+
+newmtl Matress
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.8 0.0 0.0
+Ks 0.2 0.2 0.2
+Ns 56.862743
+Ni 1.0
+
+newmtl Cube_1_1_1
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_Cube_1_1_1.png
+
+newmtl 1_1_1_2_2
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+map_Kd materials_1_1_1_2_2.png
+
+newmtl 1_1_1_5_5_5_10_10
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+d 0.0
+map_Kd materials_1_1_1_2_2.png
+
+newmtl 1_1_1_1_1
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_1_1_1_1_1.png
+
+newmtl 1_1_1_2
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_1_1_1_1_1.png
+
+newmtl 1_61_61_61_86
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+Ni 1.0
+map_Kd materials_1_1_1_1_1.png
+
+newmtl Cube_1_1_1_Cube_1_1_1_728
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+Ni 1.0
+map_Kd materials_Cube_1_1_1_Cube_1_1_1_728.png
+
+newmtl 1_1_1_2_2_1_1_1_2_2_729
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_Cube_1_1_1_Cube_1_1_1_728.png
+
+newmtl 61_61_61_62_62
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+
+newmtl 85_85_85_86_86
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_85_85_85_86_86.png
+
+newmtl Cube_1_159_159_159_160_160
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+map_Kd materials_85_85_85_86_86.png
+
+newmtl sweethome3d_window_mirror_165_165
+illum 2
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.5 0.5 0.5
+Ns 96.07843
+Ni 1.0
+map_Kd materials_sweethome3d_window_mirror_165_165.png
+
+newmtl metall
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.063199 0.063199 0.063199
+Ks 1.091519 1.091519 1.091519
+Ns 96.07843
+Ni 1.0
+
+newmtl negrepotes
+illum 2
+Ka 0.0 0.0 0.0
+Kd 0.279606 0.279606 0.279606
+Ks 1.623887 1.623887 1.623887
+Ns 50.980392
+Ni 1.0
+
+newmtl 895
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_895.png
+
+newmtl 896
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 1.0
+Ni 1.0
+map_Kd materials_895.png
+
+newmtl white_Gond_898
+illum 2
+Ka 0.5921569 0.8509804 1.0
+Kd 0.5921569 0.8509804 1.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+
+newmtl white_Gond_909
+illum 2
+Ka 0.78431374 0.44313726 0.0
+Kd 0.78431374 0.44313726 0.0
+Ks 0.46875 0.46875 0.46875
+Ns 60.0
+
+newmtl room_1_919
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_room_1_919.png
+
+newmtl room_2_920
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_room_2_920.png
+
+newmtl room_3_921
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_room_3_921.png
+
+newmtl room_4_922
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_room_4_922.png
+
+newmtl room_5_923
+illum 1
+Ka 0.2 0.2 0.2
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+Ns 0.0
+Ni 1
+d 1.0
+map_Kd materials_room_5_923.png

@@ -159,16 +159,26 @@
 
 		}
 
+		function loadMesh( geometry, material ) {
+
+			mesh = new THREE.Mesh( geometry, material );
+
+			scene.add( mesh );
+
+		}
+
 		function init() {
 
 			// container = document.createElement( 'div' );
 			// document.body.appendChild( container );
 
-			camera = new THREE.PerspectiveCamera( 60, cwidth / cheight, 1, 10000 );
-			camera.position.y = 500;
-			camera.position.x = 300;
-			camera.position.z = 300;
-			camera.lookAt(0,0,0);
+			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
+			camera.position.y = 1500;
+			camera.up.set(0,0,1);
+			camera.lookAt( 0,0,0 );
+			// camera.position.x = 900;
+			// camera.position.z = 600;
+			// camera.lookAt(50,50,0);
 			// controls
 
 			controls = new THREE.TrackballControls( camera );
@@ -192,18 +202,18 @@
 			scene = new THREE.Scene();
 			scene.fog = new THREE.Fog( 0xffffff, 1000, 10000 );
 
-			var ambient = new THREE.AmbientLight( 0x444444 );
-			scene.add( ambient );
+			// var ambient = new THREE.AmbientLight( 0x444444 );
+			// scene.add( ambient );
 
-			var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-			directionalLight.position.set( 0, 0, 1 ).normalize();
-			scene.add( directionalLight );
+			// var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+			// directionalLight.position.set( 0, 0, 1 ).normalize();
+			// scene.add( directionalLight );
 
 			// LIGHTS
 
-			var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.475 );
-			directionalLight.position.set( 100, 100, -100 );
-			scene.add( directionalLight );
+			// var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.475 );
+			// directionalLight.position.set( 100, 100, -100 );
+			// scene.add( directionalLight );
 
 
 			var hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1.25 );
@@ -272,14 +282,22 @@
 			// } );
 			loader = new THREE.BinaryLoader( true );
 			var start = Date.now();
+	        // loader.load( "house/322/bin322.js", createScene );
 
-			loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+	        // function createScene( geometry, materials ) {
+
+	        //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+
+	        // };
+			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.75, 300, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				addMesh( geometry, 1, -800, 0, -600,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
+				// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
 				loader.statusDomElement.style.display = "none";
 
 				console.log( "geometry.vertices: " + geometry.vertices.length );
