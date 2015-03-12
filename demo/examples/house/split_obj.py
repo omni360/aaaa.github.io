@@ -37,6 +37,7 @@ import sys
 import struct
 import math
 import glob
+# import pdb
 
 # #####################################################
 # Configuration
@@ -162,7 +163,7 @@ def parse_obj(fname):
     group = 0
     object = 0
     smooth = 0
-
+    # pdb.set_trace()
     for line in fileinput.input(fname):
         chunks = line.split()
         if len(chunks) > 0:
@@ -261,7 +262,7 @@ def break_obj(infile, outfile):
     faces, vertices, uvs, normals, materials, mtllib = parse_obj(infile)
 
     # sort faces by materials
-
+    # pdb.set_trace()
     chunks = {}
 
     for face in faces:
