@@ -135,7 +135,6 @@
 		var container, stats;
 
 		var camera, controls, scene, renderer;
-		var lookAtScene = true;
 
 		var mouseX = 0, mouseY = 0;
 		var cwidth = $("#gldemo").width();
@@ -175,10 +174,10 @@
 
 			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
 			camera.position.z = 250;
-			camera.position.y = 80;
+			// camera.position.y = 100;
 			// camera.position.x = 100;
 			// camera.up.set(0,0,1);
-			// camera.lookAt( 0,0,0 );
+			camera.lookAt( 0,0,0 );
 			// camera.position.x = 900;
 			// camera.position.z = 600;
 			// camera.lookAt(50,50,0);
@@ -338,7 +337,7 @@
 			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.2, -160, -32, -120,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				addMesh( geometry, 0.1, -80, -32, -60,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
@@ -407,11 +406,7 @@
 			// camera.position.x += ( mouseX - camera.position.x ) * .05;
 			// camera.position.y += ( - mouseY - camera.position.y ) * .05;
 
-			var timer = Date.now() * 0.0001;
-
-			camera.position.x = Math.cos( timer ) * 200;
-			camera.position.z = Math.sin( timer ) * 200;
-			if ( lookAtScene ) camera.lookAt( scene.position );
+			// camera.lookAt( scene.position );
 
 			renderer.render( scene, camera );
 
