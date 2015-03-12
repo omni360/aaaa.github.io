@@ -103,7 +103,7 @@
 		    <div class="container">
 	          	<div class="row">
 			        <article class="span12">
-				        <h5>3D户型导航</h5>
+				        <h5>3D户型展示</h5>
 			        </article>
 			        <div class="clear"></div>
 			        <div class="span12" id="gldemo"></div>
@@ -335,22 +335,44 @@
 
 	        // };
 			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
-			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
 
-				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.2, -160, -32, -120,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
-				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
-				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+			for (var i = 0; i < 135; i++) {
+				var tmpfile = i < 10 ? '00' +i : (i < 100 ? '0' + i : + i) ;
+				var filename = "house/layout/housesp_" + tmpfile + ".js";
+				loader.load( filename , function ( geometry, materials ) {
 
-				// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
-				loader.statusDomElement.style.display = "none";
+					// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+					addMesh( geometry, 0.2, -160, -32, -120,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+					// addMesh( geometry, 0.2, -160, -32, -120, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+					// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
-				console.log( "geometry.vertices: " + geometry.vertices.length );
-				console.log( "geometry.faces: " + geometry.faces.length );
+					// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+					// loader.statusDomElement.style.display = "none";
 
-				console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+					// console.log( "geometry.vertices: " + geometry.vertices.length );
+					// console.log( "geometry.faces: " + geometry.faces.length );
 
-			} );
+					// console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+
+				} );
+			};
+			console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+			// var start2 = Date.now();
+			// loader.load( 'house/layout/house.js', function ( geometry, materials ) {
+
+			// 	// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+			// 	addMesh( geometry, 0.2, -160, -32, -120,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+			// 	// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+
+			// 	loader.statusDomElement.style.display = "none";
+
+			// 	console.log( "geometry.vertices: " + geometry.vertices.length );
+			// 	console.log( "geometry.faces: " + geometry.faces.length );
+
+			// 	console.log( "model loaded and created in " + ( Date.now() - start2 ) + " ms" );
+
+			// } );
 
 			//
 
