@@ -97,6 +97,7 @@
 	</header>
 	<div class="bg-content">       
 	    <div id="content">
+
 	      	<div class="ic">
 	      		
 	      	</div>
@@ -105,6 +106,21 @@
 			        <article class="span12">
 				        <h5>家居在线布置</h5>
 			        </article>
+			        <div class="clear"></div>
+				         <ul class="portfolio clearfix">           
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/4"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/18"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/24"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/26"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/28"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/40"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/42"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/46"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/68"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/74"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/88"></a></li> 
+				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/90"></a></li> 
+				         </ul> 
 			        <div class="clear"></div>
 			        <div class="span12" id="gldemo"></div>
 			    </div>
@@ -358,10 +374,10 @@
 			// };
 			// console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
 			var start2 = Date.now();
-			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
+			loader.load( 'house/house_layout.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.2, -160, -32, -120,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				addMesh( geometry, 0.2, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
@@ -429,11 +445,11 @@
 			// camera.position.x += ( mouseX - camera.position.x ) * .05;
 			// camera.position.y += ( - mouseY - camera.position.y ) * .05;
 
-			var timer = Date.now() * 0.0001;
+			// var timer = Date.now() * 0.0001;
 
-			camera.position.x = Math.cos( timer ) * 200;
-			camera.position.z = Math.sin( timer ) * 200;
-			if ( lookAtScene ) camera.lookAt( scene.position );
+			// camera.position.x = Math.cos( timer ) * 200;
+			// camera.position.z = Math.sin( timer ) * 200;
+			// if ( lookAtScene ) camera.lookAt( scene.position );
 
 			renderer.render( scene, camera );
 
