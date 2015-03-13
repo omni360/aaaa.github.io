@@ -30,6 +30,7 @@
 	<script src="js/loaders/OBJMTLLoader.js"></script>
 	<script src="js/controls/TrackballControls.js"></script>
 	<script src="js/loaders/BinaryLoader.js"></script>
+	<script src="js/controls/TransformControls.js"></script>
 
 	<script src="js/Detector.js"></script>
 	<script src="js/libs/stats.min.js"></script>
@@ -109,18 +110,18 @@
 			        </article>
 			        <div class="clear"></div>
 				         <ul class="portfolio clearfix">           
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/27');"><img alt="" src="../../img/house/26"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/29');"><img alt="" src="../../img/house/28"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/41');"><img alt="" src="../../img/house/40"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/43');"><img alt="" src="../../img/house/42"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/47');"><img alt="" src="../../img/house/46"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/69');"><img alt="" src="../../img/house/68"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/75');"><img alt="" src="../../img/house/74"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/89');"><img alt="" src="../../img/house/88"></a></li> 
-				           <li class="span1"><a href="#" onclick="addFurniture('house/321/91');"><img alt="" src="../../img/house/90"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/27');"><img alt="" src="../../img/house/26"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/29');"><img alt="" src="../../img/house/28"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/41');"><img alt="" src="../../img/house/40"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/43');"><img alt="" src="../../img/house/42"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/47');"><img alt="" src="../../img/house/46"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/69');"><img alt="" src="../../img/house/68"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/75');"><img alt="" src="../../img/house/74"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/89');"><img alt="" src="../../img/house/88"></a></li> 
+				           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/91');"><img alt="" src="../../img/house/90"></a></li> 
 				         </ul> 
 			        <div class="clear"></div>
 			        <div class="span12" id="gldemo"></div>
@@ -151,8 +152,36 @@
 
 		var container, stats;
 
-		var camera, controls, scene, renderer;
+		var camera, controls, scene, renderer, tControl;
 		var lookAtScene = true;
+		var mouse, raycaster, isShiftDown = false;
+
+		var rollOverMesh, rollOverMaterial;
+		var cubeGeo, cubeMaterial;
+
+		//state
+		var isModify = false, isPlace = false, isViewControl = true;
+
+		function startModify(){
+			isModify = true;
+			isPlace = false;
+			isViewControl = true;
+		}
+		function startViewControl(){
+			isModify = true;
+			isPlace = false;
+			isViewControl = true;
+			controls.enabled = true;
+
+		}
+		function startPlace(){
+			isModify = false;
+			isPlace = true;
+			isViewControl = false;
+			controls.enabled = false;
+		}
+
+		var objects = [];
 
 		var mouseX = 0, mouseY = 0;
 		var cwidth = $("#gldemo").width();
@@ -283,6 +312,28 @@
 			// hemiLight.position.y = 500;
 			// scene.add( hemiLight );
 
+			// grid
+
+			var size = 500, step = 50;
+
+			var geometry = new THREE.Geometry();
+
+			for ( var i = - size; i <= size; i += step ) {
+
+				geometry.vertices.push( new THREE.Vector3( - size, 0, i ) );
+				geometry.vertices.push( new THREE.Vector3(   size, 0, i ) );
+
+				geometry.vertices.push( new THREE.Vector3( i, 0, - size ) );
+				geometry.vertices.push( new THREE.Vector3( i, 0,   size ) );
+
+			}
+
+			var material = new THREE.LineBasicMaterial( { color: 0x000000, opacity: 0.2, transparent: true } );
+
+			var line = new THREE.Line( geometry, material, THREE.LinePieces );
+			scene.add( line );
+
+
 			// LIGHTS
 
 			hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
@@ -348,6 +399,19 @@
 
 			var sky = new THREE.Mesh( skyGeo, skyMat );
 			scene.add( sky );
+
+			// roll-over helpers
+
+			rollOverGeo = new THREE.BoxGeometry( 50, 50, 50 );
+			rollOverMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
+			rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
+			scene.add( rollOverMesh );
+
+			// cubes
+
+			cubeGeo = new THREE.BoxGeometry( 50, 50, 50 );
+			cubeMaterial = new THREE.MeshLambertMaterial( { color: 0xfeb74c, ambient: 0x00ff80, shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( "textures/square-outline-textured.png" ) } );
+			cubeMaterial.ambient = cubeMaterial.color;
 
 			// model
 
@@ -431,6 +495,19 @@
 
 			} );
 
+			// raycaster
+			raycaster = new THREE.Raycaster();
+			mouse = new THREE.Vector2();
+
+			var geometry = new THREE.PlaneBufferGeometry( 1000, 1000 );
+			geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
+
+			plane = new THREE.Mesh( geometry );
+			plane.visible = false;
+			scene.add( plane );
+
+			objects.push( plane );
+
 			//
 
 			renderer = new THREE.WebGLRenderer({ antialias:true }); //, alpha: true });
@@ -440,7 +517,43 @@
 
 			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
+			//translate control
+			tControl = new THREE.TransformControls( camera, renderer.domElement );
+			tControl.addEventListener( 'change', render );
+
+
+			window.addEventListener( 'keydown', function ( event ) {
+	            //console.log(event.which);
+	            switch ( event.keyCode ) {
+	              case 81: // Q
+	                tControl.setSpace( tControl.space == "local" ? "world" : "local" );
+	                break;
+	              case 87: // W
+	                tControl.setMode( "translate" );
+	                break;
+	              case 69: // E
+	                tControl.setMode( "rotate" );
+	                break;
+	              case 82: // R
+	                tControl.setMode( "scale" );
+	                break;
+				case 187:
+				case 107: // +,=,num+
+					tControl.setSize( tControl.size + 0.1 );
+					break;
+				case 189:
+				case 10: // -,_,num-
+					tControl.setSize( Math.max(tControl.size - 0.1, 0.1 ) );
+					break;
+	            }
+    		});
+
 			//
+			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+			document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+			document.addEventListener( 'keydown', onDocumentKeyDown, false );
+			document.addEventListener( 'keyup', onDocumentKeyUp, false );
+			document.addEventListener( 'keypress', onDocumentKeyPress, false );
 
 			window.addEventListener( 'resize', onWindowResize, false );
 
@@ -461,6 +574,113 @@
 
 			controls.handleResize();
 			render();
+
+		}
+
+		function onDocumentMouseMove( event ) {
+
+			event.preventDefault();
+
+			mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+
+			raycaster.setFromCamera( mouse, camera );
+
+			var intersects = raycaster.intersectObjects( objects );
+
+			if ( intersects.length > 0 && isPlace == true) {
+
+				var intersect = intersects[ 0 ];
+
+				rollOverMesh.position.copy( intersect.point ).add( intersect.face.normal );
+				rollOverMesh.position.divideScalar( 50 ).floor().multiplyScalar( 50 ).addScalar( 25 );
+
+			}
+
+			render();
+
+		}
+
+		function onDocumentMouseDown( event ) {
+
+			event.preventDefault();
+
+			mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+
+			raycaster.setFromCamera( mouse, camera );
+
+			var intersects = raycaster.intersectObjects( objects );
+
+			if ( intersects.length > 0 ) {
+
+				var intersect = intersects[ 0 ];
+
+				// delete cube
+
+				if ( isShiftDown ) {
+
+					if ( intersect.object != plane ) {
+
+						scene.remove( intersect.object );
+
+						objects.splice( objects.indexOf( intersect.object ), 1 );
+
+					}
+
+				// create cube
+
+				}else if(isPlace){
+
+					var voxel = new THREE.Mesh( cubeGeo, cubeMaterial );
+					voxel.position.copy( intersect.point ).add( intersect.face.normal );
+					voxel.position.divideScalar( 50 ).floor().multiplyScalar( 50 ).addScalar( 25 );
+					scene.add( voxel );
+
+					objects.push( voxel );
+
+				}else {
+
+					if ( intersect.object != plane ) {
+
+						tControl.attach( intersect.object );
+						scene.add( tControl );
+
+					}else{
+						tControl.detach();
+						scene.remove(tControl);
+					}
+
+				}
+
+				render();
+
+			}
+
+		}
+
+		function onDocumentKeyDown( event ) {
+
+			switch( event.keyCode ) {
+
+				case 16: isShiftDown = true; break;
+				case 27: startViewControl(); break;
+
+			}
+
+		}
+
+		function onDocumentKeyPress(event) {
+			switch(event.keyCode){
+				case 27: startViewControl(); break;
+			}
+		}
+
+		function onDocumentKeyUp( event ) {
+
+			switch ( event.keyCode ) {
+
+				case 16: isShiftDown = false; break;
+
+			}
 
 		}
 
