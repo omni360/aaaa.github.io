@@ -26,6 +26,7 @@
 
 	<script src="js/loaders/DDSLoader.js"></script>
 	<script src="js/loaders/MTLLoader.js"></script>
+	<script src="js/loaders/OBJLoader.js"></script>
 	<script src="js/loaders/OBJMTLLoader.js"></script>
 	<script src="js/controls/TrackballControls.js"></script>
 	<script src="js/loaders/BinaryLoader.js"></script>
@@ -108,18 +109,18 @@
 			        </article>
 			        <div class="clear"></div>
 				         <ul class="portfolio clearfix">           
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/4"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/18"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/24"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/26"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/28"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/40"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/42"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/46"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/68"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/74"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/88"></a></li> 
-				           <li class="span1"><a href="demo/examples/gldemo_house_show.html" ><img alt="" src="../../img/house/90"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/27');"><img alt="" src="../../img/house/26"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/29');"><img alt="" src="../../img/house/28"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/41');"><img alt="" src="../../img/house/40"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/43');"><img alt="" src="../../img/house/42"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/47');"><img alt="" src="../../img/house/46"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/69');"><img alt="" src="../../img/house/68"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/75');"><img alt="" src="../../img/house/74"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/89');"><img alt="" src="../../img/house/88"></a></li> 
+				           <li class="span1"><a href="#" onclick="addFurniture('house/321/91');"><img alt="" src="../../img/house/90"></a></li> 
 				         </ul> 
 			        <div class="clear"></div>
 			        <div class="span12" id="gldemo"></div>
@@ -163,6 +164,46 @@
 
 		init();
 		animate();
+		function addFurniture (objUrl) {
+			// body...
+			var manager = new THREE.LoadingManager();
+			manager.onProgress = function ( item, loaded, total ) {
+
+				console.log( item, loaded, total );
+
+			};
+
+			var onProgress = function ( xhr ) {
+				if ( xhr.lengthComputable ) {
+					var percentComplete = xhr.loaded / xhr.total * 100;
+					console.log( Math.round(percentComplete, 2) + '% downloaded' );
+				}
+			};
+
+			var onError = function ( xhr ) {
+			};
+
+
+			// model
+
+			var loader = new THREE.OBJLoader( manager );
+			loader.load( objUrl, function ( object ) {
+
+				object.traverse( function ( child ) {
+
+					if ( child instanceof THREE.Mesh ) {
+
+						child.material = new THREE.MeshPhongMaterial( { ambient: 0xeeeeee, color: 0xeeeeee, specular: 0xffffff, shininess: 30 } );
+
+					}
+
+				} );
+
+				// object.position.y = 80;
+				scene.add( object );
+
+			}, onProgress, onError );
+		}
 
 		function addMesh( geometry, scale, x, y, z, rx, ry, rz, material ) {
 
@@ -377,7 +418,7 @@
 			loader.load( 'house/house_layout.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.2, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				// addMesh( geometry, 0.2, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
