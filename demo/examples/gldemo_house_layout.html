@@ -172,6 +172,7 @@
 			isPlace = false;
 			isViewControl = true;
 			controls.enabled = true;
+			scene.remove(rollOverMesh);
 
 		}
 		function startPlace(){
@@ -222,14 +223,21 @@
 
 					if ( child instanceof THREE.Mesh ) {
 
-						child.material = new THREE.MeshPhongMaterial( { ambient: 0xeeeeee, color: 0xeeeeee, specular: 0xffffff, shininess: 30 } );
+						child.material = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
+						// child.material = new THREE.MeshPhongMaterial( { ambient: 0xeeeeee, color: 0xeeeeee, specular: 0xffffff, shininess: 30 } );
 
 					}
 
 				} );
 
 				// object.position.y = 80;
-				scene.add( object );
+				// scene.add( object );
+				// rollOverGeo = new THREE.BoxGeometry( 50, 50, 50 );
+				// rollOverMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
+				// rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
+				// rollOverMesh.visible = false;
+				rollOverMesh = object;
+				scene.add( rollOverMesh );
 
 			}, onProgress, onError );
 		}
@@ -242,7 +250,8 @@
 			mesh.position.set( x, y, z );
 			mesh.rotation.set( rx, ry, rz );
 
-			scene.add( mesh );
+			scene.add(mesh);
+			objects.push( mesh );
 
 		}
 
@@ -402,17 +411,17 @@
 
 			// roll-over helpers
 
-			rollOverGeo = new THREE.BoxGeometry( 50, 50, 50 );
-			rollOverMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
-			rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
-			rollOverMesh.vis
-			scene.add( rollOverMesh );
+			// rollOverGeo = new THREE.BoxGeometry( 50, 50, 50 );
+			// rollOverMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
+			// rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
+			// rollOverMesh.vis
+			// scene.add( rollOverMesh );
 
 			// cubes
 
-			cubeGeo = new THREE.BoxGeometry( 50, 50, 50 );
-			cubeMaterial = new THREE.MeshLambertMaterial( { color: 0xfeb74c, ambient: 0x00ff80, shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( "textures/square-outline-textured.png" ) } );
-			cubeMaterial.ambient = cubeMaterial.color;
+			// cubeGeo = new THREE.BoxGeometry( 50, 50, 50 );
+			// cubeMaterial = new THREE.MeshLambertMaterial( { color: 0xfeb74c, ambient: 0x00ff80, shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( "textures/square-outline-textured.png" ) } );
+			// cubeMaterial.ambient = cubeMaterial.color;
 
 			// model
 
@@ -483,7 +492,7 @@
 			loader.load( 'house/house_layout.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				// addMesh( geometry, 0.2, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				addMesh( geometry, 0.2, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
@@ -631,7 +640,9 @@
 
 				}else if(isPlace){
 
-					var voxel = new THREE.Mesh( cubeGeo, cubeMaterial );
+					var voxel = rollOverMesh.clone();
+					voxel.children[0].material = new THREE.MeshPhongMaterial( { ambient: 0xeeeeee, color: 0xeeeeee, specular: 0xffffff, shininess: 30 } ); 
+					// var voxel = new THREE.Mesh( cubeGeo, cubeMaterial );
 					voxel.position.copy( intersect.point ).add( intersect.face.normal );
 					voxel.position.divideScalar( 50 ).floor().multiplyScalar( 50 ).addScalar( 25 );
 					scene.add( voxel );
@@ -647,7 +658,7 @@
 
 					}else{
 						tControl.detach();
-						scene.remove(tControl);
+						// scene.remove(tControl);
 					}
 
 				}
