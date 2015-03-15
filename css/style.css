@@ -1300,10 +1300,11 @@ footer {
   box-sizing: border-box;
 }
 #info {
-  color: #fff;
+  color: #000;
   position: absolute;
-  top: 10px;
-  width: 100%;
+  top: 50px;
+  margin-left: -30px;
+  width: 1170px;
   text-align: center;
   z-index: 100;
   display:block;

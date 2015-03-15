@@ -291,6 +291,7 @@
 
 			var material = decalMaterial.clone();
 			material.color.setHex( Math.random() * 0xffffff );
+			// material.wireframe = true;
 
 			var m = new THREE.Mesh( new THREE.DecalGeometry( mesh, p, r, s, check ), material );
 			decals.push( m );
