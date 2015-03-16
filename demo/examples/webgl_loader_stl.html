@@ -42,7 +42,7 @@
 			STL loader test by <a href="https://github.com/aleeper">aleeper</a>. PR2 head from <a href="http://www.ros.org/wiki/pr2_description">www.ros.org</a>
 		</div>
 
-		<script src="../build/three.min.js"></script>
+		<script src="../build/three.js"></script>
 
 		<script src="js/loaders/STLLoader.js"></script>
 
@@ -92,7 +92,7 @@
 				var loader = new THREE.STLLoader();
 				loader.load( './models/stl/ascii/slotted_disk.stl', function ( geometry ) {
 
-					var material = new THREE.MeshPhongMaterial( { ambient: 0xff5533, color: 0xff5533, specular: 0x111111, shininess: 200 } );
+					var material = new THREE.MeshPhongMaterial( { ambient: 0xff5533, color: 0xff5533, specular: 0x111111, shininess: 200 ,wireframe:true} );
 					var mesh = new THREE.Mesh( geometry, material );
 
 					mesh.position.set( 0, - 0.25, 0.6 );
