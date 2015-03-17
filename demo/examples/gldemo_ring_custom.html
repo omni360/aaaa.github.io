@@ -261,7 +261,7 @@
 			// camera.position.z = 250;
 			// camera.lookAt( 0,0,0 );
 			camera = new THREE.PerspectiveCamera( 30, cwidth / cheight, 1, 15000 );
-			camera.position.set( 0, 200, 600 );
+			camera.position.set( 0, 500, 900 );
 
 			cameraTarget = new THREE.Vector3( 0, 150, 0 );
 
@@ -400,7 +400,7 @@
 			}
 
 			material = new THREE.MeshFaceMaterial( [
-				new THREE.MeshPhongMaterial( { color: 0xffffff, shading: THREE.FlatShading, wireframe:true } ), // front
+				new THREE.MeshPhongMaterial( { color: 0xffffff, shading: THREE.FlatShading } ),//, wireframe:true } ), // front
 				new THREE.MeshPhongMaterial( { color: 0xffffff, shading: THREE.SmoothShading } ) // side
 			] );
 
@@ -409,7 +409,19 @@
 
 			scene.add( group );
 
+			var map = THREE.ImageUtils.loadTexture( 'textures/UV_Grid_Sm.jpg' );
+			map.wrapS = map.wrapT = THREE.RepeatWrapping;
+			map.anisotropy = 16;
+
+			var ringMaterial = new THREE.MeshLambertMaterial( { ambient: 0xbbbbbb, map: map, side: THREE.DoubleSide } );
+
+			var ring = new THREE.Mesh( new THREE.RingGeometry( 280 + hover, 300 + hover, 50, 5, 0, Math.PI * 1.5 ), ringMaterial );
+			ring.rotation.x = Math.PI / 2;
+			ring.position.y = 60;
+			group.add( ring );
+
 			createText();
+			drawArcText( text, 300, 0, Math.PI);
 
 			// var plane = new THREE.Mesh(
 			// 	new THREE.PlaneBufferGeometry( 10000, 10000 ),
@@ -720,6 +732,113 @@
 
 		}
 
+		function drawArcText(textString, radiusArg, thetaStartArg, thetaLengthArg) {
+
+			var radius = radiusArg !== undefined ? radiusArg : 300;
+			var thetaStart = thetaStartArg !== undefined ? thetaStartArg : 0;
+			var thetaLength = thetaLengthArg !== undefined ? thetaLengthArg : Math.PI * 2;
+
+			var chars = String(textString).split(''),
+				length = chars.length;
+
+			var textCharsGeo = [];
+
+			for (var i =0; i < length; i++) {
+
+				var charLocation = thetaStart + i / length * thetaLength;
+				var charAngle = Math.PI / 2 - thetaStart + i / length * thetaLength;
+
+				var charGeo = new THREE.TextGeometry( chars[i], {
+
+				size: size,
+				height: height,
+				curveSegments: curveSegments,
+
+				font: font,
+				weight: weight,
+				style: style,
+
+				bevelThickness: bevelThickness,
+				bevelSize: bevelSize,
+				bevelEnabled: bevelEnabled,
+
+				material: 0,
+				extrudeMaterial: 1
+
+				} );
+
+				charGeo.computeBoundingBox();
+				charGeo.computeVertexNormals();
+
+				if (! bevelEnabled) {
+
+					var triangleAreaHeuristics = 0.1 * (height * size);
+
+					for (var i = 0; i < chargeo.faces.length; i++) {
+						
+						var face = chargeo.faces[i];
+
+						if(face.materialIndex == 1) {
+
+							for (var j = 0; j < face.vertexNormals.length; j++) {
+
+								face.vertexNormals[j].z = 0;
+								face.vertexNormals[j].normalize();
+
+							};
+
+							var va = charGeo.vertices[face.a];
+							var vb = charGeo.vertices[face.b];
+							var vc = charGeo.vertices[face.c];
+
+							var s = THREE.GeometryUtils.triangleArea( va, vb, vc );
+
+							if( s > triangleAreaHeuristics ) {
+
+								for (var j = 0; j < face.vertexNormals.length; j++) {
+
+									face.vertexNormals[j].copy( face.normal );
+
+								};
+							}
+
+						}
+					};
+				};
+
+				var centerOffset = -0.5 * ( charGeo.boundingBox.max.x - charGeo.boundingBox.min.x );
+
+				textMesh1 = new THREE.Mesh( charGeo, material );
+
+				textMesh1.position.x = radius * Math.cos(charLocation);
+				textMesh1.position.y = 0;
+				textMesh1.position.z = radius * Math.sin(charLocation);
+
+				textMesh1.rotation.x = 0;
+				textMesh1.rotation.y = charAngle;
+				// textMesh1.rotation.z = Math.PI / 6; 
+
+				group.add( textMesh1 );
+
+				if ( mirror ) {
+
+					textMesh2 = new THREE.Mesh( charGeo, material );
+
+					textMesh2.position.x = radius * Math.cos(charLocation);
+					textMesh2.position.y = -hover;
+					textMesh2.position.z = radius * Math.sin(charLocation);
+
+					textMesh2.rotation.x = Math.PI;
+					textMesh2.rotation.y = charAngle;
+
+					// group.add( textMesh2 );
+
+				}
+
+			};
+
+		}
+
 		function refreshText() {
 
 			updatePermalink();
@@ -730,6 +849,7 @@
 			if ( !text ) return;
 
 			createText();
+			drawArcText( text,300, 0, Math.PI );
 
 		}
 
