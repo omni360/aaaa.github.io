@@ -180,7 +180,8 @@
 
 		var firstLetter = true;
 
-		var text = "three.js",
+		var text = "THREE.JS",
+		// var text = "three.js",
 
 			height = 20,
 			size = 70,
@@ -262,7 +263,8 @@
 			// camera.lookAt( 0,0,0 );
 			camera = new THREE.PerspectiveCamera( 30, cwidth / cheight, 1, 15000 );
 			camera.position.set( 0, 500, 900 );
-
+			// carmera = new THREE.OrthographicCamera( 2000, 2000, 2000, 2000, 1, 15000 );
+			// carmera.position.set(0,1500,0);
 			cameraTarget = new THREE.Vector3( 0, 150, 0 );
 
 
@@ -421,7 +423,7 @@
 			group.add( ring );
 
 			createText();
-			drawArcText( text, 300, 0, Math.PI);
+			drawArcText( text, 300, 0, Math.PI * 2);
 
 			// var plane = new THREE.Mesh(
 			// 	new THREE.PlaneBufferGeometry( 10000, 10000 ),
@@ -745,8 +747,9 @@
 
 			for (var i =0; i < length; i++) {
 
-				var charLocation = thetaStart + i / length * thetaLength;
+				var charLocation = thetaStart + i / (length + 1) * thetaLength;
 				var charAngle = Math.PI / 2 - i / length * thetaLength;
+				var charAngleMirrored = Math.PI /2 + i / length * thetaLength;
 
 				var charGeo = new THREE.TextGeometry( chars[i], {
 
@@ -821,6 +824,11 @@
 				var h = charGeo.boundingBox.max.y - charGeo.boundingBox.min.y;
 				var d = charGeo.boundingBox.max.z - charGeo.boundingBox.min.z;
 
+				console.log("char: " + chars[i]);
+				console.log("w: " + w);
+				console.log("h: " + h);
+				console.log("d: " + d);
+
 				var box =  new THREE.CubeGeometry( w, h, d);
 				var cubematerial = new THREE.MeshBasicMaterial( { color : 0x000000, wireframe : true} );
 				var cube = new THREE.Mesh(box, cubematerial);
@@ -841,7 +849,7 @@
 					// textMesh2.position.z = radius * Math.sin(charLocation);
 
 					textMesh2.rotation.x = Math.PI;
-					textMesh2.rotation.y = charAngle;
+					textMesh2.rotation.y = charAngleMirrored ;
 
 					group.add( textMesh2 );
 
@@ -861,7 +869,7 @@
 			if ( !text ) return;
 
 			createText();
-			drawArcText( text,300, 0, Math.PI );
+			drawArcText( text,300, 0, Math.PI * 2 );
 
 		}
 
