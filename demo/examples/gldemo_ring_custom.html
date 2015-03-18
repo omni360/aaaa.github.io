@@ -285,7 +285,7 @@
 			// scene
 
 			scene = new THREE.Scene();
-			scene.fog = new THREE.Fog( 0xffffff, 300, 1400 );
+			scene.fog = new THREE.Fog( 0xffffff, 300, 2000 );
 			scene.fog.color.setHSL( 0.6, 0, 1 );
 
 
@@ -746,7 +746,7 @@
 			for (var i =0; i < length; i++) {
 
 				var charLocation = thetaStart + i / length * thetaLength;
-				var charAngle = Math.PI / 2 - thetaStart + i / length * thetaLength;
+				var charAngle = Math.PI / 2 - i / length * thetaLength;
 
 				var charGeo = new THREE.TextGeometry( chars[i], {
 
@@ -816,22 +816,34 @@
 
 				textMesh1.rotation.x = 0;
 				textMesh1.rotation.y = charAngle;
+
+				var w = charGeo.boundingBox.max.x - charGeo.boundingBox.min.x;
+				var h = charGeo.boundingBox.max.y - charGeo.boundingBox.min.y;
+				var d = charGeo.boundingBox.max.z - charGeo.boundingBox.min.z;
+
+				var box =  new THREE.CubeGeometry( w, h, d);
+				var cubematerial = new THREE.MeshBasicMaterial( { color : 0x000000, wireframe : true} );
+				var cube = new THREE.Mesh(box, cubematerial);
+				cube.position.copy(textMesh1.position);
+				cube.rotation.copy(textMesh1.rotation);
+				group.add(cube);
 				// textMesh1.rotation.z = Math.PI / 6; 
 
 				group.add( textMesh1 );
 
 				if ( mirror ) {
 
-					textMesh2 = new THREE.Mesh( charGeo, material );
+					textMesh2 = textMesh1.clone();
+					// textMesh2 = new THREE.Mesh( charGeo, material );
 
-					textMesh2.position.x = radius * Math.cos(charLocation);
+					// textMesh2.position.x = radius * Math.cos(charLocation);
 					textMesh2.position.y = -hover;
-					textMesh2.position.z = radius * Math.sin(charLocation);
+					// textMesh2.position.z = radius * Math.sin(charLocation);
 
 					textMesh2.rotation.x = Math.PI;
 					textMesh2.rotation.y = charAngle;
 
-					// group.add( textMesh2 );
+					group.add( textMesh2 );
 
 				}
 
