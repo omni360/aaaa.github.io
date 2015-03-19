@@ -415,11 +415,11 @@
 			map.wrapS = map.wrapT = THREE.RepeatWrapping;
 			map.anisotropy = 16;
 
-			var ringMaterial = new THREE.MeshLambertMaterial( { ambient: 0xbbbbbb, map: map, side: THREE.DoubleSide } );
+			var ringMaterial = new THREE.MeshLambertMaterial( { ambient: 0xbbbbbb, map: map, side: THREE.DoubleSide, wireframe: true } );
 
-			var ring = new THREE.Mesh( new THREE.RingGeometry( 280 + hover, 300 + hover, 50, 5, 0, Math.PI * 1.5 ), ringMaterial );
+			var ring = new THREE.Mesh( new THREE.RingGeometry( 280 + hover, 300 + hover, 180, 5, 0, Math.PI * 1.5 ), ringMaterial );
 			ring.rotation.x = Math.PI / 2;
-			ring.position.y = 60;
+			ring.position.y = 0;
 			group.add( ring );
 
 			createText();
@@ -716,6 +716,10 @@
 			textMesh1.rotation.y = Math.PI * 2;
 
 			group.add( textMesh1 );
+			var bounding = new THREE.BoxHelper(textMesh1);
+
+			scene.add(bounding);
+			console.log(bounding);
 
 			if ( mirror ) {
 
@@ -811,7 +815,13 @@
 
 				var centerOffset = -0.5 * ( charGeo.boundingBox.max.x - charGeo.boundingBox.min.x );
 
+				charGeo.center.x = radius * Math.cos(charLocation);
+				charGeo.center.y = 0;
+				charGeo.center.z = radius * Math.sin(charLocation);
+
 				textMesh1 = new THREE.Mesh( charGeo, material );
+
+				// textMesh1.lookAt(textMesh1.position);
 
 				textMesh1.position.x = radius * Math.cos(charLocation);
 				textMesh1.position.y = 0;
@@ -820,24 +830,42 @@
 				textMesh1.rotation.x = 0;
 				textMesh1.rotation.y = charAngle;
 
-				var w = charGeo.boundingBox.max.x - charGeo.boundingBox.min.x;
-				var h = charGeo.boundingBox.max.y - charGeo.boundingBox.min.y;
-				var d = charGeo.boundingBox.max.z - charGeo.boundingBox.min.z;
-
-				console.log("char: " + chars[i]);
-				console.log("w: " + w);
-				console.log("h: " + h);
-				console.log("d: " + d);
-
-				var box =  new THREE.CubeGeometry( w, h, d);
-				var cubematerial = new THREE.MeshBasicMaterial( { color : 0x000000, wireframe : true} );
-				var cube = new THREE.Mesh(box, cubematerial);
-				cube.position.copy(textMesh1.position);
-				cube.rotation.copy(textMesh1.rotation);
-				group.add(cube);
-				// textMesh1.rotation.z = Math.PI / 6; 
-
 				group.add( textMesh1 );
+
+				// var w = charGeo.boundingBox.max.x - charGeo.boundingBox.min.x;
+				// var h = charGeo.boundingBox.max.y - charGeo.boundingBox.min.y;
+				// var d = charGeo.boundingBox.max.z - charGeo.boundingBox.min.z;
+
+				var bounding = new THREE.BoxHelper(textMesh1);
+
+				scene.add(bounding);
+				console.log(bounding);
+				// console.log("char: " + chars[i]);
+				// console.log("w: " + w);
+				// console.log("h: " + h);
+				// console.log("d: " + d);
+
+				// var box =  new THREE.BoxGeometry( w, h, d);
+				// box.computeBoundingBox();
+				// var cubematerial = new THREE.MeshBasicMaterial( { color : 0x000000, wireframe : true} );
+				// var cube = new THREE.Mesh(box, cubematerial);
+				// cube.position.copy(textMesh1.position );
+				// cube.rotation.copy(textMesh1.rotation );
+				// cube.position.x += w / 2;
+				// cube.position.y += h / 2;
+				// cube.position.z += d / 2;
+				// group.add(cube);
+
+				// console.log("tx: " + textMesh1.position.x);
+				// console.log("ty: " + textMesh1.position.y);
+				// console.log("tz: " + textMesh1.position.z);
+
+				// console.log("x: " + cube.position.x);
+				// console.log("y: " + cube.position.y);
+				// console.log("z: " + cube.position.z);
+				// console.log(box.center());
+				// console.log(charGeo.center());
+				// textMesh1.rotation.z = Math.PI / 6; 
 
 				if ( mirror ) {
 
@@ -851,7 +879,7 @@
 					textMesh2.rotation.x = Math.PI;
 					textMesh2.rotation.y = charAngleMirrored ;
 
-					group.add( textMesh2 );
+					// group.add( textMesh2 );
 
 				}
 
