@@ -30,6 +30,9 @@
 	<script src="js/controls/TrackballControls.js"></script>
 	<script src="js/loaders/BinaryLoader.js"></script>
 
+	<script src="js/geometries/DecalGeometry.js"></script>
+	<script src="js/libs/dat.gui.min.js"></script>
+
 	<script src="js/Detector.js"></script>
 	<script src="js/libs/stats.min.js"></script>
 	<script type="x-shader/x-vertex" id="vertexShader">
@@ -110,11 +113,19 @@
 			    		<div class="row">
 		 			        <div class="clear"></div>
 					        <div class="span2">
-					        	<ul class="portfolio">           
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
-						        </ul> 				        	
+		    			        <article class="span2">
+							        <h6>命令</h6>
+						        </article>
+						        <div class="row">
+						        	<ul class="portfolio">           
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/15');"><img alt="" src="textures/decal/decal-diffuse.png">模特性别</a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/19');"><img alt="" src="textures/decal/decal-diffuse.png">服装样式</a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="textures/decal/decal-diffuse.png">服装底色</a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="textures/decal/decal-diffuse.png">服装花纹</a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="textures/decal/decal.png">艺术贴片</a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="textures/decal/decal-diffuse.png">添加文字</a></li> 
+							        </ul> 				        							        	
+						        </div>
 					        </div>
 					        <div class="span5">
 		    			        <article class="span5">
@@ -137,14 +148,22 @@
 					        </div>
 					        <div class="clear"></div>
 					        <div class="span2">
-					        	<ul class="portfolio">           
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
-						           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
-						        </ul> 						        	
+		    			        <article class="span2">
+							        <h6>属性</h6>
+						        </article>
+						        <div class="row">
+						        	<ul class="portfolio">           
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/5');"><img alt="" src="../../img/house/4"></a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/19');"><img alt="" src="../../img/house/18"></a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick="startPlace(); addFurniture('house/321/25');"><img alt="" src="../../img/house/24"></a></li> 
+							        </ul> 				        							        	
+						        </div>					        	
 					        </div>
 					        <div class="span5">
-		    			        <article>
+		    			        <article class="span5">
 							        <h6>裤子</h6>
 						        </article>
 					        	<ul class="portfolio">           
@@ -199,6 +218,9 @@
 		var container, stats;
 
 		var camera, controls, scene, renderer;
+		var mesh, decal;
+		var raycaster;
+		var line;
 
 		var mouseX = 0, mouseY = 0;
 		var cwidth = $("#gldemo").width();
@@ -207,6 +229,55 @@
 		var windowHalfX = cwidth / 2;
 		var windowHalfY = cheight / 2;
 
+		var intersection = {
+			intersects: false,
+			point: new THREE.Vector3(),
+			normal: new THREE.Vector3()
+		};
+		var controls;
+		var mouse = new THREE.Vector2();
+
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/decal-diffuse.png' );
+		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
+
+		var decalMaterial = new THREE.MeshPhongMaterial( {
+			specular: 0x444444,
+			map: decalDiffuse,
+			normalMap: decalNormal,
+			normalScale: new THREE.Vector2( .15, .15 ),
+			shininess: 30,
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			wireframe: false
+		});
+		/*decalMaterial = new THREE.MeshNormalMaterial( {
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			shading: THREE.SmoothShading
+		});*/
+		var decals = [];
+		var decalHelper, mouseHelper;
+		var p = new THREE.Vector3( 0, 0, 0 );
+		var r = new THREE.Vector3( 0, 0, 0 );
+		var s = new THREE.Vector3( 10, 10, 10 );
+		var up = new THREE.Vector3( 0, 1, 0 );
+		var check = new THREE.Vector3( 1, 1, 1 );
+
+		var params = {
+			projection: 'normal',
+			minScale: 10,
+			maxScale: 20,
+			rotate: true,
+			clear: function() {
+				removeDecals();
+			}
+		};
 
 		init();
 		animate();
@@ -231,6 +302,8 @@
 
 		}
 
+		// window.addEventListener( 'load', init );
+
 		function init() {
 
 			// container = document.createElement( 'div' );
@@ -245,6 +318,8 @@
 			// camera.position.x = 900;
 			// camera.position.z = 600;
 			// camera.lookAt(50,50,0);
+			camera.target = new THREE.Vector3();
+
 			// controls
 
 			controls = new THREE.TrackballControls( camera );
@@ -321,6 +396,19 @@
 			dirLight.shadowBias = -0.0001;
 			dirLight.shadowDarkness = 0.35;
 			//dirLight.shadowCameraVisible = true;
+
+			line = new THREE.Line( new THREE.Geometry( ), new THREE.LineBasicMaterial( { linewidth: 4 }) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			scene.add( line );
+
+			// loadLeePerrySmith();
+
+			raycaster = new THREE.Raycaster();
+
+			mouseHelper = new THREE.Mesh( new THREE.BoxGeometry( 1, 1, 10 ), new THREE.MeshNormalMaterial() );
+			mouseHelper.visible = false;
+			scene.add( mouseHelper );
 
 			// GROUND
 
@@ -428,8 +516,204 @@
 
 			window.addEventListener( 'resize', onWindowResize, false );
 
+			var moved = false;
+
+			controls.addEventListener( 'change', function() {
+
+				moved = true;
+
+			} );
+
+			window.addEventListener( 'mousedown', function () {
+
+				moved = false;
+
+			}, false );
+
+			window.addEventListener( 'mouseup', function() {
+
+				checkIntersection();
+				if( !moved ) shoot();
+
+			} );
+
+			window.addEventListener( 'mousemove', onTouchMove );
+			window.addEventListener( 'touchmove', onTouchMove );
+
+
+			function onTouchMove( event ) {
+
+				if( event.changedTouches ) {
+					x = event.changedTouches[ 0 ].pageX;
+					y = event.changedTouches[ 0 ].pageY;
+				} else {
+					x = event.clientX;
+					y = event.clientY;
+				}
+
+				mouse.x = ( x / window.innerWidth ) * 2 - 1;
+				mouse.y = - ( y / window.innerHeight ) * 2 + 1;
+
+				checkIntersection();
+
+			}
+
+			function checkIntersection() {
+
+				if( !mesh ) return;
+
+				raycaster.setFromCamera( mouse, camera );
+
+				var intersects = raycaster.intersectObjects( [ mesh ] );
+
+				if ( intersects.length > 0 ) {
+
+					var p = intersects[ 0 ].point;
+					mouseHelper.position.copy( p );
+					intersection.point.copy( p );
+					var n = intersects[ 0 ].face.normal.clone();
+					n.multiplyScalar( 10 );
+					n.add( intersects[ 0 ].point );
+					intersection.normal.copy( intersects[ 0 ].face.normal );
+					mouseHelper.lookAt( n );
+
+					line.geometry.vertices[ 0 ].copy( intersection.point );
+					line.geometry.vertices[ 1 ].copy( n );
+					line.geometry.verticesNeedUpdate = true;
+
+					intersection.intersects = true;
+
+				} else {
+
+					intersection.intersects = false;
+
+				}
+
+			}
+
+			var gui = new dat.GUI();
+
+			gui.add( params, 'projection', { 'From cam to mesh': 'camera', 'Normal to mesh': 'normal' } );
+			gui.add( params, 'minScale', 1, 30 );
+			gui.add( params, 'maxScale', 1, 30 );
+			gui.add( params, 'rotate' );
+			gui.add( params, 'clear' );
+			gui.open();
+
+
 			//
+			onWindowResize();
 			render();
+
+		}
+
+		function loadLeePerrySmith( callback ) {
+
+			loader = new THREE.BinaryLoader( true );
+			var start = Date.now();
+	        // loader.load( "house/322/bin322.js", createScene );
+
+	        // function createScene( geometry, materials ) {
+
+	        //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+
+	        // };
+			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			loader.load( 'custom/female02.js', function ( geometry, materials ) {
+
+				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+				addMesh( geometry, 0.6, 0, 0, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+
+				// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+				loader.statusDomElement.style.display = "none";
+
+				console.log( "geometry.vertices: " + geometry.vertices.length );
+				console.log( "geometry.faces: " + geometry.faces.length );
+
+				console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+
+			} );
+
+		}
+
+		function shoot() {
+
+			if( params.projection == 'camera' ) {
+
+				var dir = camera.target.clone();
+				dir.sub( camera.position );
+
+				p = intersection.point;
+
+				var m = new THREE.Matrix4();
+				var c = dir.clone();
+				c.negate();
+				c.multiplyScalar( 10 );
+				c.add( p );
+				m.lookAt( p, c, up );
+				m = m.extractRotation( m );
+
+				dummy = new THREE.Object3D();
+				dummy.rotation.setFromRotationMatrix( m );
+				r.set( dummy.rotation.x, dummy.rotation.y, dummy.rotation.z );
+
+			} else {
+
+				p = intersection.point;
+				r.copy( mouseHelper.rotation );
+
+			}
+
+			var scale = params.minScale + Math.random() * ( params.maxScale - params.minScale );
+			s.set( scale, scale, scale );
+
+			if( params.rotate) r.z = Math.random() * 2 * Math.PI;
+
+			var material = decalMaterial.clone();
+			material.color.setHex( Math.random() * 0xffffff );
+			// material.wireframe = true;
+
+			var m = new THREE.Mesh( new THREE.DecalGeometry( mesh, p, r, s, check ), material );
+			decals.push( m );
+			scene.add( m );
+
+		}
+
+		function removeDecals() {
+
+			decals.forEach( function( d ) {
+				scene.remove( d );
+				d = null;
+			} );
+			decals = [];
+
+		};
+
+		function mergeDecals() {
+
+			var merge = {};
+			decals.forEach(function (decal) {
+
+				var uuid = decal.material.uuid;
+				var d = merge[uuid] = merge[uuid] || {};
+				d.material = d.material || decal.material;
+				d.geometry = d.geometry || new THREE.Geometry();
+				d.geometry.merge(decal.geometry, decal.matrix);
+
+			});
+
+			removeDecals();
+
+			for (var key in merge) {
+
+				var d = merge[key];
+				var mesh = new THREE.Mesh(d.geometry, d.material);
+				scene.add(mesh);
+				decals.push(mesh);
+
+			}
 
 		}
 
