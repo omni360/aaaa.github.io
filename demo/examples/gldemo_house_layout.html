@@ -152,7 +152,7 @@
 
 		var container, stats;
 
-		var camera, controls, scene, renderer, tControl;
+		var camera, controls, scene, renderer, tControl, canvasRect;
 		var lookAtScene = true;
 		var mouse, raycaster, isShiftDown = false;
 
@@ -236,6 +236,7 @@
 				// rollOverMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, opacity: 0.5, transparent: true } );
 				// rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
 				// rollOverMesh.visible = false;
+
 				rollOverMesh = object;
 				scene.add( rollOverMesh );
 
@@ -272,9 +273,10 @@
 			// container = document.createElement( 'div' );
 			// document.body.appendChild( container );
 
-			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
-			camera.position.z = 250;
-			camera.position.y = 80;
+			camera = new THREE.PerspectiveCamera( 35, cwidth / cheight, 1, 10000 );
+			camera.position.z = 150;
+			camera.position.y = 200;
+			camera.position.x = 150;
 			// camera.position.x = 100;
 			// camera.up.set(0,0,1);
 			// camera.lookAt( 0,0,0 );
@@ -528,6 +530,8 @@
 			renderer.setPixelRatio( window.devicePixelRatio );
 			renderer.setSize( cwidth, cheight );
 			$("#gldemo").append( renderer.domElement );
+			canvasRect = renderer.domElement.getBoundingClientRect();
+			// console.log(canvasRect);
 
 			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -596,6 +600,9 @@
 			event.preventDefault();
 
 			mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+			// console.log("mouse:" + mouse);
+			// console.log("clientx:" + event.clientX);
+			// console.log("clienty:" + event.clientY);
 
 			raycaster.setFromCamera( mouse, camera );
 
@@ -605,8 +612,18 @@
 
 				var intersect = intersects[ 0 ];
 
+				// console.log( rollOverMesh );
+				var geo = rollOverMesh.children[0].geometry;
+				geo.computeBoundingBox();
+				var offsetx = 0.5 * ( geo.boundingBox.max.x - geo.boundingBox.min.x );
+				var offsety = 0.5 * ( geo.boundingBox.max.y - geo.boundingBox.min.y ); 
+				var offsetz = 0.5 * ( geo.boundingBox.max.z - geo.boundingBox.min.z ); 
+
 				rollOverMesh.position.copy( intersect.point ).add( intersect.face.normal );
-				rollOverMesh.position.divideScalar( 50 ).floor().multiplyScalar( 50 ).addScalar( 25 );
+				// rollOverMesh.position.divideScalar( offsetx ).floor().multiplyScalar( offsety ).addScalar( offsetz );
+				// rollOverMesh.position.x += offsetx;
+				// rollOverMesh.position.y += offsety;
+				// rollOverMesh.position.z += offsetz;
 
 			}
 
