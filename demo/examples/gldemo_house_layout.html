@@ -589,6 +589,7 @@
 			camera.updateProjectionMatrix();
 
 			renderer.setSize( cwidth, cheight );
+			canvasRect = renderer.domElement.getBoundingClientRect();
 
 			controls.handleResize();
 			render();
@@ -599,7 +600,10 @@
 
 			event.preventDefault();
 
-			mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+			var x = event.clientX - canvasRect.left;
+			var y = event.clientY - canvasRect.top;
+
+			mouse.set( ( x / cwidth ) * 2 - 1, - ( y / cheight ) * 2 + 1 );
 			// console.log("mouse:" + mouse);
 			// console.log("clientx:" + event.clientX);
 			// console.log("clienty:" + event.clientY);
@@ -634,8 +638,10 @@
 		function onDocumentMouseDown( event ) {
 
 			event.preventDefault();
+			var x = event.clientX - canvasRect.left;
+			var y = event.clientY - canvasRect.top;
 
-			mouse.set( ( event.clientX / window.innerWidth ) * 2 - 1, - ( event.clientY / window.innerHeight ) * 2 + 1 );
+			mouse.set( ( x / cwidth ) * 2 - 1, - ( y / cheight ) * 2 + 1 );
 
 			raycaster.setFromCamera( mouse, camera );
 
@@ -746,6 +752,7 @@
 			// if ( lookAtScene ) camera.lookAt( scene.position );
 
 			renderer.render( scene, camera );
+			canvasRect = renderer.domElement.getBoundingClientRect();
 
 		}
 
