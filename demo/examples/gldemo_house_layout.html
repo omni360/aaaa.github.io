@@ -243,11 +243,15 @@
 		}
 
 		function addMesh( geometry, scale, x, y, z, rx, ry, rz, material ) {
-
+			geometry.computeBoundingBox();
+			var offsetx = 0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
+			var offsety = 0.5 * ( geometry.boundingBox.max.y - geometry.boundingBox.min.y ); 
+			var offsetz = 0.5 * ( geometry.boundingBox.max.z - geometry.boundingBox.min.z ); 
 			mesh = new THREE.Mesh( geometry, material );
-
+			geometry.center();
+			// console.log(geometry.center());
 			mesh.scale.set( scale, scale, scale );
-			mesh.position.set( x, y, z );
+			mesh.position.set( x, y + offsety * scale, z );
 			mesh.rotation.set( rx, ry, rz );
 
 			scene.add(mesh);
