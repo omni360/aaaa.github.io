@@ -49,6 +49,7 @@
 	<script src="fonts/droid/droid_sans_bold.typeface.js"></script>
 	<script src="fonts/droid/droid_serif_regular.typeface.js"></script>
 	<script src="fonts/droid/droid_serif_bold.typeface.js"></script>
+	<script src="afanty3d/filxgirl_normal.typeface.js"></script>
 
 	<script src="js/loaders/DDSLoader.js"></script>
 	<script src="js/loaders/MTLLoader.js"></script>
@@ -194,8 +195,8 @@
 			bevelSegments = 3,
 			bevelEnabled = true,
 
-			font = "optimer", // helvetiker, optimer, gentilis, droid sans, droid serif
-			weight = "bold", // normal bold
+			font = "fiolex girls", // helvetiker, optimer, gentilis, droid sans, droid serif
+			weight = "normal", // normal bold
 			style = "normal"; // normal italic
 
 		var mirror = true;
@@ -206,8 +207,8 @@
 			"optimer": 1,
 			"gentilis": 2,
 			"droid sans": 3,
-			"droid serif": 4
-
+			"droid serif": 4,
+			"fiolex girls":5
 		};
 
 		var weightMap = {
@@ -477,6 +478,10 @@
 					font = "gentilis";
 
 				} else if ( font == "gentilis" ) {
+
+					font = "filxgirl";
+
+				} else if ( font == "filxgirl" ) {
 
 					font = "droid sans";
 
