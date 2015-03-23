@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>阿凡提3D | 案例 | 3D户型导航</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Codester is a free responsive Bootstrap template by Dzyngiri">
+    <meta name="keywords" content="free, template, bootstrap, responsive">
+    <meta name="author" content="omni360" >  
+	<link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../../css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../../css/touchTouch.css" type="text/css" media="screen">
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="../../js/superfish.js"></script>
+    <script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>  
+    <script type="text/javascript" src="../../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../js/touchTouch.jquery.js"></script> 
+    
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='../../js/jquery.preloader.js'></"+"script>");}	</script>
+</head>
+
+<body>
+	<script src="../build/three.js"></script>
+
+	<script src="js/loaders/DDSLoader.js"></script>
+	<script src="js/loaders/MTLLoader.js"></script>
+	<script src="js/loaders/OBJMTLLoader.js"></script>
+	<script src="js/controls/TrackballControls.js"></script>
+	<script src="js/loaders/BinaryLoader.js"></script>
+
+	<script src="js/Detector.js"></script>
+	<script src="js/libs/stats.min.js"></script>
+	<script type="x-shader/x-vertex" id="vertexShader">
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+			vWorldPosition = worldPosition.xyz;
+
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+		}
+
+	</script>
+
+	<script type="x-shader/x-fragment" id="fragmentShader">
+
+		uniform vec3 topColor;
+		uniform vec3 bottomColor;
+		uniform float offset;
+		uniform float exponent;
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			float h = normalize( vWorldPosition + offset ).y;
+			gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h, 0.0 ), exponent ), 0.0 ) ), 1.0 );
+
+		}
+
+	</script>
+
+	<header>
+	      <div class="container clearfix">
+	    		<div class="row">
+	          	<div class="span12">
+	        			<div class="navbar navbar_">
+	              		<div class="container">
+	            			<h1 class="brand brand_"><a href="../../index.html"><img alt="" src="../../img/logo.png"> </a></h1>
+	            				<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">菜单 <span class="icon-bar"></span> </a>
+	            					<div class="nav-collapse nav-collapse_  collapse">
+	                 				 	<ul class="nav sf-menu">
+							                <li><a href="../../index.html">主页</a></li>
+							                <li class="active"><a href="../../work.html">案例</a></li>
+
+							                <li class="sub-menu"><a href="../../process.html">解决方案</a>
+					                      <ul>
+						                    <li><a href="#">Process 01</a></li>
+						                    <li><a href="#">Process 02</a></li>
+						                    <li><a href="#">Process 03</a></li>
+						                  </ul>
+					                    	</li>
+	  							            <li><a href="../../blog.html">博客</a></li>
+							               <li><a href="../../contact.html">联系我们</a></li>
+					              	 	</ul>
+	               				</div>
+	          			</div>
+	            	</div>
+	      		</div>
+	        </div>
+	  		</div>
+	</header>
+	<div class="bg-content">       
+	    <div id="content">
+	      	<div class="ic">
+	      		
+	      	</div>
+		    <div class="container">
+	          	<div class="row">
+			        <article class="span12">
+				        <h5>3D户型导航</h5>
+			        </article>
+			        <div class="clear"></div>
+			        <div class="span12" id="gldemo"></div>
+			    </div>
+	        </div>
+	  	</div>
+	</div>
+	<!-- footer -->
+	<footer>
+	    <div class="container clearfix">
+		    <ul class="list-social pull-right">
+		          <li><a class="icon-1" href="#"></a></li>
+		          <li><a class="icon-2" href="#"></a></li>
+		          <li><a class="icon-3" href="#"></a></li>
+		          <li><a class="icon-4" href="#"></a></li>
+		    </ul>
+		    <div class="privacy pull-left">© 2015 | 
+		      <a href="http://omni360.github.io">版权所有 : 侯春雷</a> | 
+		      <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | WebGL　Demo　by : 
+		      <a href="http://omni360.github.io" target="_blank">侯春雷</a>|    
+				<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254501268'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254501268' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+	  	</div>
+	</footer>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+	<script>
+
+		var container, stats;
+
+		var camera, controls, scene, renderer;
+
+		var mouseX = 0, mouseY = 0;
+		var cwidth = $("#gldemo").width();
+		var cheight = cwidth / 1.777;
+
+		var windowHalfX = cwidth / 2;
+		var windowHalfY = cheight / 2;
+
+
+		init();
+		animate();
+
+		function addMesh( geometry, scale, x, y, z, rx, ry, rz, material ) {
+
+			mesh = new THREE.Mesh( geometry, material );
+
+			mesh.scale.set( scale, scale, scale );
+			mesh.position.set( x, y, z );
+			mesh.rotation.set( rx, ry, rz );
+
+			scene.add( mesh );
+
+		}
+
+		function loadMesh( geometry, material ) {
+
+			mesh = new THREE.Mesh( geometry, material );
+
+			scene.add( mesh );
+
+		}
+
+		function init() {
+
+			// container = document.createElement( 'div' );
+			// document.body.appendChild( container );
+
+			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
+			camera.position.z = 250;
+			// camera.position.y = 100;
+			// camera.position.x = 100;
+			// camera.up.set(0,0,1);
+			camera.lookAt( 0,0,0 );
+			// camera.position.x = 900;
+			// camera.position.z = 600;
+			// camera.lookAt(50,50,0);
+			// controls
+
+			controls = new THREE.TrackballControls( camera );
+
+			controls.rotateSpeed = 1.0;
+			controls.zoomSpeed = 1.2;
+			controls.panSpeed = 0.8;
+
+			controls.noZoom = false;
+			controls.noPan = false;
+
+			controls.staticMoving = true;
+			controls.dynamicDampingFactor = 0.15;
+
+			controls.keys = [ 65, 83, 68 ];
+
+			controls.addEventListener( 'change', render );
+
+			// scene
+
+			scene = new THREE.Scene();
+			scene.fog = new THREE.Fog( 0xffffff, 1, 5000 );
+			scene.fog.color.setHSL( 0.6, 0, 1 );
+
+			// var ambient = new THREE.AmbientLight( 0x444444 );
+			// scene.add( ambient );
+
+			// var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+			// directionalLight.position.set( 0, 0, 1 ).normalize();
+			// scene.add( directionalLight );
+
+			// LIGHTS
+
+			// var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.475 );
+			// directionalLight.position.set( 100, 100, -100 );
+			// scene.add( directionalLight );
+
+
+			// var hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1.25 );
+			// hemiLight.color.setHSL( 0.6, 1, 0.6 );
+			// hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+			// hemiLight.position.y = 500;
+			// scene.add( hemiLight );
+
+			// LIGHTS
+
+			hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+			hemiLight.color.setHSL( 0.6, 1, 0.6 );
+			hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+			hemiLight.position.set( 0, 500, 0 );
+			scene.add( hemiLight );
+
+			//
+
+			dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
+			dirLight.color.setHSL( 0.1, 1, 0.95 );
+			dirLight.position.set( -1, 1.75, 1 );
+			dirLight.position.multiplyScalar( 50 );
+			scene.add( dirLight );
+
+			dirLight.castShadow = true;
+
+			dirLight.shadowMapWidth = 2048;
+			dirLight.shadowMapHeight = 2048;
+
+			var d = 50;
+
+			dirLight.shadowCameraLeft = -d;
+			dirLight.shadowCameraRight = d;
+			dirLight.shadowCameraTop = d;
+			dirLight.shadowCameraBottom = -d;
+
+			dirLight.shadowCameraFar = 3500;
+			dirLight.shadowBias = -0.0001;
+			dirLight.shadowDarkness = 0.35;
+			//dirLight.shadowCameraVisible = true;
+
+			// GROUND
+
+			var groundGeo = new THREE.PlaneBufferGeometry( 10000, 10000 );
+			var groundMat = new THREE.MeshPhongMaterial( { ambient: 0xffffff, color: 0xffffff, specular: 0x050505 } );
+			groundMat.color.setHSL( 0.095, 1, 0.75 );
+
+			var ground = new THREE.Mesh( groundGeo, groundMat );
+			ground.rotation.x = -Math.PI/2;
+			ground.position.y = -33;
+			scene.add( ground );
+
+			ground.receiveShadow = true;
+
+			// SKYDOME
+
+			var vertexShader = document.getElementById( 'vertexShader' ).textContent;
+			var fragmentShader = document.getElementById( 'fragmentShader' ).textContent;
+			var uniforms = {
+				topColor: 	 { type: "c", value: new THREE.Color( 0x0077ff ) },
+				bottomColor: { type: "c", value: new THREE.Color( 0xffffff ) },
+				offset:		 { type: "f", value: 33 },
+				exponent:	 { type: "f", value: 0.6 }
+			}
+			uniforms.topColor.value.copy( hemiLight.color );
+
+			scene.fog.color.copy( uniforms.bottomColor.value );
+
+			var skyGeo = new THREE.SphereGeometry( 4000, 32, 15 );
+			var skyMat = new THREE.ShaderMaterial( { vertexShader: vertexShader, fragmentShader: fragmentShader, uniforms: uniforms, side: THREE.BackSide } );
+
+			var sky = new THREE.Mesh( skyGeo, skyMat );
+			scene.add( sky );
+
+			// model
+
+			// var onProgress = function ( xhr ) {
+			// 	if ( xhr.lengthComputable ) {
+			// 		var percentComplete = xhr.loaded / xhr.total * 100;
+			// 		console.log( Math.round(percentComplete, 2) + '% downloaded' );
+			// 	}
+			// };
+
+			// var onError = function ( xhr ) {
+			// };
+
+
+			// THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+
+			// var loader = new THREE.OBJMTLLoader();
+			// loader.load( 'house/house_bak.obj', 'house/house_bak.mtl', function ( object ) {
+
+			// 	// object.position.y = - 200;
+			// 	scene.add( object );
+
+			// }, onProgress, onError );
+
+			// MODEL
+
+			// var loader = new THREE.JSONLoader();
+			// loader.load( "obj/lightmap/lightmap.js", function ( geometry, materials ) {
+
+			// 	var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+			// 	mesh.scale.multiplyScalar( 100 );
+			// 	scene.add( mesh );
+
+			// } );
+			loader = new THREE.BinaryLoader( true );
+			var start = Date.now();
+	        // loader.load( "house/322/bin322.js", createScene );
+
+	        // function createScene( geometry, materials ) {
+
+	        //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+
+	        // };
+			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
+
+				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+				addMesh( geometry, 0.1, -80, -32, -60,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+
+				// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+				loader.statusDomElement.style.display = "none";
+
+				console.log( "geometry.vertices: " + geometry.vertices.length );
+				console.log( "geometry.faces: " + geometry.faces.length );
+
+				console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+
+			} );
+
+			//
+
+			renderer = new THREE.WebGLRenderer({ antialias:true }); //, alpha: true });
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( cwidth, cheight );
+			$("#gldemo").append( renderer.domElement );
+
+			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+			//
+
+			window.addEventListener( 'resize', onWindowResize, false );
+
+			//
+			render();
+
+		}
+
+		function onWindowResize() {
+
+			windowHalfX = cwidth / 2;
+			windowHalfY = cheight / 2;
+
+			camera.aspect = cwidth / cheight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize( cwidth, cheight );
+
+			controls.handleResize();
+			render();
+
+		}
+
+		// function onDocumentMouseMove( event ) {
+
+		// 	mouseX = ( event.clientX - windowHalfX ) / 2;
+		// 	mouseY = ( event.clientY - windowHalfY ) / 2;
+
+		// }
+
+		//
+
+		function animate() {
+
+			requestAnimationFrame( animate );
+			controls.update();
+			render();
+
+		}
+
+		function render() {
+
+			// camera.position.x += ( mouseX - camera.position.x ) * .05;
+			// camera.position.y += ( - mouseY - camera.position.y ) * .05;
+
+			// camera.lookAt( scene.position );
+
+			renderer.render( scene, camera );
+
+		}
+
+	</script>
+</body>
+</html>

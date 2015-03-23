@@ -113,8 +113,8 @@
 			    	<article class="span7">
 			    		<div class="row">
 		 			        <div class="clear"></div>
-					        <div class="span2">
-		    			        <article class="span2">
+					        <div class="span3">
+		    			        <article class="span3">
 							        <h6>命令</h6>
 						        </article>
 						        <div class="row">
@@ -128,8 +128,8 @@
 							        </ul> 				        							        	
 						        </div>
 					        </div>
-					        <div class="span5">
-		    			        <article class="span5">
+					        <div class="span4">
+		    			        <article class="span4">
 							        <h6>上衣</h6>
 						        </article>
 					        	<ul class="portfolio">           
@@ -148,23 +148,24 @@
 						         </ul> 
 					        </div>
 					        <div class="clear"></div>
-					        <div class="span2">
-		    			        <article class="span2">
-							        <h6>属性</h6>
+					        <div class="span3">
+		    			        <article class="span3">
+							        <h6>艺术贴片属性设置</h6>
 						        </article>
 						        <div class="row">
-						        	<ul class="portfolio">           
+						        <div class="span3" id="attribute"></div>
+	<!-- 					        	<ul class="portfolio">           
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/4"></a></li> 
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/18"></a></li> 
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
 							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
-							        </ul> 				        							        	
+							        </ul> 		 -->		        							        	
 						        </div>					        	
 					        </div>
-					        <div class="span5">
-		    			        <article class="span5">
+					        <div class="span4">
+		    			        <article class="span4">
 							        <h6>裤子</h6>
 						        </article>
 					        	<ul class="portfolio">           
@@ -273,8 +274,8 @@
 
 		var params = {
 			projection: 'normal',
-			minScale: 10,
-			maxScale: 20,
+			minScale: 5,
+			maxScale: 25,
 			rotate: true,
 			clear: function() {
 				removeDecals();
@@ -561,15 +562,15 @@
 
 			}
 
-			// var gui = new dat.GUI();
+			var gui = new dat.GUI({ autoPlace: false });
 
-			// gui.add( params, 'projection', { 'From cam to mesh': 'camera', 'Normal to mesh': 'normal' } );
-			// gui.add( params, 'minScale', 1, 30 );
-			// gui.add( params, 'maxScale', 1, 30 );
-			// gui.add( params, 'rotate' );
-			// gui.add( params, 'clear' );
-			// gui.open();
-
+			gui.add( params, 'projection', { 'From cam to mesh': 'camera', 'Normal to mesh': 'normal' } );
+			gui.add( params, 'minScale', 1, 30 );
+			gui.add( params, 'maxScale', 1, 30 );
+			gui.add( params, 'rotate' );
+			gui.add( params, 'clear' );
+			gui.open();
+			$("#attribute").append(gui.domElement);
 
 			//
 			render();
