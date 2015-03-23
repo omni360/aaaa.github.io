@@ -208,9 +208,15 @@
 			盒子厚度:1,
 			盒子底色: "#ffae23",
 			艺术贴花: "",
+			投影方式: 'normal',
+			贴花最小比例:5,
+			贴花最大比例:25,
 			随机旋转: true,
 			贴图:"",
-			clear: function() {
+			清除: function() {
+				removeDecals();
+			},
+			重置:function() {
 				removeDecals();
 			}
 		};
@@ -442,11 +448,16 @@
 			
 			//包装盒图案定制
 			geofl221.add( params, '艺术贴花');
+
+			geofl221.add( params, '投影方式', { '从相机到包装盒': 'camera', '从法线到包装盒': 'normal' } );
+			geofl221.add( params, '贴花最小比例', 1, 30 );
+			geofl221.add( params, '贴花最大比例', 1, 30 );
 			geofl221.add(params,'随机旋转');
 			geofl221.add(params,'贴图');
+			geofl221.add(params,'清除');
 			geofl221.open();
 			
-			gui.add( params, 'clear' );
+			gui.add( params, '重置' );
 			gui.open();
 			$("#sidemenu").append(gui.domElement);
 
@@ -466,14 +477,14 @@
 				var reverts = params.翻边半径;
 				var packaging = new afanty3d.packagegeomety(length, width, height, bevel, reverts);	
 
-				addMesh( packaging, 1, 0, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+				addMesh( packaging, 1, 0, -80, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 			};
 	
 		}
 
 		function shoot() {
 
-			if( params.projection == 'camera' ) {
+			if( params.投影方式 == 'camera' ) {
 
 				var dir = camera.target.clone();
 				dir.sub( camera.position );
@@ -499,10 +510,10 @@
 
 			}
 
-			var scale = params.minScale + Math.random() * ( params.maxScale - params.minScale );
+			var scale = params.贴花最小比例 + Math.random() * ( params.贴花最大比例 - params.贴花最小比例 );
 			s.set( scale, scale, scale );
 
-			if( params.rotate) r.z = Math.random() * 2 * Math.PI;
+			if( params.随机旋转) r.z = Math.random() * 2 * Math.PI;
 
 			var material = decalMaterial.clone();
 			material.color.setHex( Math.random() * 0xffffff );
