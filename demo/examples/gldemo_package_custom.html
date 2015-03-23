@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>阿凡提3D | 案例 | 3D户型导航</title>
+	<title>阿凡提3D | 案例 | 服装在线定制</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="../../img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon" />
@@ -29,6 +29,10 @@
 	<script src="js/loaders/OBJMTLLoader.js"></script>
 	<script src="js/controls/TrackballControls.js"></script>
 	<script src="js/loaders/BinaryLoader.js"></script>
+	<script src="js/controls/OrbitControls.js"></script>
+
+	<script src="js/geometries/DecalGeometry.js"></script>
+	<script src="js/libs/dat.gui.min.js"></script>
 
 	<script src="js/Detector.js"></script>
 	<script src="js/libs/stats.min.js"></script>
@@ -97,20 +101,101 @@
 	</header>
 	<div class="bg-content">       
 	    <div id="content">
-	      	<div class="ic">
-	      		
-	      	</div>
-		    <div class="container">
-	          	<div class="row">
-			        <article class="span12">
-				        <h5>3D户型导航</h5>
+	      	<div class="ic"></div>
+		    <div class="container clearfix">
+		    	<div class="span12">
+			        <article>
+				        <h5>服装在线定制</h5>
 			        </article>
-			        <div class="clear"></div>
-			        <div class="span12" id="gldemo"></div>
-			    </div>
-	        </div>
-	  	</div>
-	</div>
+		    	</div>
+		    	<div class="clear"></div>
+		    	<div class="row">
+			    	<article class="span7">
+			    		<div class="row">
+		 			        <div class="clear"></div>
+					        <div class="span3">
+		    			        <article class="span3">
+							        <h6>命令</h6>
+						        </article>
+						        <div class="row">
+						        	<ul class="portfolio">           
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal-diffuse.png">模特性别</a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal-diffuse.png">服装样式</a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal-diffuse.png">服装底色</a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal-diffuse.png">服装花纹</a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal.png">艺术贴片</a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="textures/decal/decal-diffuse.png">添加文字</a></li> 
+							        </ul> 				        							        	
+						        </div>
+					        </div>
+					        <div class="span4">
+		    			        <article class="span4">
+							        <h6>上衣</h6>
+						        </article>
+					        	<ul class="portfolio">           
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/4"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/18"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/24"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/26"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/28"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/40"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/42"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/46"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/68"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/74"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/88"></a></li> 
+						           <li class="span1"><a href="#" onclick=";"><img alt="" src="../../img/house/90"></a></li> 
+						         </ul> 
+					        </div>
+					        <div class="clear"></div>
+					        <div class="span3">
+		    			        <article class="span3">
+							        <h6>艺术贴片属性设置</h6>
+						        </article>
+						        <div class="row">
+						        <div class="span3" id="attribute"></div>
+	<!-- 					        	<ul class="portfolio">           
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/4"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/18"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
+							        </ul> 		 -->		        							        	
+						        </div>					        	
+					        </div>
+					        <div class="span4">
+		    			        <article class="span4">
+							        <h6>裤子</h6>
+						        </article>
+					        	<ul class="portfolio">           
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/4"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/18"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/24"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/26"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/28"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/40"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/42"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/46"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/68"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/74"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/88"></a></li> 
+						           <li class="span1"><a href="#" onclick=""><img alt="" src="../../img/house/90"></a></li> 
+						         </ul> 
+					        </div>			    			
+			    		</div>
+
+			    	</article>
+			    	<article class="span5">
+				        <div class="span5 pull-right" id="gldemo"></div>
+			    	</article>
+		    		
+		    	</div>
+
+		    </div>
+
+        </div>
+  	</div>
 	<!-- footer -->
 	<footer>
 	    <div class="container clearfix">
@@ -124,25 +209,78 @@
 		      <a href="http://omni360.github.io">版权所有 : 侯春雷</a> | 
 		      <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | WebGL　Demo　by : 
 		      <a href="http://omni360.github.io" target="_blank">侯春雷</a>|    
-				<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254501268'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254501268' type='text/javascript'%3E%3C/script%3E"));</script>
-			</div>
+<!--				<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254501268'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254501268' type='text/javascript'%3E%3C/script%3E"));</script>
+-->			</div>
 	  	</div>
 	</footer>
 	<script type="text/javascript" src="../../js/bootstrap.js"></script>
 
 	<script>
 
-		var container, stats;
+		var container = document.getElementById("gldemo");
+		var stats;
+		var canvasRect;
 
 		var camera, controls, scene, renderer;
+		var mesh, decal;
+		var raycaster;
+		var line;
 
 		var mouseX = 0, mouseY = 0;
 		var cwidth = $("#gldemo").width();
-		var cheight = cwidth / 1.777;
+		var cheight = cwidth * 1.618;
 
 		var windowHalfX = cwidth / 2;
 		var windowHalfY = cheight / 2;
 
+		var intersection = {
+			intersects: false,
+			point: new THREE.Vector3(),
+			normal: new THREE.Vector3()
+		};
+		var mouse = new THREE.Vector2();
+
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/decal-diffuse.png' );
+		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
+
+		var decalMaterial = new THREE.MeshPhongMaterial( {
+			specular: 0x444444,
+			map: decalDiffuse,
+			normalMap: decalNormal,
+			normalScale: new THREE.Vector2( .15, .15 ),
+			shininess: 30,
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			wireframe: false
+		});
+		/*decalMaterial = new THREE.MeshNormalMaterial( {
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			shading: THREE.SmoothShading
+		});*/
+		var decals = [];
+		var decalHelper, mouseHelper;
+		var p = new THREE.Vector3( 0, 0, 0 );
+		var r = new THREE.Vector3( 0, 0, 0 );
+		var s = new THREE.Vector3( 10, 10, 10 );
+		var up = new THREE.Vector3( 0, 1, 0 );
+		var check = new THREE.Vector3( 1, 1, 1 );
+
+		var params = {
+			projection: 'normal',
+			minScale: 5,
+			maxScale: 25,
+			rotate: true,
+			clear: function() {
+				removeDecals();
+			}
+		};
 
 		init();
 		animate();
@@ -159,20 +297,23 @@
 
 		}
 
-		function loadMesh( geometry, material ) {
-
-			mesh = new THREE.Mesh( geometry, material );
-
-			scene.add( mesh );
-
-		}
+		// window.addEventListener( 'load', init );
 
 		function init() {
+			//
 
+			renderer = new THREE.WebGLRenderer({ antialias:true }); //, alpha: true });
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( cwidth, cheight );
+			container.appendChild( renderer.domElement );
+
+			scene = new THREE.Scene();
+			scene.fog = new THREE.Fog( 0xffffff, 1, 5000 );
+			scene.fog.color.setHSL( 0.6, 0, 1 );
 			// container = document.createElement( 'div' );
 			// document.body.appendChild( container );
 
-			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
+			camera = new THREE.PerspectiveCamera( 60, cwidth / cheight, 1, 10000 );
 			camera.position.z = 250;
 			// camera.position.y = 100;
 			// camera.position.x = 100;
@@ -181,29 +322,34 @@
 			// camera.position.x = 900;
 			// camera.position.z = 600;
 			// camera.lookAt(50,50,0);
+			camera.target = new THREE.Vector3();
+
 			// controls
+			controls = new THREE.OrbitControls( camera, renderer.domElement );
+			controls.minDistance = 50;
+			controls.maxDistance = 200;
 
-			controls = new THREE.TrackballControls( camera );
+			// controls = new THREE.OrbitControls( camera, renderer.domElement );
+			// controls.minDistance = 50;
+			// controls.maxDistance = 200;
+			// controls = new THREE.TrackballControls( camera );
 
-			controls.rotateSpeed = 1.0;
-			controls.zoomSpeed = 1.2;
-			controls.panSpeed = 0.8;
+			// controls.rotateSpeed = 1.0;
+			// controls.zoomSpeed = 1.2;
+			// controls.panSpeed = 0.8;
 
-			controls.noZoom = false;
-			controls.noPan = false;
+			// controls.noZoom = false;
+			// controls.noPan = false;
 
-			controls.staticMoving = true;
-			controls.dynamicDampingFactor = 0.15;
+			// controls.staticMoving = true;
+			// controls.dynamicDampingFactor = 0.15;
 
-			controls.keys = [ 65, 83, 68 ];
+			// controls.keys = [ 65, 83, 68 ];
 
-			controls.addEventListener( 'change', render );
+			// controls.addEventListener( 'change', render );
 
 			// scene
 
-			scene = new THREE.Scene();
-			scene.fog = new THREE.Fog( 0xffffff, 1, 5000 );
-			scene.fog.color.setHSL( 0.6, 0, 1 );
 
 			// var ambient = new THREE.AmbientLight( 0x444444 );
 			// scene.add( ambient );
@@ -258,6 +404,19 @@
 			dirLight.shadowDarkness = 0.35;
 			//dirLight.shadowCameraVisible = true;
 
+			line = new THREE.Line( new THREE.Geometry( ), new THREE.LineBasicMaterial( { linewidth: 4 }) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			scene.add( line );
+
+			loadLeePerrySmith();
+
+			raycaster = new THREE.Raycaster();
+
+			mouseHelper = new THREE.Mesh( new THREE.BoxGeometry( 1, 1, 10 ), new THREE.MeshNormalMaterial() );
+			mouseHelper.visible = false;
+			scene.add( mouseHelper );
+
 			// GROUND
 
 			var groundGeo = new THREE.PlaneBufferGeometry( 10000, 10000 );
@@ -266,7 +425,7 @@
 
 			var ground = new THREE.Mesh( groundGeo, groundMat );
 			ground.rotation.x = -Math.PI/2;
-			ground.position.y = -33;
+			ground.position.y = -80;
 			scene.add( ground );
 
 			ground.receiveShadow = true;
@@ -278,7 +437,7 @@
 			var uniforms = {
 				topColor: 	 { type: "c", value: new THREE.Color( 0x0077ff ) },
 				bottomColor: { type: "c", value: new THREE.Color( 0xffffff ) },
-				offset:		 { type: "f", value: 33 },
+				offset:		 { type: "f", value: 80 },
 				exponent:	 { type: "f", value: 0.6 }
 			}
 			uniforms.topColor.value.copy( hemiLight.color );
@@ -293,37 +452,134 @@
 
 			// model
 
-			// var onProgress = function ( xhr ) {
-			// 	if ( xhr.lengthComputable ) {
-			// 		var percentComplete = xhr.loaded / xhr.total * 100;
-			// 		console.log( Math.round(percentComplete, 2) + '% downloaded' );
-			// 	}
-			// };
+			// loader = new THREE.BinaryLoader( true );
+			// var start = Date.now();
+	  //       // loader.load( "house/322/bin322.js", createScene );
 
-			// var onError = function ( xhr ) {
-			// };
+	  //       // function createScene( geometry, materials ) {
 
+	  //       //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
 
-			// THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+	  //       // };
+			// // loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			// loader.load( 'custom/female02.js', function ( geometry, materials ) {
 
-			// var loader = new THREE.OBJMTLLoader();
-			// loader.load( 'house/house_bak.obj', 'house/house_bak.mtl', function ( object ) {
+			// 	// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+			// 	addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+			// 	// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
-			// 	// object.position.y = - 200;
-			// 	scene.add( object );
+			// 	// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+			// 	loader.statusDomElement.style.display = "none";
 
-			// }, onProgress, onError );
+			// 	console.log( "geometry.vertices: " + geometry.vertices.length );
+			// 	console.log( "geometry.faces: " + geometry.faces.length );
 
-			// MODEL
-
-			// var loader = new THREE.JSONLoader();
-			// loader.load( "obj/lightmap/lightmap.js", function ( geometry, materials ) {
-
-			// 	var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
-			// 	mesh.scale.multiplyScalar( 100 );
-			// 	scene.add( mesh );
+			// 	console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
 
 			// } );
+
+
+			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+			//
+			canvasRect = renderer.domElement.getBoundingClientRect();
+			window.addEventListener( 'resize', onWindowResize, false );
+
+			var moved = false;
+
+			controls.addEventListener( 'change', function() {
+
+				moved = true;
+				// render();
+			} );
+
+			window.addEventListener( 'mousedown', function () {
+
+				moved = false;
+
+			}, false );
+
+			window.addEventListener( 'mouseup', function() {
+
+				checkIntersection();
+				if( !moved ) shoot();
+
+			} );
+
+			window.addEventListener( 'mousemove', onTouchMove );
+			window.addEventListener( 'touchmove', onTouchMove );
+
+
+			function onTouchMove( event ) {
+				// console.log(canvasRect);
+
+				if( event.changedTouches ) {
+					x = event.changedTouches[ 0 ].pageX;
+					y = event.changedTouches[ 0 ].pageY;
+				} else {
+					x = event.clientX - canvasRect.left;
+					y = event.clientY - canvasRect.top;
+				}
+
+				mouse.x = ( x / cwidth ) * 2 - 1;
+				mouse.y = - ( y / cheight ) * 2 + 1;
+
+				checkIntersection();
+
+			}
+
+			function checkIntersection() {
+
+				if( !mesh ) return;
+
+				raycaster.setFromCamera( mouse, camera );
+
+				var intersects = raycaster.intersectObjects( [ mesh ] );
+
+				if ( intersects.length > 0 ) {
+
+					var p = intersects[ 0 ].point;
+					mouseHelper.position.copy( p );
+					intersection.point.copy( p );
+					var n = intersects[ 0 ].face.normal.clone();
+					n.multiplyScalar( 10 );
+					n.add( intersects[ 0 ].point );
+					intersection.normal.copy( intersects[ 0 ].face.normal );
+					mouseHelper.lookAt( n );
+
+					line.geometry.vertices[ 0 ].copy( intersection.point );
+					line.geometry.vertices[ 1 ].copy( n );
+					line.geometry.verticesNeedUpdate = true;
+
+					intersection.intersects = true;
+
+				} else {
+
+					intersection.intersects = false;
+
+				}
+
+			}
+
+			var gui = new dat.GUI({ autoPlace: false });
+
+			gui.add( params, 'projection', { 'From cam to mesh': 'camera', 'Normal to mesh': 'normal' } );
+			gui.add( params, 'minScale', 1, 30 );
+			gui.add( params, 'maxScale', 1, 30 );
+			gui.add( params, 'rotate' );
+			gui.add( params, 'clear' );
+			gui.open();
+			$("#attribute").append(gui.domElement);
+
+			//
+			render();
+			onWindowResize();
+
+		}
+
+		function loadLeePerrySmith( callback ) {
+
 			loader = new THREE.BinaryLoader( true );
 			var start = Date.now();
 	        // loader.load( "house/322/bin322.js", createScene );
@@ -334,10 +590,10 @@
 
 	        // };
 			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
-			loader.load( 'house/layout/house.js', function ( geometry, materials ) {
+			loader.load( 'custom/female02.js', function ( geometry, materials ) {
 
 				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 0.1, -80, -32, -60,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+				addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
 				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
@@ -351,21 +607,84 @@
 
 			} );
 
-			//
+		}
 
-			renderer = new THREE.WebGLRenderer({ antialias:true }); //, alpha: true });
-			renderer.setPixelRatio( window.devicePixelRatio );
-			renderer.setSize( cwidth, cheight );
-			$("#gldemo").append( renderer.domElement );
+		function shoot() {
 
-			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+			if( params.projection == 'camera' ) {
 
-			//
+				var dir = camera.target.clone();
+				dir.sub( camera.position );
 
-			window.addEventListener( 'resize', onWindowResize, false );
+				p = intersection.point;
 
-			//
-			render();
+				var m = new THREE.Matrix4();
+				var c = dir.clone();
+				c.negate();
+				c.multiplyScalar( 10 );
+				c.add( p );
+				m.lookAt( p, c, up );
+				m = m.extractRotation( m );
+
+				dummy = new THREE.Object3D();
+				dummy.rotation.setFromRotationMatrix( m );
+				r.set( dummy.rotation.x, dummy.rotation.y, dummy.rotation.z );
+
+			} else {
+
+				p = intersection.point;
+				r.copy( mouseHelper.rotation );
+
+			}
+
+			var scale = params.minScale + Math.random() * ( params.maxScale - params.minScale );
+			s.set( scale, scale, scale );
+
+			if( params.rotate) r.z = Math.random() * 2 * Math.PI;
+
+			var material = decalMaterial.clone();
+			material.color.setHex( Math.random() * 0xffffff );
+			// material.wireframe = true;
+
+			var m = new THREE.Mesh( new THREE.DecalGeometry( mesh, p, r, s, check ), material );
+			decals.push( m );
+			scene.add( m );
+
+		}
+
+		function removeDecals() {
+
+			decals.forEach( function( d ) {
+				scene.remove( d );
+				d = null;
+			} );
+			decals = [];
+
+		};
+
+		function mergeDecals() {
+
+			var merge = {};
+			decals.forEach(function (decal) {
+
+				var uuid = decal.material.uuid;
+				var d = merge[uuid] = merge[uuid] || {};
+				d.material = d.material || decal.material;
+				d.geometry = d.geometry || new THREE.Geometry();
+				d.geometry.merge(decal.geometry, decal.matrix);
+
+			});
+
+			removeDecals();
+
+			for (var key in merge) {
+
+				var d = merge[key];
+				var mesh = new THREE.Mesh(d.geometry, d.material);
+				scene.add(mesh);
+				decals.push(mesh);
+
+			}
 
 		}
 
@@ -378,8 +697,8 @@
 			camera.updateProjectionMatrix();
 
 			renderer.setSize( cwidth, cheight );
-
-			controls.handleResize();
+			canvasRect = renderer.domElement.getBoundingClientRect();
+			// controls.handleResize();
 			render();
 
 		}
@@ -407,8 +726,11 @@
 			// camera.position.y += ( - mouseY - camera.position.y ) * .05;
 
 			// camera.lookAt( scene.position );
-
+			// animate();
+			// requestAnimationFrame( animate );
+			// controls.update();
 			renderer.render( scene, camera );
+			canvasRect = renderer.domElement.getBoundingClientRect();
 
 		}
 
