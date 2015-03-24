@@ -475,8 +475,8 @@
 				var height = params.高;
 				var bevel = params.倒角半径;
 				var reverts = params.翻边半径;
-				var packaging = new afanty3d.packagegeomety(length, width, height, bevel, reverts);	
-
+				var extrudeSettings = { amount: 8, steps: 10};
+				var packaging = new afanty3d.packagegeomety(length, width, height, bevel, reverts, 0.6, extrudeSettings);	
 				addMesh( packaging, 1, 0, -80, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 			};
 	
