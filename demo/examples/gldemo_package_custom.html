@@ -252,9 +252,9 @@
 
 
 			camera = new THREE.PerspectiveCamera( 45, cwidth / cheight, 1, 10000 );
-			// camera.position.x = 500;
+			camera.position.x = 500;
 			// camera.position.y = 500;
-			camera.position.z = 800;
+			// camera.position.z = 800;
 			camera.lookAt( 0,0,0 );
 			camera.target = new THREE.Vector3();
 
@@ -475,7 +475,7 @@
 				var height = params.高;
 				var bevel = params.倒角半径;
 				var reverts = params.翻边半径;
-				var extrudeSettings = { amount: 8, steps: 10};
+				var extrudeSettings = { amount: 8, steps: 20};
 				var packaging = new afanty3d.packagegeomety(length, width, height, bevel, reverts, 0.6, extrudeSettings);	
 				addMesh( packaging, 1, 0, -80, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
 			};
