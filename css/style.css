@@ -453,12 +453,23 @@ p {
 .list-photo {
   list-style: none outside;
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /*overflow: scroll; */
   margin-left: -30px;
 }
 .list-photo li {
   float: left;
   margin: 0 0 30px 30px;
+}
+/*------------ .unchecked---------------*/
+.unchecked{
+  border: 1px solid gray;  
+  padding: 2px 2px 2px 2px;  
+}
+/*------------ .checked---------------*/
+.checked{
+  border: 2px solid #c00;  
+  padding: 1px 1px 1px 1px;  
 }
 /*----------- .portfolio --------------*/
 .portfolio {
