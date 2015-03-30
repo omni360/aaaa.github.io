@@ -16,7 +16,7 @@
    id="svg8854"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="bcardf.svg"
+   sodipodi:docname="bcardf.pdf"
    enable-background="new">
   <defs
      id="defs3">
@@ -423,10 +423,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.9288394"
-     inkscape:cx="139.78237"
-     inkscape:cy="118.62871"
+     inkscape:cx="143.87956"
+     inkscape:cy="82.778332"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer20"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1399"
      inkscape:window-height="876"
@@ -453,9 +453,22 @@
   </metadata>
   <g
      inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="black"
+     style="display:none">
+    <rect
+       style="opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#646464;stroke-width:0.99562824;stroke-opacity:1"
+       id="rect3239"
+       width="317.90201"
+       height="176.16972"
+       x="0.49781412"
+       y="0.49781343" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer19"
      inkscape:label="backgroud"
-     style="opacity:0.38699999"
+     style="opacity:0.38699999;display:inline"
      sodipodi:insensitive="true">
     <g
        transform="translate(6.6356643e-7,8.8582719)"
@@ -1427,7 +1440,8 @@
      inkscape:groupmode="layer"
      id="layer20"
      inkscape:label="name"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
@@ -1444,7 +1458,8 @@
      inkscape:groupmode="layer"
      id="layer21"
      inkscape:label="company"
-     style="display:inline;filter:url(#filter14371)">
+     style="display:inline;filter:url(#filter14371)"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-size:15.36009216px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
@@ -1457,7 +1472,7 @@
          id="tspan11800"
          x="144.60281"
          y="109.85258"
-         style="font-size:7.68004608000000033px;-inkscape-font-specification:Larabiefont;font-family:Larabiefont;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">http://www.afanty3d.com</tspan></text>
+         style="font-size:7.68004608px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Larabiefont;-inkscape-font-specification:Larabiefont">http://www.afanty3d.com</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:19.200037px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
@@ -1470,7 +1485,7 @@
          id="tspan11804"
          x="144.47864"
          y="126.60268"
-         style="font-size:9.60001849999999912px;-inkscape-font-specification:Larabiefont;font-family:Larabiefont;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">133 3106 8066</tspan></text>
+         style="font-size:9.6000185px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Larabiefont;-inkscape-font-specification:Larabiefont">133 3106 8066</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:15.36004353px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
@@ -1483,7 +1498,7 @@
          id="tspan11804-7"
          x="242.79559"
          y="125.90128"
-         style="font-size:7.68002175999999981px;-inkscape-font-specification:Larabiefont;font-family:Larabiefont;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">272928275</tspan></text>
+         style="font-size:7.68002176px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Larabiefont;-inkscape-font-specification:Larabiefont">272928275</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:15.36002922px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
@@ -1496,10 +1511,10 @@
          id="tspan11804-8"
          x="144.87224"
          y="141.28529"
-         style="font-size:7.68001460999999885px;-inkscape-font-specification:Larabiefont;font-family:Larabiefont;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">afanty3d@vip.qq.com</tspan></text>
+         style="font-size:7.68001461px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Larabiefont;-inkscape-font-specification:Larabiefont">afanty3d@vip.qq.com</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:15.36005877999999925px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#696969;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
+       style="font-size:15.36005878px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#696969;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese"
        x="145.04094"
        y="154.58965"
        id="text11798-3"
@@ -1509,10 +1524,10 @@
          id="tspan11800-3"
          x="145.04094"
          y="154.58965"
-         style="font-size:7.68002938999999873px;fill:#696969">北京市海淀区创业中路32号楼32-1-1-312</tspan></text>
+         style="font-size:7.68002939px;fill:#696969">北京市海淀区创业中路32号楼32-1-1-312</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:380;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#696969;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese Semi-Light;text-anchor:start;text-align:start;writing-mode:lr"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#696969;fill-opacity:1;stroke:none;display:inline;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese Semi-Light"
        x="144.96825"
        y="96.345284"
        id="text11794"
@@ -1522,7 +1537,7 @@
          id="tspan11796"
          x="144.96825"
          y="96.345284"
-         style="font-size:10px;fill:#696969;-inkscape-font-specification:Noto Sans S Chinese Semi-Light;font-family:Noto Sans S Chinese;font-weight:380;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">北京阿凡提思睿网络科技有限公司</tspan></text>
+         style="font-size:10px;font-style:normal;font-variant:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#696969;font-family:Noto Sans S Chinese;-inkscape-font-specification:Noto Sans S Chinese Semi-Light">北京阿凡提思睿网络科技有限公司</tspan></text>
     <path
        id="path12528"
        d="m 134.13677,135.61996 h -6.41938 c -0.44157,0 -0.79482,0.35915 -0.79482,0.80255 l 0,4.81526 c 0,0.4434 0.35877,0.80255 0.80035,0.80255 h 6.41938 c 0.44157,0 0.80586,-0.35915 0.80586,-0.80255 v -4.81526 c 0,-0.4434 -0.36429,-0.80255 -0.80586,-0.80255 z m 0,1.60509 -3.20692,2.00636 -3.21246,-2.00636 v -0.80254 l 3.21246,2.00636 3.20692,-2.00636 v 0.80254 z"
@@ -1578,7 +1593,7 @@
          id="layer16">
         <path
            transform="matrix(0.72633531,0,0,0.88585753,39.540233,388.90426)"
-           d="m 661.4848,387.71237 a 275.35492,169.32745 0 1 1 -550.70984,0 275.35492,169.32745 0 1 1 550.70984,0 z"
+           d="m 661.4848,387.71237 c 0,93.51697 -123.28059,169.32746 -275.35492,169.32746 -152.07432,0 -275.35492,-75.81049 -275.35492,-169.32746 0,-93.51697 123.2806,-169.32745 275.35492,-169.32745 152.07433,0 275.35492,75.81048 275.35492,169.32745 z"
            sodipodi:ry="169.32745"
            sodipodi:rx="275.35492"
            sodipodi:cy="387.71237"
@@ -2250,5 +2265,6 @@
   <g
      inkscape:groupmode="layer"
      id="layer22"
-     inkscape:label="icon" />
+     inkscape:label="icon"
+     sodipodi:insensitive="true" />
 </svg>
