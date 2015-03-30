@@ -1,0 +1,70 @@
+%% Creator: Inkscape inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'bcardf.eps' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{255.13281152bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.60689258)%
+    \put(0,0){\includegraphics[width=\unitlength]{bcardf.eps}}%
+    \put(0.38503217,0.42362594){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{侯春雷}}}%
+    \put(0.45345122,0.23889292){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{http://www.afanty3d.com}}}%
+    \put(0.45306003,0.18636967){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{133 3106 8066}}}%
+    \put(0.7613454,0.18856897){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{272928275}}}%
+    \put(0.45429422,0.14033062){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{afanty3d@vip.qq.com}}}%
+    \put(0.45482406,0.09861421){\color[rgb]{0.41176471,0.41176471,0.41176471}\makebox(0,0)[lb]{\smash{北京市海淀区创业中路32号楼32-1-1-312}}}%
+    \put(0.45459526,0.28124523){\color[rgb]{0.41176471,0.41176471,0.41176471}\makebox(0,0)[lb]{\smash{北京阿凡提思睿网络科技有限公司}}}%
+    \put(0.15853783,0.20307069){\color[rgb]{0,0,0}\rotatebox{29.99978545}{\makebox(0,0)[lb]{\smash{阿凡提思睿}}}}%
+    \put(0.06011634,0.25616124){\color[rgb]{0,0,0}\rotatebox{-29.99976287}{\makebox(0,0)[lb]{\smash{Afanty3D}}}}%
+    \put(0.15743202,0.20264739){\rotatebox{29.9997728}{\makebox(0,0)[lb]{\smash{阿凡提思睿}}}}%
+    \put(0.06166343,0.25542438){\rotatebox{-29.9997728}{\makebox(0,0)[lb]{\smash{Afanty3D}}}}%
+    \put(0.14432093,0.36957175){\color[rgb]{1,1,1}\rotatebox{-29.99988846}{\makebox(0,0)[lb]{\smash{E}}}}%
+    \put(0.08285068,0.37047427){\color[rgb]{0,1,0}\rotatebox{-29.99988846}{\makebox(0,0)[lb]{\smash{W}}}}%
+    \put(0.20637986,0.36861788){\color[rgb]{1,0,0}\rotatebox{-29.99988846}{\makebox(0,0)[lb]{\smash{B}}}}%
+    \put(0.13075993,0.28307881){\color[rgb]{0,0,1}\rotatebox{-28.41314241}{\makebox(0,0)[lb]{\smash{3}}}}%
+    \put(0.16161869,0.26721159){\color[rgb]{1,1,0.94117647}\rotatebox{29.19815833}{\makebox(0,0)[lb]{\smash{d}}}}%
+  \end{picture}%
+\endgroup%
