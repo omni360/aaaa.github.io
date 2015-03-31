@@ -170,7 +170,7 @@
 							        <h6>艺术贴花细纹</h6>
 						        </article>
 					        	<ul class="portfolio span4 list-photo">           
-						           <li class="span1 unchecked magnifier" onclick="demoAlert('亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。')"><a href="#" onclick="demoAlert"><img alt="" src="../../img/house/4"></a></li> 
+						           <li class="span1 unchecked magnifier" onclick="decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/textu.png' );"><a href="#" onclick="demoAlert"><img alt="" src="../../img/house/4"></a></li> 
 						           <li class="span1 unchecked magnifier" onclick="demoAlert('亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。')"><a href="#" onclick="demoAlert"><img alt="" src="../../img/house/18"></a></li> 
 						           <li class="span1 unchecked magnifier" onclick="demoAlert('亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。')"><a href="#" onclick="demoAlert"><img alt="" src="../../img/house/24"></a></li> 
 						           <li class="span1 checked magnifier" onclick="demoAlert('亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。')"><a href="#" onclick="demoAlert"><img alt="" src="../../img/house/26"></a></li> 
@@ -243,7 +243,7 @@
 		
 		var pictures = $();
 
-		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/text.png' );
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/textu.png' );
 		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
 
 		var decalMaterial = new THREE.MeshPhongMaterial( {
@@ -715,7 +715,7 @@
 
 		//
 		function demoAlert() {
-			alert("亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。")
+			alert("亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。");
 		}
 		function animate() {
 
