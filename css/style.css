@@ -178,6 +178,10 @@ header {
 .nav-collapse_ .nav ul li {
   text-align: center;
 }
+.centerphoto{
+  width: 50%;
+  height: 50%
+}
 .nav-collapse_ .nav ul li a {
   padding: 4px 0;
   display: block;
