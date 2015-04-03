@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon" />
     <meta name="description" content="Codester is a free responsive Bootstrap template by Dzyngiri">
     <meta name="keywords" content="free, template, bootstrap, responsive">
-    <meta name="author" content="Inbetwin Networks">    
+    <meta name="author" content="omni360" >    
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
@@ -80,7 +80,7 @@
                                       <li><a href="wait.html">智慧城市</a></li>
                                 </ul>
                                   </li>
-                                <li><a href="blog.html">博客</a></li>
+		  							            <li><a href="products.html">产品和服务</a></li>
                                <li><a href="contact.html">联系我们</a></li>
                               </ul>
                           </div>
