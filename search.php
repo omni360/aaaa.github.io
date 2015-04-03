@@ -107,15 +107,20 @@
 </div>
 <!--  footer  -->
 <footer>
-      <div class="container clearfix">
-    <ul class="list-social pull-right">
-          <li><a class="icon-1" href="#"></a></li>
-          <li><a class="icon-2" href="#"></a></li>
-          <li><a class="icon-3" href="#"></a></li>
-          <li><a class="icon-4" href="#"></a></li>
-        </ul>
-    <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri : Online Design Magazine</a> | <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | Demo Illustrations by <a href="http://justinmezzell.com" target="_blank">Justin Mezzell</a></div>
-  </div>
+    <div class="container clearfix">
+	    <ul class="list-social pull-right">
+	          <li><a class="icon-1" href="wait.html"></a></li>
+	          <li><a class="icon-2" href="wait.html"></a></li>
+	          <li><a class="icon-3" href="wait.html"></a></li>
+	          <li><a class="icon-4" href="wait.html"></a></li>
+	    </ul>
+	    <div class="privacy pull-left">© 2015 | 
+	      <a href="http://omni360.github.io">版权所有 : 北京阿凡提思睿网络科技有限公司　</a> | 
+	      <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | WebGL Demo By : 
+	      <a href="http://omni360.github.io" target="_blank">北京阿凡提思睿网络科技有限公司</a>|    
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254501268'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254501268' type='text/javascript'%3E%3C/script%3E"));</script>
+		</div>
+  	</div>
     </footer>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>

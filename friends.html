@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>阿凡提3D | 解决方案</title>
+	<title>阿凡提3D | 案例</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
@@ -11,23 +11,26 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>  
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/touchTouch.jquery.js"></script> 
+    
 	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
-	<script>		
+<!--  	<script>		
 		 jQuery(window).load(function() {	
 		 $x = $(window).width();		
 	if($x > 1024)
 	{			
-	jQuery("wait.htmlcontent .row").preloader();    }			 
-		
+	jQuery("#content .row").preloader();    }			 
+	 jQuery('.magnifier').touchTouch();
 		 jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
   		  }); 
 					
-	</script>
+	</script> --> 
 
 	<!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
@@ -41,10 +44,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
   <![endif]-->
-  
-  <!--Google analytics code-->	  
-	 <!--  
-  <script type="text/javascript">
+	
+    <!--Google analytics code-->	  
+		<!--  
+	  <script type="text/javascript">
            var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-29231762-1']);
           _gaq.push(['_setDomainName', 'dzyngiri.com']);
@@ -74,8 +77,8 @@
 		                 				 	<ul class="nav sf-menu">
 								                <li><a href="index.html">主页</a></li>
 								                <li><a href="work.html">案例</a></li>
-		
-                                <li class="sub-menu active"><a href="process.html">行业解决方案</a>
+    
+                                <li class="sub-menu"><a href="process.html">行业解决方案</a>
                                   <ul>
                                       <li><a href="wait.html">互联网＋</a></li>
                                       <li><a href="wait.html">C2B</a></li>
@@ -89,7 +92,7 @@
                                 </ul>
 						                    	</li>
 		  							            <li><a href="products.html">产品和服务</a></li>
-								               <li><a href="contact.html">联系我们</a></li>
+								               <li class="active"　><a href="contact.html">联系我们</a></li>
 						              	 	</ul>
 		               				</div>
 		          			</div>
@@ -98,83 +101,47 @@
 		        </div>
 		  		</div>
 		</header>
-<div class="bg-content"> 
-      
-      <!-- content -->
-      
+<div class="bg-content">       
+  <!-- Content -->      
       <div id="content"><div class="ic"></div>
     <div class="container">
           <div class="row">
         <article class="span12">
-              <h4>行业解决方案</h4>
-            </article>
+        <h4>合作伙伴</h4>
+         </article>
         <div class="clear"></div>
-        <ul class="thumbnails thumbnails-1 list-services">
-              <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-1.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">互联网＋ </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-2.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">C2B </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-3.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">3D打印 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-4.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">工业4.0 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-5.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">三维网络展示平台 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-6.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">工业仿真 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                   <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-4.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">石油、电力、航空</a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-5.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">数据可视化 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-                  <li class="span4">
-                <div class="thumbnail thumbnail-1"> <img  src="img/service-6.jpg" alt="">
-                      <section> <a href="wait.html" class="link-1">智慧城市 </a>
-                    <p>Deleniti atque corrupti quos dolores molestias excepturi sint occaecati cupiditate nonprovident similique sunt in culpa.</p>
-                  </section>
-                    </div>
-              </li>
-            </ul>
-      </div>
+         <ul class="portfolio clearfix">           
+           <li class="box"><a href="demo/examples/gldemo_house_show.html" class="magnifier" ><img alt="" src="img/work/show.jpg">户型展示</a></li> 
+           <li class="box"><a href="demo/examples/gldemo_house_layout.html" class="magnifier" ><img alt="" src="img/work/layout.jpg">在线装修</a></li> 
+           <li class="box"><a href="demo/examples/gldemo_cloth_custom.html" class="magnifier" ><img alt="" src="img/work/cloth.jpg">服装定制</a></li> 
+           <li class="box"><a href="demo/examples/gldemo_package_custom.html" class="magnifier" ><img alt="" src="img/work/4.jpg">产品包装在线定制</a></li> 
+           <li class="box"><a href="demo/examples/css3d_periodictable.html" class="magnifier" ><img alt="" src="img/work/5.jpg">产品安装动画</a></li> 
+           <li class="box"><a href="demo/examples/webgl_shaders_tonemapping.html" class="magnifier" ><img alt="" src="img/work/6.jpg">工艺流程模拟</a></li> 
+           <li class="box"><a href="demo/examples/webgl_morphtargets_human.html" class="magnifier" ><img alt="" src="img/work/7.jpg">玻璃杯定制</a></li> 
+           <li class="box"><a href="demo/examples/webgl_loader_collada_kinematics.html" class="magnifier" ><img alt="" src="img/work/8.jpg">虚拟现实</a></li>
+          <div class="clear"></div>
+           <li class="box"><a href="demo/examples/webgl_loader_collada_keyframe.html" class="magnifier" ><img alt="" src="img/work/9.jpg">全球石油进出口</a></li> 
+           <li class="box"><a href="demo/examples/webgl_lights_hemisphere.html" class="magnifier" ><img alt="" src="img/work/10.jpg">科幻主题UI</a></li> 
+           <li class="box"><a href="demo/examples/webgl_geometry_large_mesh.html" class="magnifier" ><img alt="" src="img/work/11.jpg">商业街展示</a></li> 
+           <li class="box"><a href="demo/examples/webgl_effects_parallaxbarrier.html" class="magnifier" ><img alt="" src="img/work/12.jpg">京津冀一体化</a></li> 
+           <li class="box"><a href="demo/examples/webgl_decals.html" class="magnifier" ><img alt="" src="img/work/13.jpg">十大城市群</a></li> 
+           <li class="box"><a href="demo/examples/webgl_animation_skinning_blending.html" class="magnifier" ><img alt="" src="img/work/14.jpg">数字药店</a></li> 
+           <li class="box"><a href="demo/examples/webgl_loader_pdb.html" class="magnifier" ><img alt="" src="img/work/15.jpg">墙纸选购平台</a></li> 
+           <li class="box"><a href="demo/examples/raytracing_sandbox.html" class="magnifier" ><img alt="" src="img/work/16.jpg">逃生通道导航</a></li>                  
+          <div class="clear"></div>
+           <li class="box"><a href="demo/examples/webgl_morphtargets_md2.html" class="magnifier" ><img alt="" src="img/work/9.jpg">模具定制</a></li> 
+           <li class="box"><a href="demo/examples/webgl_multiple_canvases_circle.html" class="magnifier" ><img alt="" src="img/work/10.jpg">机柜定制</a></li> 
+           <li class="box"><a href="demo/examples/webgl_geometry_colors_lookuptable.html" class="magnifier" ><img alt="" src="img/work/11.jpg">３D试衣</a></li> 
+           <li class="box"><a href="demo/examples/webgl_marchingcubes.html" class="magnifier" ><img alt="" src="img/work/12.jpg">网上展厅</a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_blending_custom.html" class="magnifier" ><img alt="" src="img/work/13.jpg">游戏画面展示</a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_bumpmap_skin.html" class="magnifier" ><img alt="" src="img/work/14.jpg">游戏交互式体验</a></li> 
+           <li class="box"><a href="demo/examples/webgl_materials_cubemap_dynamic.html" class="magnifier" ><img alt="" src="img/work/15.jpg">武器进出口</a></li> 
+           <li class="box"><a href="demo/examples/canvas_camera_orthographic2.html" class="magnifier" ><img alt="" src="img/work/16.jpg">机房监控</a></li>                  
+          <div class="clear"></div>           
+           <li class="box"><a href="demo/examples/webgl_materials_cars.html" class="mag汽车展示nifier" ><img alt="" src="img/work/16.jpg">汽车展示</a></li>                  
+           <li class="box"><a href="demo/examples/webgl_materials_cars_camaro.html" class="magnifier" ><img alt="" src="img/work/16.jpg">汽车定制</a></li>                  
+        </ul> 
+           </div>
         </div>
   </div>
     </div>
