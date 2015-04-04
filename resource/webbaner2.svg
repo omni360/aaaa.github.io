@@ -226,19 +226,7 @@
          offset="0"
          id="stop8435-4" />
       <stop
-         id="stop5507"
-         offset="0.25"
-         style="stop-color:#ffff00;stop-opacity:1;" />
-      <stop
-         id="stop8439-1"
-         offset="0.5"
-         style="stop-color:#ff0000;stop-opacity:1;" />
-      <stop
-         style="stop-color:#ff00ff;stop-opacity:1;"
-         offset="0.75"
-         id="stop5509" />
-      <stop
-         style="stop-color:#0000ff;stop-opacity:1;"
+         style="stop-color:#ffff00;stop-opacity:1;"
          offset="1"
          id="stop8443-5" />
     </linearGradient>
