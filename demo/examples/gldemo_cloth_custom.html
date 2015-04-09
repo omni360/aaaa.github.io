@@ -238,6 +238,7 @@
 		var mesh, decal;
 		var raycaster;
 		var line;
+		var instersections;
 
 		var mouseX = 0, mouseY = 0;
 		var cwidth = $("#gldemo").width();
@@ -266,7 +267,7 @@
 
 		var tmpdebug;
 
-		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/textu.png' );
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/text.png' );
 		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
 
 
@@ -609,7 +610,7 @@
 
 				raycaster.setFromCamera( mouse, camera );
 
-				var intersects = raycaster.intersectObjects( [ mesh ] );
+				var intersects = raycaster.intersectObjects( instersections );	//[ mesh ] );
 
 				if ( intersects.length > 0 ) {
 
@@ -652,10 +653,31 @@
 
 		}
 
+		var onProgress = function ( xhr ) {
+			if ( xhr.lengthComputable ) {
+				var percentComplete = xhr.loaded / xhr.total * 100;
+				console.log( Math.round(percentComplete, 2) + '% downloaded' );
+			}
+		};
+
+		var onError = function ( xhr ) {
+		};
+
+
 		function loadLeePerrySmith( callback ) {
 
-			loader = new THREE.BinaryLoader( true );
-			var start = Date.now();
+			var loader = new THREE.OBJMTLLoader();
+			loader.load( 'custom/female02.obj', 'custom/female02.mtl', function ( object ) {
+
+				object.position.y = - 80;
+				instersections = object;
+				scene.add( instersections );
+
+			}, onProgress, onError );
+	
+
+			// loader = new THREE.BinaryLoader( true );
+			// var start = Date.now();
 	        // loader.load( "house/322/bin322.js", createScene );
 
 	        // function createScene( geometry, materials ) {
@@ -664,22 +686,24 @@
 
 	        // };
 			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
-			loader.load( 'custom/female02.js', function ( geometry, materials ) {
+			// loader.load( 'custom/female02.js', function ( geometry, materials ) {
 
-				// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
-				addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
-				// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
-				// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+			// 	// materials[0].wireframe = true;
+			// 	// var THREE.MeshFaceMaterial( materials ) ;
+			// 	addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+			// 	// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
 
-				// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
-				loader.statusDomElement.style.display = "none";
+			// 	// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+			// 	loader.statusDomElement.style.display = "none";
 
-				console.log( "geometry.vertices: " + geometry.vertices.length );
-				console.log( "geometry.faces: " + geometry.faces.length );
+			// 	console.log( "geometry.vertices: " + geometry.vertices.length );
+			// 	console.log( "geometry.faces: " + geometry.faces.length );
 
-				console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+			// 	console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
 
-			} );
+			// } );
 
 		}
 
