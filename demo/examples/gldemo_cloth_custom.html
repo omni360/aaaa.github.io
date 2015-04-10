@@ -355,19 +355,21 @@
 					cloth = mesh.children[i].clone();
 					// console.log(cloth);
 					mesh.remove(mesh.children[i]);
+
+					cloth.scale.set( scale, scale, scale );
+					cloth.position.set( x, y, z );
+					cloth.rotation.set( rx, ry, rz );
+					scene.add( cloth );
+
 				};
 			};
 
 			mesh.scale.set( scale, scale, scale );
 			mesh.position.set( x, y, z );
 			mesh.rotation.set( rx, ry, rz );
-			cloth.scale.set( scale, scale, scale );
-			cloth.position.set( x, y, z );
-			cloth.rotation.set( rx, ry, rz );
 
 
 			scene.add( mesh );
-			scene.add( cloth );
 
 			}
 
@@ -691,7 +693,7 @@
 		function loadLeePerrySmith( callback ) {
 
 			var loader = new THREE.OBJMTLLoader();
-			loader.load( 'custom/female02.obj', 'custom/female02.mtl', function ( object ) {
+			loader.load( 'custom/female01.obj', 'custom/female01.mtl', function ( object ) {
 
 				// object.position.y = - 80;
 				// console.log( object );
