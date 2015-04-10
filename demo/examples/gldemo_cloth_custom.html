@@ -235,7 +235,7 @@
 		var canvasRect;
 
 		var camera, controls, scene, renderer;
-		var mesh, decal;
+		var mesh, decal, cloth;
 		var raycaster;
 		var line;
 		var instersections;
@@ -346,6 +346,30 @@
 			scene.add( mesh );
 
 		}
+
+		function addGroup( group, scale, x, y, z, rx, ry, rz) {
+			mesh = group;
+
+			for (var i = mesh.children.length - 1; i >= 0; i--) {
+				if (mesh.children[i].name == "1") {
+					cloth = mesh.children[i].clone();
+					// console.log(cloth);
+					mesh.remove(mesh.children[i]);
+				};
+			};
+
+			mesh.scale.set( scale, scale, scale );
+			mesh.position.set( x, y, z );
+			mesh.rotation.set( rx, ry, rz );
+			cloth.scale.set( scale, scale, scale );
+			cloth.position.set( x, y, z );
+			cloth.rotation.set( rx, ry, rz );
+
+
+			scene.add( mesh );
+			scene.add( cloth );
+
+			}
 
 		// window.addEventListener( 'load', init );
 
@@ -606,11 +630,11 @@
 
 			function checkIntersection() {
 
-				if( !mesh ) return;
+				if( !cloth ) return;
 
 				raycaster.setFromCamera( mouse, camera );
 
-				var intersects = raycaster.intersectObjects( instersections );	//[ mesh ] );
+				var intersects = raycaster.intersectObjects( [cloth] );
 
 				if ( intersects.length > 0 ) {
 
@@ -669,10 +693,10 @@
 			var loader = new THREE.OBJMTLLoader();
 			loader.load( 'custom/female02.obj', 'custom/female02.mtl', function ( object ) {
 
-				object.position.y = - 80;
-				instersections = object;
-				scene.add( instersections );
-
+				// object.position.y = - 80;
+				// console.log( object );
+				// scene.add( object );
+				addGroup( object, 1, 0, -80, 0,  0,0,0 );
 			}, onProgress, onError );
 	
 
@@ -750,7 +774,7 @@
 			material.color.setHex( Math.random() * 0xffffff );
 			// material.wireframe = true;
 
-			var m = new THREE.Mesh( new THREE.DecalGeometry( mesh, p, r, s, check ), material );
+			var m = new THREE.Mesh( new THREE.DecalGeometry( cloth, p, r, s, check ), material );
 			decals.push( m );
 			scene.add( m );
 
