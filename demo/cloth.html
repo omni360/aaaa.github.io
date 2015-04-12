@@ -692,12 +692,13 @@
 		function loadLeePerrySmith( callback ) {
 
 			var loader = new THREE.OBJMTLLoader();
-			loader.load( 'examples/custom/female02.obj', 'examples/custom/female02.mtl', function ( object ) {
+			loader.load( 'examples/custom/female11.obj', 'examples/custom/female11.obj.mtl', function ( object ) {
 
 				// object.position.y = - 80;
 				// console.log( object );
 				// scene.add( object );
-				addMesh( object, 25, 0, 380, 0,  0,0,0 );
+				addMesh( object, 1, 0, -80, 0,  0,0,0 , new THREE.MeshFaceMaterial( materials ));
+				// addGroup( object, 1, 0, -80, 0,  0,0,0 );
 			}, onProgress, onError );
 	
 
