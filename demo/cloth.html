@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>阿凡提3D | 服装在线定制</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <meta name="description" content="阿凡提思睿长期专注于图形图像领域技术研发，通过网页3D技术推动产业升级，领导和带动行业发展方向。积极组织业内发展论坛，通过引领定制消费文化建立，促进行业发展协会建立，培育产业核心环节，吸引3D打印等配套企业聚集，促使形成产业集群形成，存进行业持续、健康、快速发展.">
+    <meta name="keywords" content="私人订制, 互联网＋, C2B, 工业4.0">
+    <meta name="author" content="omni360" >  
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../css/touchTouch.css" type="text/css" media="screen">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/superfish.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>  
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/touchTouch.jquery.js"></script> 
+    
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='../js/jquery.preloader.js'></"+"script>");}	</script>
+</head>
+
+<body>
+	<script src="../build/three.js"></script>
+
+	<script src="js/loaders/DDSLoader.js"></script>
+	<script src="js/loaders/MTLLoader.js"></script>
+	<script src="js/loaders/OBJMTLLoader.js"></script>
+	<script src="js/controls/TrackballControls.js"></script>
+	<script src="js/loaders/BinaryLoader.js"></script>
+	<script src="js/controls/OrbitControls.js"></script>
+
+	<script src="js/geometries/DecalGeometry.js"></script>
+	<script src="js/libs/dat.gui.min.js"></script>
+
+	<script src="js/Detector.js"></script>
+	<script src="js/libs/stats.min.js"></script>
+	<script type="x-shader/x-vertex" id="vertexShader">
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+			vWorldPosition = worldPosition.xyz;
+
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+		}
+
+	</script>
+
+	<script type="x-shader/x-fragment" id="fragmentShader">
+
+		uniform vec3 topColor;
+		uniform vec3 bottomColor;
+		uniform float offset;
+		uniform float exponent;
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			float h = normalize( vWorldPosition + offset ).y;
+			gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h, 0.0 ), exponent ), 0.0 ) ), 1.0 );
+
+		}
+
+	</script>
+
+	<header>
+	      <div class="container clearfix">
+	    		<div class="row">
+	          	<div class="span12">
+	        			<div class="navbar navbar_">
+	              		<div class="container">
+	            			<h1 class="brand brand_"><a href="../index.html"><img alt="" src="../img/logo.png"> </a></h1>
+	            				<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">菜单 <span class="icon-bar"></span> </a>
+	            					<div class="nav-collapse nav-collapse_  collapse">
+	                 				 	<ul class="nav sf-menu">
+							                <li><a href="../index.html">主页</a></li>
+							                <li class="active"><a href="../work.html">案例</a></li>
+			                                <li class="sub-menu"><a href="../process.html">行业解决方案</a>
+				                                  <ul>
+				                                      <li><a href="../wait.html">互联网＋</a></li>
+				                                      <li><a href="../wait.html">C2B</a></li>
+				                                      <li><a href="../wait.html">3D打印</a></li>
+				                                      <li><a href="../wait.html">工业4.0</a></li>
+				                                      <li><a href="../wait.html">三维网络展示平台</a></li>
+				                                      <li><a href="../wait.html">工业仿真</a></li>
+				                                      <li><a href="../wait.html">石油、电力、航空</a></li>
+				                                      <li><a href="../wait.html">数据可视化</a></li>
+				                                      <li><a href="../wait.html">智慧城市</a></li>
+				                                </ul>
+					                    	</li>
+		  							            <li><a href="../products.html">产品和服务</a></li>
+		  							            <li><a href="../aboutus.html">关于我们</a>
+			  							            <ul>
+								               		<li><a href="../technical.html">技术优势</a></li>		  							            
+								               		<li><a href="../team.html">团队成员</a></li>
+                                  				<li><a href="../friends.html">合作伙伴</a></li>
+								               		<li><a href="../contact.html">联系我们</a></li>		  							            
+		  							            	</ul>	  							            
+		  							            </li>
+					              	 	</ul>
+	               				</div>
+	          			</div>
+	            	</div>
+	      		</div>
+	        </div>
+	  		</div>
+	</header>
+	<div class="bg-content">       
+	    <div id="content">
+	      	<div class="ic"></div>
+		    <div class="container clearfix">
+		    	<div class="span12">
+			        <article>
+				        <h5>服装在线定制</h5>
+			        </article>
+		    	</div>
+		    	<div class="clear"></div>
+		    	<div class="row">
+			    	<article class="span7">
+			    		<div class="row">
+		 			        <div class="clear"></div>
+					        <div class="span3">
+		    			        <article class="span3">
+							        <h6>命令</h6>
+						        </article>
+						        <div class="row">
+						        	<ul class="portfolio span4 list-photo">           
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()" ><a href="#"><img alt="" src="textures/decal/decal-diffuse.png">模特性别</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal-diffuse.png">服装样式</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal-diffuse.png">服装底色</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/textu.png">服装花纹</a></li> 
+							           <li class="span1 checked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal.png">艺术贴片</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/texticon.png">添加文字</a></li> 
+							        </ul> 				        							        	
+						        </div>
+					        </div>
+					        <div class="span4">
+		    			        <article class="span4">
+							        <h6>艺术贴花图案</h6>
+						        </article>
+
+					        	<ul class="portfolio span4 list-photo">
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/4"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/18"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/24"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/26"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/28"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/40"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/42"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/46"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/68"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/74"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/88"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/90"></a></li> 
+						         </ul> 
+					        </div>
+					        <div class="clear"></div>
+					        <div class="span3">
+		    			        <article class="span3">
+							        <h6>艺术贴片属性设置</h6>
+						        </article>
+						        <div class="row">
+						        <div class="span3" id="attribute"></div>
+	<!-- 					        	<ul class="portfolio">           
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/4"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/18"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/24"></a></li> 
+							           <li class="span1"><a href="#" onclick=""><img alt="" src="../img/house/24"></a></li> 
+							        </ul> 		 -->		        							        	
+						        </div>					        	
+					        </div>
+	        <div class="span4">
+		        <article class="span4">
+			        <h6>艺术贴花细纹</h6>
+		        </article>
+					        	<ul class="portfolio span4 list-photo">           
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#"><img alt="" src="../img/house/4"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/18"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/24"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/26"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/28"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/40"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/42"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/46"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/68"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/74"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/88"></a></li> 
+						           <li class="span1 unchecked magnifier" name = 'rightli' checked = 'false' onclick='changeSelected( this );'><a href="#" ><img alt="" src="../img/house/90"></a></li> 
+						         </ul> 
+					        </div>			    			
+			    		</div>
+
+			    	</article>
+			    	<article class="span5">
+				        <div class="span5 pull-right" id="gldemo"></div>
+			    	</article>
+		    		
+		    	</div>
+
+		    </div>
+
+        </div>
+  	</div>
+	<!-- footer -->
+<footer>
+    <div class="container clearfix">
+	    <ul class="list-social pull-right">
+	          <li><a class="icon-1" href="../wait.html"></a></li>
+	          <li><a class="icon-2" href="../wait.html"></a></li>
+	          <li><a class="icon-3" href="../wait.html"></a></li>
+	          <li><a class="icon-4" href="../wait.html"></a></li>
+	    </ul>
+	    <div class="privacy pull-left">© 2015 | 
+	      <a href="http://omni360.github.io">版权所有 : 北京阿凡提思睿网络科技有限公司　</a> | 
+	      <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | WebGL Demo By : 
+	      <a href="http://omni360.github.io" target="_blank">北京阿凡提思睿网络科技有限公司</a>|    
+		<!--	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254726319'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254726319' type='text/javascript'%3E%3C/script%3E"));</script> -->
+		</div>
+  	</div>
+</footer>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+
+	<script>
+
+		var container = document.getElementById("gldemo");
+		var stats;
+		var canvasRect;
+
+		var camera, controls, scene, renderer;
+		var mesh, decal, cloth;
+		var raycaster;
+		var line;
+		var instersections;
+
+		var mouseX = 0, mouseY = 0;
+		var cwidth = $("#gldemo").width();
+		var cheight = cwidth * 1.618;
+
+		var windowHalfX = cwidth / 2;
+		var windowHalfY = cheight / 2;
+
+		var intersection = {
+			intersects: false,
+			point: new THREE.Vector3(),
+			normal: new THREE.Vector3()
+		};
+		var mouse = new THREE.Vector2();
+		
+		var pictures = $();
+
+		var inCanvars = false;
+		var materialChanged = false, activeImg;
+
+		// texture imgage selected list
+		var textureImage = {
+			leftli :  "",
+			rightli : ""
+		};
+
+		var tmpdebug;
+
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/text.png' );
+		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
+
+
+		var decalMaterial = new THREE.MeshPhongMaterial( {
+			specular: 0x444444,
+			map: decalDiffuse,
+			normalMap: decalNormal,
+			normalScale: new THREE.Vector2( .15, .15 ),
+			shininess: 30,
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			wireframe: false
+		});
+
+
+		function changeSelected ( selected ){
+
+
+			$('li[name = "'+$(selected).attr('name')+'"]').each(function(){
+				if(this.checked && this != selected){
+
+					this.className = "span1 unchecked magnifier";
+					this.checked = false;
+				}
+			});
+
+			textureImage[$(selected).attr('name')] = selected.innerHTML;
+			selected.className = "span1 checked magnifier";
+			selected.checked = true;
+			materialChanged = true;
+			activeImg = $(selected).find('img')[0].src;
+			// decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/textu.png' );
+		}
+
+
+		/*decalMaterial = new THREE.MeshNormalMaterial( {
+			transparent: true,
+			depthTest: true,
+			depthWrite: false,
+			polygonOffset: true,
+			polygonOffsetFactor: -4,
+			shading: THREE.SmoothShading
+		});*/
+		var decals = [];
+		var decalHelper, mouseHelper;
+		var p = new THREE.Vector3( 0, 0, 0 );
+		var r = new THREE.Vector3( 0, 0, 0 );
+		var s = new THREE.Vector3( 10, 10, 10 );
+		var up = new THREE.Vector3( 0, 1, 0 );
+		var check = new THREE.Vector3( 1, 1, 1 );
+
+		var params = {
+			projection: 'normal',
+			minScale: 5,
+			maxScale: 25,
+			rotate: true,
+			clear: function() {
+				removeDecals();
+			}
+		};
+
+		init();
+		animate();
+
+		function addMesh( geometry, scale, x, y, z, rx, ry, rz, material ) {
+
+			mesh = new THREE.Mesh( geometry, material );
+
+			mesh.scale.set( scale, scale, scale );
+			mesh.position.set( x, y, z );
+			mesh.rotation.set( rx, ry, rz );
+
+			scene.add( mesh );
+
+		}
+
+		function addGroup( group, scale, x, y, z, rx, ry, rz) {
+			mesh = group;
+
+			for (var i = mesh.children.length - 1; i >= 0; i--) {
+				if (mesh.children[i].name == "1") {
+					cloth = mesh.children[i].clone();
+					// console.log(cloth);
+					mesh.remove(mesh.children[i]);
+
+					cloth.scale.set( scale, scale, scale );
+					cloth.position.set( x, y, z );
+					cloth.rotation.set( rx, ry, rz );
+					scene.add( cloth );
+
+				};
+			};
+
+			mesh.scale.set( scale, scale, scale );
+			mesh.position.set( x, y, z );
+			mesh.rotation.set( rx, ry, rz );
+
+
+			scene.add( mesh );
+
+			}
+
+		// window.addEventListener( 'load', init );
+
+		function init() {
+			//
+
+			renderer = new THREE.WebGLRenderer({ antialias:true }); //, alpha: true });
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( cwidth, cheight );
+			container.appendChild( renderer.domElement );
+
+			scene = new THREE.Scene();
+			scene.fog = new THREE.Fog( 0xffffff, 1, 5000 );
+			scene.fog.color.setHSL( 0.6, 0, 1 );
+			// container = document.createElement( 'div' );
+			// document.body.appendChild( container );
+
+			camera = new THREE.PerspectiveCamera( 60, cwidth / cheight, 1, 10000 );
+			camera.position.z = 250;
+			// camera.position.y = 100;
+			// camera.position.x = 100;
+			// camera.up.set(0,0,1);
+			camera.lookAt( 0,0,0 );
+			// camera.position.x = 900;
+			// camera.position.z = 600;
+			// camera.lookAt(50,50,0);
+			camera.target = new THREE.Vector3();
+
+			// controls
+			controls = new THREE.OrbitControls( camera, renderer.domElement );
+			controls.minDistance = 50;
+			controls.maxDistance = 200;
+
+			// controls = new THREE.OrbitControls( camera, renderer.domElement );
+			// controls.minDistance = 50;
+			// controls.maxDistance = 200;
+			// controls = new THREE.TrackballControls( camera );
+
+			// controls.rotateSpeed = 1.0;
+			// controls.zoomSpeed = 1.2;
+			// controls.panSpeed = 0.8;
+
+			// controls.noZoom = false;
+			// controls.noPan = false;
+
+			// controls.staticMoving = true;
+			// controls.dynamicDampingFactor = 0.15;
+
+			// controls.keys = [ 65, 83, 68 ];
+
+			// controls.addEventListener( 'change', render );
+
+			// scene
+
+
+			// var ambient = new THREE.AmbientLight( 0x444444 );
+			// scene.add( ambient );
+
+			// var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+			// directionalLight.position.set( 0, 0, 1 ).normalize();
+			// scene.add( directionalLight );
+
+			// LIGHTS
+
+			// var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.475 );
+			// directionalLight.position.set( 100, 100, -100 );
+			// scene.add( directionalLight );
+
+
+			// var hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 1.25 );
+			// hemiLight.color.setHSL( 0.6, 1, 0.6 );
+			// hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+			// hemiLight.position.y = 500;
+			// scene.add( hemiLight );
+
+			// LIGHTS
+
+			hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+			hemiLight.color.setHSL( 0.6, 1, 0.6 );
+			hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+			hemiLight.position.set( 0, 500, 0 );
+			scene.add( hemiLight );
+
+			//
+
+			dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
+			dirLight.color.setHSL( 0.1, 1, 0.95 );
+			dirLight.position.set( -1, 1.75, 1 );
+			dirLight.position.multiplyScalar( 50 );
+			scene.add( dirLight );
+
+			dirLight.castShadow = true;
+
+			dirLight.shadowMapWidth = 2048;
+			dirLight.shadowMapHeight = 2048;
+
+			var d = 50;
+
+			dirLight.shadowCameraLeft = -d;
+			dirLight.shadowCameraRight = d;
+			dirLight.shadowCameraTop = d;
+			dirLight.shadowCameraBottom = -d;
+
+			dirLight.shadowCameraFar = 3500;
+			dirLight.shadowBias = -0.0001;
+			dirLight.shadowDarkness = 0.35;
+			//dirLight.shadowCameraVisible = true;
+
+			line = new THREE.Line( new THREE.Geometry( ), new THREE.LineBasicMaterial( { linewidth: 4 }) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			line.geometry.vertices.push( new THREE.Vector3( 0, 0, 0 ) );
+			scene.add( line );
+
+			loadLeePerrySmith();
+
+			raycaster = new THREE.Raycaster();
+
+			mouseHelper = new THREE.Mesh( new THREE.BoxGeometry( 1, 1, 10 ), new THREE.MeshNormalMaterial() );
+			mouseHelper.visible = false;
+			scene.add( mouseHelper );
+
+			// GROUND
+
+			var groundGeo = new THREE.PlaneBufferGeometry( 10000, 10000 );
+			var groundMat = new THREE.MeshPhongMaterial( { ambient: 0xffffff, color: 0xffffff, specular: 0x050505 } );
+			groundMat.color.setHSL( 0.095, 1, 0.75 );
+
+			var ground = new THREE.Mesh( groundGeo, groundMat );
+			ground.rotation.x = -Math.PI/2;
+			ground.position.y = -80;
+			scene.add( ground );
+
+			ground.receiveShadow = true;
+
+			// SKYDOME
+
+			var vertexShader = document.getElementById( 'vertexShader' ).textContent;
+			var fragmentShader = document.getElementById( 'fragmentShader' ).textContent;
+			var uniforms = {
+				topColor: 	 { type: "c", value: new THREE.Color( 0x0077ff ) },
+				bottomColor: { type: "c", value: new THREE.Color( 0xffffff ) },
+				offset:		 { type: "f", value: 80 },
+				exponent:	 { type: "f", value: 0.6 }
+			}
+			uniforms.topColor.value.copy( hemiLight.color );
+
+			scene.fog.color.copy( uniforms.bottomColor.value );
+
+			var skyGeo = new THREE.SphereGeometry( 4000, 32, 15 );
+			var skyMat = new THREE.ShaderMaterial( { vertexShader: vertexShader, fragmentShader: fragmentShader, uniforms: uniforms, side: THREE.BackSide } );
+
+			var sky = new THREE.Mesh( skyGeo, skyMat );
+			scene.add( sky );
+
+			// model
+
+			// loader = new THREE.BinaryLoader( true );
+			// var start = Date.now();
+	  //       // loader.load( "house/322/bin322.js", createScene );
+
+	  //       // function createScene( geometry, materials ) {
+
+	  //       //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+
+	  //       // };
+			// // loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			// loader.load( 'custom/female02.js', function ( geometry, materials ) {
+
+			// 	// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+			// 	addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+			// 	// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+
+			// 	// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+			// 	loader.statusDomElement.style.display = "none";
+
+			// 	console.log( "geometry.vertices: " + geometry.vertices.length );
+			// 	console.log( "geometry.faces: " + geometry.faces.length );
+
+			// 	console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+
+			// } );
+
+
+			// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+			//
+			canvasRect = renderer.domElement.getBoundingClientRect();
+
+			function checkmode(event) {
+				if( event.clientX > renderer.domElement.offsetLeft && event.clientX < (renderer.domElement.offsetLeft + renderer.domElement.offsetWidth) && event.clientY > renderer.domElement.offsetTop && event.clientY < (renderer.domElement.offsetTop + renderer.domElement.offsetHeight)) {
+
+					inCanvars = true;
+
+				} else {
+
+					inCanvars = false;
+
+				}
+			}
+
+
+			window.addEventListener( 'resize', onWindowResize, false );
+
+			var moved = false;
+
+			controls.addEventListener( 'change', function() {
+
+				moved = true;
+				// render();
+			} );
+
+			window.addEventListener( 'mousedown', function (event) {
+
+				checkmode(event);
+
+				moved = false;
+
+			}, false );
+
+			window.addEventListener( 'mouseup', function() {
+
+
+				if( inCanvars ) { 
+
+					checkIntersection();
+					if( !moved ) shoot();
+
+				}
+
+			} );
+
+			window.addEventListener( 'mousemove', onTouchMove );
+			window.addEventListener( 'touchmove', onTouchMove );
+
+
+			function onTouchMove( event ) {
+				// console.log(canvasRect);
+
+
+				if( event.changedTouches ) {
+					x = event.changedTouches[ 0 ].pageX;
+					y = event.changedTouches[ 0 ].pageY;
+				} else {
+					x = event.clientX - canvasRect.left;
+					y = event.clientY - canvasRect.top;
+				}
+
+				mouse.x = ( x / cwidth ) * 2 - 1;
+				mouse.y = - ( y / cheight ) * 2 + 1;
+				// if(inCanvars) {
+
+					checkIntersection();
+
+				// };
+
+			}
+
+			function checkIntersection() {
+
+				if( !cloth ) return;
+
+				raycaster.setFromCamera( mouse, camera );
+
+				var intersects = raycaster.intersectObjects( [cloth] );
+
+				if ( intersects.length > 0 ) {
+
+					var p = intersects[ 0 ].point;
+					mouseHelper.position.copy( p );
+					intersection.point.copy( p );
+					var n = intersects[ 0 ].face.normal.clone();
+					n.multiplyScalar( 10 );
+					n.add( intersects[ 0 ].point );
+					intersection.normal.copy( intersects[ 0 ].face.normal );
+					mouseHelper.lookAt( n );
+
+					line.geometry.vertices[ 0 ].copy( intersection.point );
+					line.geometry.vertices[ 1 ].copy( n );
+					line.geometry.verticesNeedUpdate = true;
+
+					intersection.intersects = true;
+
+				} else {
+
+					intersection.intersects = false;
+
+				}
+
+			}
+
+			var gui = new dat.GUI({ autoPlace: false });
+
+			gui.add( params, 'projection', { 'From cam to mesh': 'camera', 'Normal to mesh': 'normal' } );
+			gui.add( params, 'minScale', 1, 30 );
+			gui.add( params, 'maxScale', 1, 30 );
+			gui.add( params, 'rotate' );
+			gui.add( params, 'clear' );
+			gui.open();
+			$("#attribute").append(gui.domElement);
+
+			//
+			render();
+			onWindowResize();
+
+		}
+
+		var onProgress = function ( xhr ) {
+			if ( xhr.lengthComputable ) {
+				var percentComplete = xhr.loaded / xhr.total * 100;
+				console.log( Math.round(percentComplete, 2) + '% downloaded' );
+			}
+		};
+
+		var onError = function ( xhr ) {
+		};
+
+
+		function loadLeePerrySmith( callback ) {
+
+			var loader = new THREE.OBJMTLLoader();
+			loader.load( 'custom/female02.obj', 'custom/female02.mtl', function ( object ) {
+
+				// object.position.y = - 80;
+				// console.log( object );
+				// scene.add( object );
+				addMesh( object, 25, 0, 380, 0,  0,0,0 );
+			}, onProgress, onError );
+	
+
+			// loader = new THREE.BinaryLoader( true );
+			// var start = Date.now();
+	        // loader.load( "house/322/bin322.js", createScene );
+
+	        // function createScene( geometry, materials ) {
+
+	        //     var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+
+	        // };
+			// loader.load( 'obj/lucy/Lucy100k_bin.js', function ( geometry, materials ) {
+			// loader.load( 'custom/female02.js', function ( geometry, materials ) {
+
+			// 	// addMesh( geometry, 0.75, 900, 0, 0,  0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x030303, specular: 0x990000, shininess: 30 } ) );
+			// 	// materials[0].wireframe = true;
+			// 	// var THREE.MeshFaceMaterial( materials ) ;
+			// 	addMesh( geometry, 1, -30, -80, 0,  0,0,0, new THREE.MeshFaceMaterial( materials ) );
+			// 	// addMesh( geometry, 0.75, -300, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x111111, specular: 0xffaa00, shininess: 10 } ) );
+			// 	// addMesh( geometry, 0.75, -900, 0, 0, 0,0,0, new THREE.MeshPhongMaterial( { ambient: 0x030303, color: 0x555555, specular: 0x666666, shininess: 10 } ) );
+
+			// 	// loadMesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+			// 	loader.statusDomElement.style.display = "none";
+
+			// 	console.log( "geometry.vertices: " + geometry.vertices.length );
+			// 	console.log( "geometry.faces: " + geometry.faces.length );
+
+			// 	console.log( "model loaded and created in " + ( Date.now() - start ) + " ms" );
+
+			// } );
+
+		}
+
+		function shoot() {
+
+			if( params.projection == 'camera' ) {
+
+				var dir = camera.target.clone();
+				dir.sub( camera.position );
+
+				p = intersection.point;
+
+				var m = new THREE.Matrix4();
+				var c = dir.clone();
+				c.negate();
+				c.multiplyScalar( 10 );
+				c.add( p );
+				m.lookAt( p, c, up );
+				m = m.extractRotation( m );
+
+				dummy = new THREE.Object3D();
+				dummy.rotation.setFromRotationMatrix( m );
+				r.set( dummy.rotation.x, dummy.rotation.y, dummy.rotation.z );
+
+			} else {
+
+				p = intersection.point;
+				r.copy( mouseHelper.rotation );
+
+			}
+
+			var scale = params.minScale + Math.random() * ( params.maxScale - params.minScale );
+			s.set( scale, scale, scale );
+
+			if( params.rotate) r.z = Math.random() * 2 * Math.PI;
+
+			var material = decalMaterial.clone();
+
+			if(materialChanged){
+				material.map = THREE.ImageUtils.loadTexture(activeImg);
+				// materialChanged = false;
+			};
+
+			material.color.setHex( Math.random() * 0xffffff );
+			// material.wireframe = true;
+
+			var m = new THREE.Mesh( new THREE.DecalGeometry( cloth, p, r, s, check ), material );
+			decals.push( m );
+			scene.add( m );
+
+		}
+
+		function removeDecals() {
+
+			decals.forEach( function( d ) {
+				scene.remove( d );
+				d = null;
+			} );
+			decals = [];
+
+		};
+
+		function mergeDecals() {
+
+			var merge = {};
+			decals.forEach(function (decal) {
+
+				var uuid = decal.material.uuid;
+				var d = merge[uuid] = merge[uuid] || {};
+				d.material = d.material || decal.material;
+				d.geometry = d.geometry || new THREE.Geometry();
+				d.geometry.merge(decal.geometry, decal.matrix);
+
+			});
+
+			removeDecals();
+
+			for (var key in merge) {
+
+				var d = merge[key];
+				var mesh = new THREE.Mesh(d.geometry, d.material);
+				scene.add(mesh);
+				decals.push(mesh);
+
+			}
+
+		}
+
+		function onWindowResize() {
+
+			windowHalfX = cwidth / 2;
+			windowHalfY = cheight / 2;
+
+			camera.aspect = cwidth / cheight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize( cwidth, cheight );
+			canvasRect = renderer.domElement.getBoundingClientRect();
+			// controls.handleResize();
+			render();
+
+		}
+
+		// function onDocumentMouseMove( event ) {
+
+		// 	mouseX = ( event.clientX - windowHalfX ) / 2;
+		// 	mouseY = ( event.clientY - windowHalfY ) / 2;
+
+		// }
+
+		//
+		function demoAlert() {
+			alert("亲，您目前访问的是体验页面，尚未开放全部功能，请见谅。");
+		}
+		function animate() {
+
+			requestAnimationFrame( animate );
+			controls.update();
+			render();
+
+		}
+
+		function render() {
+
+			// camera.position.x += ( mouseX - camera.position.x ) * .05;
+			// camera.position.y += ( - mouseY - camera.position.y ) * .05;
+
+			// camera.lookAt( scene.position );
+			// animate();
+			// requestAnimationFrame( animate );
+			// controls.update();
+			renderer.render( scene, camera );
+			canvasRect = renderer.domElement.getBoundingClientRect();
+
+		}
+
+	</script>
+</body>
+</html>
