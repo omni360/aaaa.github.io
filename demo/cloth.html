@@ -22,20 +22,20 @@
 </head>
 
 <body>
-	<script src="../build/three.js"></script>
+	<script src="build/three.js"></script>
 
-	<script src="js/loaders/DDSLoader.js"></script>
-	<script src="js/loaders/MTLLoader.js"></script>
-	<script src="js/loaders/OBJMTLLoader.js"></script>
-	<script src="js/controls/TrackballControls.js"></script>
-	<script src="js/loaders/BinaryLoader.js"></script>
-	<script src="js/controls/OrbitControls.js"></script>
+	<script src="examples/js/loaders/DDSLoader.js"></script>
+	<script src="examples/js/loaders/MTLLoader.js"></script>
+	<script src="examples/js/loaders/OBJMTLLoader.js"></script>
+	<script src="examples/js/controls/TrackballControls.js"></script>
+	<script src="examples/js/loaders/BinaryLoader.js"></script>
+	<script src="examples/js/controls/OrbitControls.js"></script>
 
-	<script src="js/geometries/DecalGeometry.js"></script>
-	<script src="js/libs/dat.gui.min.js"></script>
+	<script src="examples/js/geometries/DecalGeometry.js"></script>
+	<script src="examples/js/libs/dat.gui.min.js"></script>
 
-	<script src="js/Detector.js"></script>
-	<script src="js/libs/stats.min.js"></script>
+	<script src="examples/js/Detector.js"></script>
+	<script src="examples/js/libs/stats.min.js"></script>
 	<script type="x-shader/x-vertex" id="vertexShader">
 
 		varying vec3 vWorldPosition;
@@ -131,12 +131,12 @@
 						        </article>
 						        <div class="row">
 						        	<ul class="portfolio span4 list-photo">           
-							           <li class="span1 unchecked magnifier" onclick="demoAlert()" ><a href="#"><img alt="" src="textures/decal/decal-diffuse.png">模特性别</a></li> 
-							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal-diffuse.png">服装样式</a></li> 
-							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal-diffuse.png">服装底色</a></li> 
-							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/textu.png">服装花纹</a></li> 
-							           <li class="span1 checked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/decal.png">艺术贴片</a></li> 
-							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="textures/decal/texticon.png">添加文字</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()" ><a href="#"><img alt="" src="examples/textures/decal/decal-diffuse.png">模特性别</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="examples/textures/decal/decal-diffuse.png">服装样式</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="examples/textures/decal/decal-diffuse.png">服装底色</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="examples/textures/decal/textu.png">服装花纹</a></li> 
+							           <li class="span1 checked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="examples/textures/decal/decal.png">艺术贴片</a></li> 
+							           <li class="span1 unchecked magnifier" onclick="demoAlert()"><a href="#" ><img alt="" src="examples/textures/decal/texticon.png">添加文字</a></li> 
 							        </ul> 				        							        	
 						        </div>
 					        </div>
@@ -219,9 +219,8 @@
 	          <li><a class="icon-4" href="../wait.html"></a></li>
 	    </ul>
 	    <div class="privacy pull-left">© 2015 | 
-	      <a href="http://omni360.github.io">版权所有 : 北京阿凡提思睿网络科技有限公司　</a> | 
-	      <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | WebGL Demo By : 
-	      <a href="http://omni360.github.io" target="_blank">北京阿凡提思睿网络科技有限公司</a>|    
+	      <a href="http://www.afanty3d.com">版权所有 : 北京阿凡提思睿网络科技有限公司　</a> | WebGL Demo By : 
+	      <a href="http://www.afanty3d.com" target="_blank">北京阿凡提思睿网络科技有限公司</a>|    
 		<!--	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254726319'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254726319' type='text/javascript'%3E%3C/script%3E"));</script> -->
 		</div>
   	</div>
@@ -267,8 +266,8 @@
 
 		var tmpdebug;
 
-		var decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/text.png' );
-		var decalNormal = THREE.ImageUtils.loadTexture( 'textures/decal/decal-normal.jpg' );
+		var decalDiffuse = THREE.ImageUtils.loadTexture( 'examples/textures/decal/text.png' );
+		var decalNormal = THREE.ImageUtils.loadTexture( 'examples/textures/decal/decal-normal.jpg' );
 
 
 		var decalMaterial = new THREE.MeshPhongMaterial( {
@@ -302,7 +301,7 @@
 			selected.checked = true;
 			materialChanged = true;
 			activeImg = $(selected).find('img')[0].src;
-			// decalDiffuse = THREE.ImageUtils.loadTexture( 'textures/decal/textu.png' );
+			// decalDiffuse = THREE.ImageUtils.loadTexture( 'examples/textures/decal/textu.png' );
 		}
 
 
@@ -693,7 +692,7 @@
 		function loadLeePerrySmith( callback ) {
 
 			var loader = new THREE.OBJMTLLoader();
-			loader.load( 'custom/female02.obj', 'custom/female02.mtl', function ( object ) {
+			loader.load( 'examples/custom/female02.obj', 'examples/custom/female02.mtl', function ( object ) {
 
 				// object.position.y = - 80;
 				// console.log( object );
