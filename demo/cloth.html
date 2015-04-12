@@ -694,10 +694,11 @@
 			var loader = new THREE.OBJMTLLoader();
 			loader.load( 'examples/custom/female11.obj', 'examples/custom/female11.obj.mtl', function ( object ) {
 
-				// object.position.y = - 80;
+				object.position.y = -80;
+				object.scale.set(10.0, 10.0, 10.0);
 				// console.log( object );
-				// scene.add( object );
-				addMesh( object, 1, 0, -80, 0,  0,0,0 , new THREE.MeshFaceMaterial( materials ));
+				scene.add( object );
+				// addMesh( object, 1, 0, -80, 0,  0,0,0 , new THREE.MeshFaceMaterial( materials ));
 				// addGroup( object, 1, 0, -80, 0,  0,0,0 );
 			}, onProgress, onError );
 	
