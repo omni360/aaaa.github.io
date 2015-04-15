@@ -80,6 +80,7 @@
 				
 
 				var loader = new THREE.ColladaLoader();
+				// loader.load( "./custom/female1.dae", function ( collada ) {
 				loader.load( "./models/collada/avatar.dae", function ( collada ) {
 				
 					collada.scene.traverse( function ( child ) {

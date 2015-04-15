@@ -12,28 +12,28 @@
 
   <library_images>
     <image id="young_lightskinned_female_diffuse3_png" name="young_lightskinned_female_diffuse3_png">
-      <init_from>file://textures/young_lightskinned_female_diffuse3.png</init_from>
+      <init_from>textures/young_lightskinned_female_diffuse3.png</init_from>
     </image>
     <image id="ponytail01_diffuse_png" name="ponytail01_diffuse_png">
-      <init_from>file://textures/ponytail01_diffuse.png</init_from>
+      <init_from>textures/ponytail01_diffuse.png</init_from>
     </image>
     <image id="brown_eye_png" name="brown_eye_png">
-      <init_from>file://textures/brown_eye.png</init_from>
+      <init_from>textures/brown_eye.png</init_from>
     </image>
     <image id="eyebrow008_png" name="eyebrow008_png">
-      <init_from>file://textures/eyebrow008.png</init_from>
+      <init_from>textures/eyebrow008.png</init_from>
     </image>
     <image id="eyelashes02_png" name="eyelashes02_png">
-      <init_from>file://textures/eyelashes02.png</init_from>
+      <init_from>textures/eyelashes02.png</init_from>
     </image>
     <image id="teeth_png" name="teeth_png">
-      <init_from>file://textures/teeth.png</init_from>
+      <init_from>textures/teeth.png</init_from>
     </image>
     <image id="female_casualsuit01_diffuse_png" name="female_casualsuit01_diffuse_png">
-      <init_from>file://textures/female_casualsuit01_diffuse.png</init_from>
+      <init_from>textures/female_casualsuit01_diffuse.png</init_from>
     </image>
     <image id="female_casualsuit01_normal_png" name="female_casualsuit01_normal_png">
-      <init_from>file://textures/female_casualsuit01_normal.png</init_from>
+      <init_from>textures/female_casualsuit01_normal.png</init_from>
     </image>
   </library_images>
 
