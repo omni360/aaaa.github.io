@@ -692,15 +692,24 @@
 		function loadLeePerrySmith( callback ) {
 
 			var loader = new THREE.OBJMTLLoader();
-			loader.load( 'examples/custom/female01.obj', 'examples/custom/female01.obj.mtl', function ( object ) {
+			// loader.load( 'examples/custom/female01.obj', 'examples/custom/female01.obj.mtl', function ( object ) {
 
-				object.position.y = -80;
-				object.scale.set(10.0, 10.0, 10.0);
+			// 	object.position.y = -80;
+			// 	object.scale.set(10.0, 10.0, 10.0);
+			// 	// console.log( object );
+			// 	scene.add( object );
+			// 	// addMesh( object, 1, 0, -80, 0,  0,0,0 , new THREE.MeshFaceMaterial( materials ));
+			// 	// addGroup( object, 1, 0, -80, 0,  0,0,0 );
+			// }, onProgress, onError );
+
+			loader.load( 'examples/custom/female02.obj', 'examples/custom/female02.mtl', function ( object ) {
+
+				// object.position.y = - 80;
 				// console.log( object );
-				scene.add( object );
-				// addMesh( object, 1, 0, -80, 0,  0,0,0 , new THREE.MeshFaceMaterial( materials ));
-				// addGroup( object, 1, 0, -80, 0,  0,0,0 );
+				// scene.add( object );
+				addGroup( object, 1, 0, -80, 0,  0,0,0 );
 			}, onProgress, onError );
+
 	
 
 			// loader = new THREE.BinaryLoader( true );
